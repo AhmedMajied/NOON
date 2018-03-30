@@ -1,0 +1,75 @@
+/* Author: Andrew Emad Nassif */
+
+@font-face {
+  font-family: "Bahij TheSansArabic";
+  src: url("../webfonts/Bahij TheSansArabic-Plain.ttf")
+}
+@font-face {
+  font-family: "Bahij TheSansArabic";
+  src: url("../webfonts/Bahij TheSansArabic-Black.ttf");
+  font-weight: bold
+}
+
+#idiv-news-container{
+    border:2px solid #f0f0f0;
+    padding:22px;
+    width:50%;
+}
+#iimg-news{
+    width:100%;
+    height:308px;
+    margin-bottom:20px
+}
+#idiv-time{
+    margin-bottom:22px;
+    font-size: 12px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(204, 204, 204);
+    line-height: 1.2;
+}
+#idiv-title{
+    font-size: 22px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom:20px
+}
+
+#idiv-text {
+    font-size: 14px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(204, 204, 204);
+    line-height: 1.357;
+    text-align: left;
+}
+
+#idiv-links{
+    border:2px solid #f0f0f0;
+    padding:20px
+}
+
+#idiv-link-title,#idiv-print-title{
+    font-size: 22px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    line-height: 1.2;
+    text-align: left;
+}
+
+#ia-link-text,#idiv-print-text {
+    font-size: 16px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    line-height: 1.697;
+    margin-bottom:34px;
+}
+
+.fab{
+  margin-right: 12px;
+  color: rgb(204, 204, 204);
+}
+
+.fab:hover{
+    color: rgb(107, 71, 143);
+}
