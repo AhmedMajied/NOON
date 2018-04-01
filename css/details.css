@@ -13,14 +13,13 @@
 #idiv-news-container{
     border:2px solid #f0f0f0;
     padding:22px;
-    width:50%;
 }
 #iimg-news{
     width:100%;
     height:308px;
-    margin-bottom:20px
 }
-#idiv-time{
+.cdiv-time{
+    margin-top:20px;
     margin-bottom:22px;
     font-size: 12px;
     font-family: "Bahij TheSansArabic";
@@ -33,7 +32,8 @@
     color: rgb(107, 71, 143);
     line-height: 1.2;
     text-align: left;
-    margin-bottom:20px
+   margin-bottom:20px
+
 }
 
 #idiv-text {
@@ -44,9 +44,10 @@
     text-align: left;
 }
 
-#idiv-links{
+#idiv-links,.cdiv-related-news{
     border:2px solid #f0f0f0;
-    padding:20px
+    padding:18px;
+    margin-bottom: 20px;
 }
 
 #idiv-link-title,#idiv-print-title{
@@ -56,20 +57,76 @@
     line-height: 1.2;
     text-align: left;
 }
-
-#ia-link-text,#idiv-print-text {
+#idiv-link-text>a,#idiv-print-text {
+    color: rgb(107, 71, 143);
     font-size: 16px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
     line-height: 1.697;
+}
+#idiv-link-text,#idiv-print-text{
     margin-bottom:34px;
 }
-
+.fa-youtube{
+  margin:0px
+}
 .fab{
-  margin-right: 12px;
+  margin-right: 6px;
   color: rgb(204, 204, 204);
+  font-size:15px;
 }
 
 .fab:hover{
     color: rgb(107, 71, 143);
+}
+
+.cdiv-news-title {
+    font-size: 18px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom:28px;
+}
+.cimg-related-news {
+  width:100%;
+  height: 153px;
+}
+
+.cdiv-related-news .cdiv-time{
+    margin-bottom:16px;
+}
+.cdiv-related-news .cdiv-read-more{
+    padding-top:3px;
+    font-size:12px;
+    float:right;
+}
+
+
+.cdiv-related-news .cdiv-read-more a{
+    font-size: 14px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(204, 204, 204);
+    line-height: 1.2;
+    -moz-transform: matrix( 0.9983286908078,0,0,1.03681885125184,0,0);
+    -webkit-transform: matrix( 0.9983286908078,0,0,1.03681885125184,0,0);
+    -ms-transform: matrix( 0.9983286908078,0,0,1.03681885125184,0,0);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.cdiv-related-news .cdiv-read-more a:hover{
+    color: rgb(107, 71, 143);
+    text-decoration: none
+}
+.cdiv-related-news .cdiv-read-more a .arrow{
+      color: rgb(107, 71, 143);
+
+}
+.cdiv-related-news .cdiv-social{
+    display:inline-block
+}
+
+.cdiv-related-news:last-child{
+  margin-bottom: 0
 }
