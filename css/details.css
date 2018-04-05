@@ -148,6 +148,80 @@ a:hover {
     margin-bottom: 0
 }
 
+#idiv-advertisement {
+    border: 1px solid #f0f0f0;
+    padding: 20px;
+    height: 294px;
+    margin-bottom: 20px;
+}
+
+#idiv-advertisement .cdiv-space {
+    background-color: #efefef;
+    height: 100%;
+    font-size: 14px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    font-weight: bold;
+    padding-top: 50%;
+    text-align: center;
+}
+
+#idiv-profiles {
+    border: 1px solid #f0f0f0;
+    padding-top: 16px;
+}
+
+#idiv-profiles .cdiv-flag {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    background-color: #6b478f;
+    width: 32%;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    font-family: "Bahij TheSansArabic";
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+#idiv-profiles .cdiv-profile {
+    text-align: center;
+    margin: 12px 25px
+}
+
+#idiv-profiles .cdiv-profile ~.cdiv-profile{
+    border-top:1px solid #f0f0f0;
+    padding-top:22px
+}
+
+#idiv-profiles img {
+    border: 1px solid #f0f0f0;
+    width: 100%;
+    margin-bottom: 22px
+}
+
+#idiv-profiles .cdiv-profile-name {
+    font-size: 18px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    line-height: 1.2;
+    margin-bottom: 20px
+}
+
+#idiv-profiles .cdiv-profile-text {
+    font-size: 14px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(204, 204, 204);
+    line-height: 1.357;
+    margin-bottom: 20px
+}
+
+#idiv-profiles .cdiv-social {
+    margin-bottom: 23px
+}
+
 #idiv-comments-container {
     margin-top: 15px;
     padding: 26px;
@@ -296,7 +370,7 @@ a:hover {
 #idiv-related-topics .cdiv-more {
     float: right;
     margin-top: 56px;
-    margin-right:20px
+    margin-right: 20px
 }
 
 #idiv-related-topics .cdiv-more a {
@@ -304,5 +378,4 @@ a:hover {
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
     line-height: 1.2;
-    
 }
