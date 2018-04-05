@@ -6,56 +6,89 @@
              <link rel="stylesheet" href="../css/bootstrap.min.css"/>
             <script src="../js/jquery-3.3.1.min.js"></script>
             <script src="../js/bootstrap.min.js"></script>
-                        <link rel="stylesheet" href="../css/contactUs.css"/>
-
+            <link rel="stylesheet" href="../css/contactUs.css"/>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknmD-bIczC5pP5WPolW9zsx8xA8Ty6Cw&callback=myMap"></script>
+            <script src="../js/contactUs.js"></script>
         </head>
         <body>
+            <!--Start Body Of Contact Us Page( By Mariam Ashraf)-->
             <div class="container">
+                <!--Start First Component in Page-->
                 <div class="row row1">
+                    <!--Start Call Us Div which is first div in the first Component-->
                     <div class="cdiv-call-us">
+                        <!-- Start Call Us Word-->
                             <h1 id="ip-call-us">
                             <b>إتصل</b>
                                 بنا
                         </h1>
+                        <!--End Call Us Word-->
                     </div>
-                    <div class="cdiv-back-post-address">
-                        <div class="cdiv-front-post-address">
-                            <h2 class="ch2-post-address-title">العنوان البريدي</h2>
-                                <div id="idiv-content-line"></div>
-                                <div id="idiv-info">
-                                    <p id="ip-noon-magazine">مجلة نون</p>
-                                    <p id="ip-post-address">
-                                        ص.ب: <span id="ispan-pa-number">113147</span>
-                                    </p>
-                                    <p id="ip-location">الإمارات العربية المتحدة ـ ابوظبي</p>
-                                    <p id="ip-email">
-                                        البريد الإلكتروني:
-                                        <span id="ispan-email">info@noonsport.com</span>
-                                    </p>
-                                    <p id="ip-phone">
-                                        الهاتف:
-                                        <span id="ispan-phone"> +971 26270007</span>
-                                    </p>
-                                </div>
-                        </div>
-                    </div>
+                    <!--End Call Us Div-->
                     
-                     <div class="cdiv-back-our-offices">
+                    <!--Start Post Address which is second div in the first Component-->
+                    <!--The Div Behind Post Address-->
+                    <div class="cdiv-back-post-address">
+                        <!--Start Post Address Div Informations-->
+                        <div class="cdiv-front-post-address">
+                            <!--Title-->
+                            <h2 class="ch2-post-address-title">العنوان البريدي</h2>
+                            <!--Vertical Line in Post Address Div-->
+                            <div id="idiv-content-line"></div>
+                            <!--Start Post Address Details-->
+                            <div id="idiv-info">
+                                <!--Magazine Name-->
+                                <p id="ip-noon-magazine">مجلة نون</p>
+                                <!--Post Address Number-->
+                                <p id="ip-post-address">
+                                    ص.ب: <span id="ispan-pa-number">113147</span>
+                                </p>
+                                <p id="ip-location">الإمارات العربية المتحدة ـ ابوظبي</p>
+                                <!--Email Address-->
+                                <p id="ip-email">
+                                    البريد الإلكتروني:
+                                    <span id="ispan-email">info@noonsport.com</span>
+                                </p>
+                                <!--Phone Number-->
+                                <p id="ip-phone">
+                                    الهاتف:
+                                    <span id="ispan-phone"> +971 26270007</span>
+                                </p>
+                            </div>
+                            <!--End Post Address Details-->
+                        </div>
+                        <!--End Post Address Information-->
+                    </div>
+                    <!--End Post Address-->
+
+                    <!--Start Our Offices which is third div in the first Component-->
+                    <!--Start The Content Of The Our Offices Div-->
+                    <div class="cdiv-back-our-offices">
                        <div class="cdiv-front-our-offices">
-                         <h2 id="ih2-our-offices">مكاتبنا</h2>
+                        <!--Our Offices-->
+                            <h2 id="ih2-our-offices">مكاتبنا</h2>
+                         <!--Start Our Offices Places and its mails-->
                             <div id="idiv-our-offices-places">
+                                <!--Start First Office country and mail-->
                                 <div class="cdiv-our-offices">
                                     <span class="li"></span>
                                    <span class="cspan-office">البحرين:</span>bahrain.bureau@noonsport.com
                                 </div>
+                                <!--End First Office country and mail-->
+                                
+                                <!--Start Second Office country and mail-->
                                 <div class="cdiv-our-offices">
                                     <span class="li"></span>
                                     <span class="cspan-office">الاردن:</span>jordan.bureau@noonsport.com
                                 </div>
+                                <!--End Second Office country and mail-->
+                                
+                                <!--Start Third Office country and mail-->
                                 <div class="cdiv-our-offices">
                                     <span class="li"></span>
                                     <span class="cspan-office">مصر:</span>egypt.bureau@noonsport.com
                                 </div>
+                                <!--End Third Office country and mail-->
                                 <div class="cdiv-our-offices">
                                     <span class="li"></span>
                                     <span class="cspan-office">تونس:</span>tunisia.bureau@noonsport.com
@@ -69,43 +102,69 @@
                                     <span class="cspan-office">المغرب:</span>morocco.bureau@noonsport.com
                                 </div>
                             </div>
+                            <!--End Our Offices Places and its mails-->
                         </div>
                      </div>
+                    <!--End Content of Our Offices Div-->
+                    <!--End Our Offices-->
+
                 </div>
+                <!--End First Component in Page-->
+                
+                <!--Start The Second Component ( Write Message Part)In Page-->
                 <div class="row row2">
-                    <div id="idiv-img"class="col-xs-6 pull-right">
-                        
-                    </div>
+                    <!-- Image Displayes in Write Message-->
+                    <div id="idiv-img"class="col-xs-6 pull-right"></div>
+                    <!--Start Write Message Form-->
                     <div id="idiv-form-write-message" class="col-xs-6">
                         <form action="#" method="post">
+                            <!--Start Write Your Name Part-->
                             <div class="idiv-write-message-info">
                                 <div class="cdiv-name">الإسم</div>
+                                <!--Input field to write Name-->
                                 <input type="text" class="cinput-name"/>
                             </div>
+                            <!--End Write Your Name Part-->
+                            <!--Start Write Your Mail Part-->
                             <div class="idiv-write-message-info">
                                 <div class="cdiv-email">البريد الإلكتروني</div>
+                                <!--Input Field To Write E-mail-->
                                 <input type="email" class="cinput-email"/>
                             </div>
-                            <div class="idiv-write-message-message">
+                            <!--End Write Your Mail Part-->
+                            <!--Start Write Your Message Part-->
+                            <div class="idiv-write-message-info">
                                 <div class="cdiv-message">الرسالة</div>
+                                <!--Input Field to Write Message-->
                                 <textarea class="ctextarea-message"placeholder="أكتب رسالتك هنا......."></textarea>
                             </div>
+                            <!--End Write Your Message part-->
+                            <!--Send Button -->
                             <button type="button" class="btn btn-default cbtn-send">إرسال</button>
                         </form>
+                        <!--Div Behind Write Message with purple color-->
                         <div id="idiv-behind-write-message"></div>
                     </div>
+                    <!--End Write Message Form-->
                 </div>
+                <!--End The Second Component ( Write Message Part)In Page-->
                 
+                <!--Start Our Location which is The Third Component In Page-->
                 <div class="row row3">
+                    <!--Start Our Location-->
                     <div class="cdiv-map-location">
-                        <div class="cdiv-front">
+                        <div class="cdiv-front col-lg-3 pull-right">
                             <h2 class="ch2-front"> موقعنا</h2>
                             <p class="cp-front">على الخريطة</p>
                         </div>
+                        <!--Div Behind mapLocation Div-->
                         <div class="cdiv-back"></div>
                     </div>
+                    <!--End Our Location-->
+                    
+                    <!--Start Choose Your Country-->
                     <div class="cdiv-country">
-                        <select class="cselect-country selectpicker">
+                        <select class="cselect-country selectpicker col-lg-3 pull-right">
                             <option>اختر دولتك</option>
                             <option>مصر</option>
                             <option>تونس</option>
@@ -113,43 +172,45 @@
                             <option>الامارات</option>
                         </select>
                     </div>
+                    <!--End Choose Your Country-->
+                    
+                    <!--This Is div For Google Map-->
                     <div id="idiv-map-location"></div>
-                    <div id="idiv-location-address" class="col-lg-4 row pull-right">
-                            <div id="idiv-front-location-address">
-                                <h2 id="ih2-location-address-title">البحرين</h2>
-                                <div id="idiv-content-location-address">
-                                    <div id="idiv-info">
-                                        <p id="ip-noon-magazine">مجلة نون</p>
-                                        <p id="ip-post-address">
-                                            ص.ب: <span id="ispan-pa-number">113147</span>
-                                        </p>
-                                        <p id="ip-location">الإمارات العربية ا تحدة ـ اأبوظبي</p>
-                                        <p id="ip-email">
-                                            البريد الإلكتروني:
-                                            <span id="ispan-email">info@noonsport.com</span>
-                                        </p>
-                                        <p id="ip-phone">
-                                            الهاتف:
-                                            <span id="ispan-phone"> +971 26270007</span>
-                                        </p>
-                                    </div>
+                    
+                    <!--Start Location Informations-->
+                    <div id="idiv-location-address" class="col-lg-4 pull-right">
+                        <div id="idiv-front-location-address">
+                            <!--Address Location Name (Country Name)-->
+                            <h2 id="ih2-location-address-title">البحرين</h2>
+                            <div id="idiv-content-location-address">
+                                <div id="idiv-info">
+                                    <!--Magazine Name-->
+                                    <p id="ip-noon-magazine">مجلة نون</p>
+                                    <!--Magazine Post Address-->
+                                    <p id="ip-post-address">
+                                        ص.ب: <span id="ispan-pa-number">113147</span>
+                                    </p>
+                                    <!--Location Address-->
+                                    <p id="ip-location">الإمارات العربية ا تحدة ـ اأبوظبي</p>
+                                    <!--Email Address-->
+                                    <p id="ip-email">
+                                        البريد الإلكتروني:
+                                        <span id="ispan-email">info@noonsport.com</span>
+                                    </p>
+                                    <!--Phone Number-->
+                                    <p id="ip-phone">
+                                        الهاتف:
+                                        <span id="ispan-phone"> +971 26270007</span>
+                                    </p>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-          <!--  <script>
-            function myMap()
-            {
-            var mapProp= {
-                center:new google.maps.LatLng(31.508742,30.120850),
-                zoom:5,
-            };
-            var map=new google.maps.Map(document.getElementById("idiv-map-location"),mapProp);
-            }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknmD-bIczC5pP5WPolW9zsx8xA8Ty6Cw&callback=myMap"></script>
+                <!--End Location Informations-->
 
--->
+                </div>
+                <!--End Our Location which is The Third Component In Page-->
+            </div>
+            <!--End Body Of Contact Us Page( By Mariam Ashraf)-->
         </body>
     </html>
