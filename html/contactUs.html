@@ -6,8 +6,7 @@
              <link rel="stylesheet" href="../css/bootstrap.min.css"/>
             <script src="../js/jquery-3.3.1.min.js"></script>
             <script src="../js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"/>
-            <link rel="stylesheet" href="../css/contactUs.css"/>
+                        <link rel="stylesheet" href="../css/contactUs.css"/>
 
         </head>
         <body>
@@ -22,9 +21,7 @@
                     <div class="cdiv-back-post-address">
                         <div class="cdiv-front-post-address">
                             <h2 class="ch2-post-address-title">العنوان البريدي</h2>
-                            <div class="cdiv-content-post-address">
-                                <div id="idiv-content-line">
-                                </div>
+                                <div id="idiv-content-line"></div>
                                 <div id="idiv-info">
                                     <p id="ip-noon-magazine">مجلة نون</p>
                                     <p id="ip-post-address">
@@ -40,9 +37,9 @@
                                         <span id="ispan-phone"> +971 26270007</span>
                                     </p>
                                 </div>
-                            </div>
                         </div>
                     </div>
+                    
                      <div class="cdiv-back-our-offices">
                        <div class="cdiv-front-our-offices">
                          <h2 id="ih2-our-offices">مكاتبنا</h2>
@@ -75,6 +72,84 @@
                         </div>
                      </div>
                 </div>
+                <div class="row row2">
+                    <div id="idiv-img"class="col-xs-6 pull-right">
+                        
+                    </div>
+                    <div id="idiv-form-write-message" class="col-xs-6">
+                        <form action="#" method="post">
+                            <div class="idiv-write-message-info">
+                                <div class="cdiv-name">الإسم</div>
+                                <input type="text" class="cinput-name"/>
+                            </div>
+                            <div class="idiv-write-message-info">
+                                <div class="cdiv-email">البريد الإلكتروني</div>
+                                <input type="email" class="cinput-email"/>
+                            </div>
+                            <div class="idiv-write-message-message">
+                                <div class="cdiv-message">الرسالة</div>
+                                <textarea class="ctextarea-message"placeholder="أكتب رسالتك هنا......."></textarea>
+                            </div>
+                            <button type="button" class="btn btn-default cbtn-send">إرسال</button>
+                        </form>
+                        <div id="idiv-behind-write-message"></div>
+                    </div>
+                </div>
+                
+                <div class="row row3">
+                    <div class="cdiv-map-location">
+                        <div class="cdiv-front">
+                            <h2 class="ch2-front"> موقعنا</h2>
+                            <p class="cp-front">على الخريطة</p>
+                        </div>
+                        <div class="cdiv-back"></div>
+                    </div>
+                    <div class="cdiv-country">
+                        <select class="cselect-country selectpicker">
+                            <option>اختر دولتك</option>
+                            <option>مصر</option>
+                            <option>تونس</option>
+                            <option>فلسطين</option>
+                            <option>الامارات</option>
+                        </select>
+                    </div>
+                    <div id="idiv-map-location"></div>
+                    <div id="idiv-location-address" class="col-lg-4 row pull-right">
+                            <div id="idiv-front-location-address">
+                                <h2 id="ih2-location-address-title">البحرين</h2>
+                                <div id="idiv-content-location-address">
+                                    <div id="idiv-info">
+                                        <p id="ip-noon-magazine">مجلة نون</p>
+                                        <p id="ip-post-address">
+                                            ص.ب: <span id="ispan-pa-number">113147</span>
+                                        </p>
+                                        <p id="ip-location">الإمارات العربية ا تحدة ـ اأبوظبي</p>
+                                        <p id="ip-email">
+                                            البريد الإلكتروني:
+                                            <span id="ispan-email">info@noonsport.com</span>
+                                        </p>
+                                        <p id="ip-phone">
+                                            الهاتف:
+                                            <span id="ispan-phone"> +971 26270007</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
+          <!--  <script>
+            function myMap()
+            {
+            var mapProp= {
+                center:new google.maps.LatLng(31.508742,30.120850),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("idiv-map-location"),mapProp);
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDknmD-bIczC5pP5WPolW9zsx8xA8Ty6Cw&callback=myMap"></script>
+
+-->
         </body>
     </html>

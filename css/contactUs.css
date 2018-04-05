@@ -11,67 +11,64 @@ body
 .cdiv-call-us
 {
     background-color: rgb(232, 19, 119);
-    width: 39%;
-    height: 348px;
+    width: 39.34%;
+    /*height: 348px%;*/
     display: inline-block;
     float: right;
-    position: relative;
 }
 #ip-call-us
 {
     font-size: 52px;
     color: rgb(255, 255, 255);
     font-weight: normal;
-    line-height: 1.2;
-    margin: 0px;
-    padding: 150px 71px 128px 172px; 
+   padding:0px 4px 0px 8px;
+   margin:31.25% 13.95% 26.66% auto;
 }
 /* End Call Us*/
 /* Start Post Address*/
 .cdiv-back-post-address
 {
-    width:32%;
+    width:32.04%;
     height: 300px;
     position:relative;
     background-color: rgb(107, 71, 143);
     display: inline-block;
     float:right;
-    margin-top: 79px;
-    margin-right: -28px;
+    margin-top: 6.75%;
+    margin-right: -2.82%;
 }
 .cdiv-front-post-address
 {
-    width: 100%;
-    height: 300px;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(237,237,237);
-    transform: translate(16px,-15px);
+    transform: translate(5.33%,-5%);
 }
 .ch2-post-address-title
 {
   color: rgb(107, 71, 143);
   line-height: 1;
-  padding: 58px 60px 41px 71px;
-  margin:0px;
-}
-.cdiv-content-post-address
-{
-    padding-right:60px;
+  padding:0px 5px 0px 2px;
+  margin:14.83% 14.06% 10.48% 17.64%;
 }
 #idiv-content-line
 {
     width: 2px;
     height: 108px;
+    margin-right:15.3%;
+    margin-left:5.11%;
     background-color: rgb(107, 71, 143);
     float: right;
 }
 #idiv-info
 {
-    padding-right:20px;
     float: right;
+    position: relative;
     color: rgb(143, 143, 143);
     line-height: 1.429;
+    display: inline-block;
 }
+
 #ip-post-address , #ip-email ,#ip-phone
 {
     color:rgb(107, 71, 143);
@@ -82,53 +79,48 @@ body
 #ip-noon-magazine , #ip-location , #ispan-pa-number , #ispan-email , #ispan-phone
 {
     font-weight: normal;
-    margin: 0px;
+    margin: 0%;
     padding-bottom: 3px;
 
 }
 /* End Post Address*/
 .cdiv-back-our-offices
 {
-    width:29%;
+    width:33.1%;
     height: 316px;
     background-color: rgb(232, 19, 119);
     position: relative;
     display: inline-block;
     top:16px;
-    margin-right: -30px;
+    margin-right: -3.15%;
 }
 .cdiv-front-our-offices
-{
-    width: 112%;
-    height: 316px;
+{ 
+    height: 100%;
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(237,237,237);
-    transform: translate(-18px,-16px);
+    transform: translate(-4.71%,-4.18%);
 }
 #ih2-our-offices
 {
   color: rgb(107, 71, 143);
   line-height: 1;
-  margin:0px;
-  padding-top:58px;
-  padding-right:56px;
-  padding-bottom:43px;
+  padding:0px 4px;
+  margin:14.32% 12.83% 10.61% 59.50%;
 }
  .li
 {
-    padding-right: 0px;
-    margin-bottom: 17px;
     border-radius: 50%;
     background-color: rgb(107, 71, 143);
     width: 8px;
     height: 8px;
     display: inline-block;
-    margin: 0px 56px 0px 0px;
+    margin: 0% 13.82% 0% 0%;
 }
 .cdiv-our-offices
 {
     font-weight: normal;
-    margin-bottom: 6px;
+    padding-bottom: 1.48%;
     color:rgb(143,143,143);
 }
 .cspan-office
@@ -136,8 +128,187 @@ body
   color: rgb(107, 71, 143);
   font-weight: bold;
   line-height: 1.429;
-  padding-right: 9px;
+  padding-right: 2.22%;
   padding-left: 1px;
 }
+@media(max-width:991px)
+{
+    
+}
+.row2
+{
+    margin-top:126px;
+    height:551px;
+    border:1px solid rgb(237, 237, 237);
+    background-image: url(../images/Soccer_Lady&Girl.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    border-color: transparent;
+}
+#idiv-img
+{
+    margin-top: 23px;
+}
+#idiv-form-write-message
+{
+    height: 593px;
+    background-color: rgb(107, 71, 143);
+    margin-top:-21px;
+    padding: 0px;
+}
+#idiv-behind-write-message{
+  background-color: rgb(232, 19, 119);
+    width: 53.5%;
+    height: 5.4%;
+    position: relative;
+    margin-right: -9px;
+    margin-top: 31px;
+    z-index: -1;
+}
+.cdiv-name
+{
+    margin:95px 78px auto 13px;
+}
+.cdiv-name , .cdiv-email , .cdiv-message
+{
+  font-family: "Bahij TheSansArabic";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: right;
+  height: 15px;
+  font-weight: bold;
+  margin-right: 78px;
 
+}
+.cinput-name , .cinput-email , .ctextarea-message
+{
+    margin-right:78px;
+    margin-left:103px;
+    border: none;
+    width:70%;
+    align-self: center;
+    border-bottom: 1px solid rgba(155,155,155,0.102);
+    background-color: transparent;
+    color: rgba(155,155,155,0.9);
+}
+.cdiv-email
+{
+    margin-top:26px;
+}
+.cdiv-message
+{
+    margin-top:35px;
+    margin-bottom: 15px;
+}
+.ctextarea-message{
+  border: 1px solid rgba(155,155,155,0.102);
+  width: 403px;
+  height: 179px;
+  resize: none;
+  padding-top:18px;
+  padding-right: 17px;
+  font-size:14px;
+   line-height: 1.2;
+   font-weight: bold;
+}
+.cbtn-send
+{
+    width:87px;
+    height: 38px;
+    border-radius: 30px;
+  color: rgb(107, 71, 143);
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 53px 78px auto auto;
+}
+.row3{
+    margin-top:124px;
+}
+.cdiv-front {
+  border: 1px solid rgb(237,237,237);
+  background-color: rgb(255, 255, 255);
+  width: 205px;
+  height: 202px;
+  font-size: 30px;
+  font-family: "Bahij TheSansArabic";
+  color: rgb(107, 71, 143);
+  line-height: 1.34;
+  text-align: right;
+  display: inline-block;
+  
+  position: absolute;
+    z-index: 2;
+}
+.cdiv-map-location
+{
+    display: inline-block;
+}
+.ch2-front
+{
+    margin-top: 71px;
+}
+.ch2-front , .cp-front
+{
+    margin-right: 20px;
+      padding: 0px 2px 1px 0px;
+}
+.cdiv-back
+{
+  background-color: rgb(232, 19, 119);
+  margin:0px;
+  display: inline-block;
+  width: 9px;
+  height: 145px;
+  margin-right:-4px;
+margin-bottom: -21px;
 
+    margin-right: 205px;
+    margin-top: 25px;
+}
+.cdiv-country
+{
+    display: inline-block;
+    float: left;
+}
+.cselect-country
+{
+    width:169px;
+    height: 41px;
+    border: none;
+    border-bottom: 1px solid rgb(237,237,237);
+    font-family: "Bahij TheSansArabic";
+    color: rgb(107, 71, 143);
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+#idiv-map-location
+{
+    width:100%;
+    height: 551px;
+    margin-top:-70px;
+    border: 1px solid rgb(237,237,237);
+
+}
+#idiv-front-location-address
+{
+    width: 296px;
+    height: 255px;
+    position: absolute;
+    z-index:2;
+}
+#idiv-location-address
+{
+    background-color: rgb(107, 71, 143);
+    height: 155px;
+    z-index: 2;
+    margin-top: 7%;
+    width: 294px;
+    margin-right: 69.75%;
+    margin-top: -22%;
+}
+#ih2-location-address-title
+{
+    margin:33px 25px 27px auto;
+}
