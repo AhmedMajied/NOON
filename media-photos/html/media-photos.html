@@ -1,23 +1,30 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="../../bootstrap-4.0.0.min.css" type="application/javascript"></script>
+        <script src="../../jquery-3.2.1.min.js" type="application/javascript"></script>
+        <script src="../js/media-photos.js" type="application/javascript"></script>
         <link rel="stylesheet" type="text/css" href="../../bootstrap-4.0.0.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/media-photos.css" />
     </head>
     <body>
-        <div id="idiv-cmp">
-            <header id="ihdr" class="container-fluid">
+        <!--component root-->
+        <div id="idiv-cmp" class="container-fluid">
+            <!--component header-->
+            <header id="ihdr">
                 <span id="ispn-hdr">
-                    <label>Photos</label>
+                    <label id="ilbl-hdr">Photos</label>
                 </span>
             </header>
+
+            <!--component body-->
             <div id="idiv-bdy" class="container-fluid">
-                <div class="row cdiv-media-photo-row"><!--row of photos-->
-                    <div class="cdiv-media-photo-cart col-md-3"><!--photo cart-->
+                <!--row of photos-->
+                <div class="row cdiv-media-photo-row">
+                    <!--photo cart-->
+                    <div class="cdiv-media-photo-cart col-md-3">
                         <figure class="cfgr-main">
                             <img src="../img/Test.jpg" class="img img-responsive cimg-main"/>
                             <figcaption class="cfigcaption-main">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do ei...</figcaption>
@@ -33,6 +40,8 @@
                     </div>
                 </div>
             </div>
+
+            <!--component footer-->
             <footer id="iftr" class="container-fluid">
                 <button id="ibtn-more">More</button>
             </footer>
