@@ -43,9 +43,9 @@ body{
 }
 
 /* Component body style*/
-.cdiv-media-photo-cart{
-    margin: 1.25rem 0rem;
-    padding: 0rem 0.625rem;
+.cdiv-media-video-cart{
+    margin: 1.25rem -0.07rem;
+    padding: 0rem 0rem;
 }
 .cfgr-main{
     display: block;
@@ -73,6 +73,7 @@ body{
     font-size: 1.125rem;
     font-family: Bahij-TheSansArabic-Plain;
     color: #6b478f;
+    padding: 0rem 0.25rem;
 }
 .cdiv-show-on-hover{
     position: absolute;

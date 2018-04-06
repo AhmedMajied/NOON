@@ -11,7 +11,7 @@
     </head>
     <body>
         <!--component root-->
-        <div id="idiv-cmp" class="container-fluid">
+        <div id="idiv-component-root" class="container-fluid">
             <!--component header-->
             <header id="ihdr">
                 <span id="ispn-hdr">
@@ -26,17 +26,19 @@
                     <!--photo cart-->
                     <div class="cdiv-media-photo-cart col-md-3">
                         <figure class="cfgr-main">
-                            <img src="../img/Test.jpg" class="img img-responsive cimg-main"/>
+                            <picture class="cpicture">
+                                <div class="cdiv-show-on-hover">
+                                    <span class="cspn-show-on-hover">
+                                        <figure class="cfgr-show-on-hover">
+                                            <img src="../img/img-show-on-hover.png" class="img img-responsive cimg-show-on-hover"/>
+                                            <figcaption class="cfigcaption-show-on-hover">8/1</figcaption>
+                                        </figure>
+                                    </span>
+                                </div>
+                                <img src="../img/Test.jpg" class="img img-responsive cimg-main"/>
+                            </picture>
                             <figcaption class="cfigcaption-main">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do ei...</figcaption>
                         </figure>
-                        <div class="cdiv-show-on-hover">
-                            <span class="cspn-show-on-hover">
-                                <figure class="cfgr-show-on-hover">
-                                    <img src="../img/img-show-on-hover.png" class="img img-responsive cimg-show-on-hover"/>
-                                    <figcaption class="cfigcaption-show-on-hover">8/1</figcaption>
-                                </figure>
-                            </span>
-                        </div>
                     </div>
                 </div>
             </div>
