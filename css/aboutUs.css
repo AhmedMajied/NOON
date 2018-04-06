@@ -2,244 +2,299 @@ body
 {
     direction: rtl;
 }
-.cdiv-first
+.row
 {
-    width: 100%;
-    min-height: 560px;
-    display:inline-block;
+    margin-top:20px;
+    font-family: "Bahij TheSansArabic";
 }
+/*Start About Noon Style*/
+
 .cdiv-about-us
 {
-  background-color: rgb(232, 19, 119);
-  width: 480px;
-  height: 348px;
-  display: inline-block;
-  margin-top: 10px;
-  z-index: 1;
+    background-color: rgb(232, 19, 119);
+    width: 39.3%;
+    display: inline-block;
+    float: right;
 }
 .cdiv-about-noon{
-    margin:120px 106px 88px 257px;
+    margin:25% 22% 18.3% 53.5%;
     padding:0px 5px;
     font-size: 52px;
-    font-family: "Bahij TheSansArabic";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-align: right;
-    width: 117px;
-    height: 140px;
 }
-.cspan-about
-{
-    font-weight: bold;
-}
-.cdiv-noon
-{
-    width: 484px;
-    height: 352px;
-    border:1px solid rgb(237,237,237);
-    background-color: rgb(255, 255, 255);
-    margin-right:364px;
-    float: right;
-    z-index: 2;
-    position: relative;
-    padding: 18px 16px;
-}
+.cspan-about {font-weight: bold;}
+/*Finish About Noon Style*/
 
-.cdiv-noon-title {
-  font-size: 30px;/*24px*/
-  font-family: "Bahij TheSansArabic";
-  color: rgb(107, 71, 143);
-  line-height: 1;
-  text-align: justify;
-  margin-top: 41px;
-  margin-right:  40px;
-font-weight: bold;
-      padding:0 4px 0 2px;
-
-}
-.cp-noon {
-  font-size: 14px;
-  font-family: "Bahij TheSansArabic";
-  color: rgb(143, 143, 143);
-  line-height: 1.429;
-  width: 364px;
-  height: 180px;
-    margin-top:52px;
-  margin-right: 40px;
-}
-.cdiv-behind-noon{
+/*Start Noon Style*/
+.cdiv-behind-content-noon , .cdiv-behind-our-mission
+{
+    width:38%;
+    position:relative;
     background-color: rgb(107, 71, 143);
-    z-index: 1;
-    margin-top: -138px;
-    margin-right: 384px;
-    width:484px;
-    height:370px;
-   border-top:18px solid rgb(255,255,255);
-    padding-right:16px;
-    padding-bottom: 18px;
+    display: inline-block;
+    float:right;
+    margin-right:-6%;
+    margin-top: 10%;
 }
-.cdiv-contains-image
+.cdiv-front-content-noon , .cdiv-front-our-mission
 {
-     margin-top: -590px;
-    margin-right: 60%;
-    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(237,237,237);
+    transform: translate(4.9%,-4%);
+}
+.cdiv-noon-title , .ch2-our-mission-title
+{
+    font-size: 30px;
+    color: rgb(107, 71, 143);
+    line-height: 1;
+    font-weight: bold;
+    padding:0 4px 0 2px;
+    margin:8.83% 8.62% auto auto;
+
+}
+.cp-noon , .cp-our-mission
+{
+    font-size: 14px;
+    font-family: "Bahij TheSansArabic";
+    color: rgb(143, 143, 143);
+    line-height: 1.429;
+    margin:11.2% 8.62% 15% auto;
+    word-wrap: break-word;
+}
+/*End Noon Style*/
+/*Start Image Style*/
+.cdiv-behind-image
+{
+    width:31.5%;
+    height: 294px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 9.62%,
+                                          rgb(232, 19, 119) 9.62%,rgb(232, 19, 119) 46.90%,
+                                          rgb(255,255,255)46.90%);
+    margin-right: -4.5%;
+}
+.cdiv-contain-image
+{ 
+    height: 100%;
+    border:1px solid rgb(237,237,237);
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;    
+    transform: translate(0%,2%);
+}
+/*End Image Style*/
+/*Start Logo Style*/
+.cdiv-behind-logo
+{
+    width: 20%;
+    height: 30%;
+    width:310px;
+    height: 227px;
+    position: relative;
+    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 11.6%,
+                                          rgb(232, 19, 119) 11.6%,rgb(232, 19, 119) 76.77%,
+                                          rgb(255,255,255)76.77%);
+    margin-top:4%;
+    margin-right:2%;
     float: right;
-    position:absolute;
     
 }
-.class1 {
-  background-color: rgb(232, 19, 119);
-  width: 148px;
-  height: 4px;
-  margin-top:108px;
-  margin-right: 218px;
-}
-#iimg-gathering
+.cdiv-contain-logo
 {
-    width:403px;
-    height: 293px;
+    height: 100%;
+    border:1px solid rgb(237,237,237);
+    background-image: url(../img/logo.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: rgb(255,255,255);
+    transform: translate(-5%,-2%);
 }
-#iimg-logo{
-    margin-top:-110px;
-    float:left;
-}
-#iidiv-behind-img{
-      left: 90px;
-    background-color: rgb(232, 19, 119);
-    position: absolute;   
-    width: 214px;
-    height: 14px;
-    margin-top: 75px;
-}
-.cdiv-vision{
-    width:1170px;
-    background-size: 100%;
-    margin-top: 114px;
-    border: 1px solid rgb(0, 0, 0);
-    position: absolute;
+/*End Logo Style*/
 
+/*Start Vision Style*/
+
+.row2
+{
+    margin-top:10.5%;
+    background-image: url(../img/Laundry.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:366px;
 }
-.cimg-laundry{
-    width: 100%;
-    height: 385px;
-    z-index: -1;
-    position: absolute;
+#idiv-img{
+    height:100%;
+    margin-top: -23px;
 }
-.cdiv-our-vision{
-    width:100%;
-    height: 385px;
-    background:rgba(107, 71, 143,0.8);
-    z-index:2;
-    margin-top: -20px;
+
+.cdiv-vision{
+    height: 100%;
+    background-color:rgba(107, 71, 143,0.8);
+    padding: 0px;
 }
 .cdiv-our-mission-title {
   font-size: 30px;
-  font-family: "Bahij TheSansArabic";
   color: rgb(255, 255, 255);
   line-height: 0.8;
   text-align: justify;
   padding: 0px 3px;
-  padding-top:100px;
-  margin-right:73px;
+  margin: 0px;
+  padding:  8.19% 5.9% 0px 0px;
 }
 .cp-our-mission-description
 {
-    font-family: "Bahij TheSansArabic";
     color: rgb(255, 255, 255);
     line-height: 1.429;
-      margin-right:76px;
-      margin-top:19px;
+    margin: 0px;
+    padding: 1.55% 6.22% ;
 }
-.cimg-our-message{
-        margin-top: 576px;
+/*Finish Vision Style*/
 
+/*Start Third Component Style*/
+.row3 {margin-top:10%;}
+/*Start Gathering Image Style*/
+.row3>.cdiv-behind-image
+{
+    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 100%);
+     width:33.11%;
+    height: 295px;
+    margin-right:0%;
 }
+.row3  .cdiv-contain-image {transform: translate(0%,0%);}
 .cdiv-vertical {
   background-color: rgb(232, 19, 119);
-  width:10px ;
-  height: 46px;
-  margin-right:403px;
+  width: 6.47%;
+  height: 25%;
+  margin-right:100%;
   position: absolute;
-  margin-top: 29px;
+  margin-top: 7.17%;
 }
 .cdiv-horizontal
 {
   background-color: rgb(107, 71, 143);
   position: absolute;
-  width: 205px;
-  height: 9px;
-  margin-top: 292px;
-  margin-right: 19px;
+  width: 50.9%;
+  height: 100%;
+  margin-top:2%;
+  margin-right: 4.7%;
 }
-.cdiv-our-message
+/*End Gathering Image Style*/
+/*Start Our Mission Style*/
+.cdiv-behind-our-mission
 {
-    width:403px;
-    height: 295px;
+    width: 70.89%;
+    margin-right: 29%;
+    margin-top: -18%;
 }
-.ch2-our-mission-title {
-  font-family: "Bahij TheSansArabic";
-  color: rgb(107, 71, 143);
-  line-height: 0.8;
-  text-align: right;
-margin-top: 63px;
-  margin-right:  52px;
-  padding: 0px 3px;
-}
-.cp-our-mission {
-  font-family: "Bahij TheSansArabic";
-  color: rgb(143, 143, 143);
-  line-height: 1.429;
-  width: 364px;
-  height: 180px;
-  margin:24px 55px 61px 26px;
-}
-.cdiv-behind-our-mission{
-    background-color: rgb(107, 71, 143);
-    z-index: 1;
-    width:862px;;
-    height:367px;
-    margin-right: 356px;
-margin-top: -217px;
-border-top:18px solid rgb(255,255,255);
-padding-left:16px;
-    padding-bottom: 18px;
-}
-.cdiv-our-mission
+.cdiv-front-our-mission
 {
-    width: 862px;
-    height: 349px;
-    border:1px solid rgb(237,237,237);
-    background-color: rgb(255, 255, 255);
-    margin-right:340px;
-    float: right;
-    z-index: 2;
-    position: relative;
+    transform: translate(1.5%,-4%);
+    min-height:50%;
 }
-.cdiv-last-logo
+.ch2-our-mission-title {margin-bottom:3.83%; }
+.cp-our-mission {margin:0% 8.62% 11.3% auto;}
+/*End Our Mission Style*/
+
+/*Start White Logo Style*/
+.row3 .cdiv-contain-logo
 {
-  border:1px solid rgb(237,237,237);
-  background-color: rgb(232, 19, 119);
-  width: 317px;
-  height: 231px;
-z-index:2;
-margin-top: -19px;
-margin-right: 217px;
+    background-color: rgb(232, 19, 119);
+    background-image: url(../img/whiteLogo.png);
+    transform: translate(-2%,-3%);
 }
-.cimg-logo-last{
-    margin: 73px 48px 51px 72px;
+.row3 .cdiv-behind-logo
+{
+    margin-top: -3%;
+    margin-right: 17%;
+    background: linear-gradient(to top,rgb(107, 71, 143)0%,rgb(107, 71, 143)9%,rgb(255,255,255)9%);
 }
-.cdiv-behind-img{
-  border-style: solid;
-  border:1px solid rgb(237, 237, 237);
-  background-color: rgb(107, 71, 143);
-  width: 317px;
-  height: 41px;
-  z-index: -1;
-  position: absolute;
-  margin-top: -6px;
-  margin-right: -8px;
+/*End White Logo Style*/
+/*End Third Component Style*/
+
+/*Start Media Queries*/
+@media(max-width:1149px)
+{
+    .cdiv-about-us {width:50%}
+    .cdiv-behind-content-noon {width:56%}
+    .cdiv-contain-image
+    {
+        width: 100%;
+        border: none
+    }
+    .cdiv-about-noon , .cdiv-noon-title, .ch2-our-mission-title , .cdiv-our-mission-title
+     {font-size: 19px;}
+    .cp-noon, .cp-our-mission , .cp-our-mission-description
+    {font-size: 8px;}
+    img , .cdiv-behind-image
+    {
+        width:90%;
+        height: 200px;
+        margin-top: 1%;
+        margin-right:6%;
+        margin-left: 1%;
+    }
+    .cdiv-behind-logo
+    {
+        width:88%;
+        height:180px;
+        margin-top: 8%;
+    }
+    .row3 .cdiv-behind-image
+    {
+        margin:0%;
+        padding: 0%;
+        width: 0%;
+        height: 0%;
+    }
+    .cdiv-behind-our-mission
+    {
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
 }
-
-
-
-
+@media(max-width:589px)
+{
+    .row3 .cdiv-behind-logo ,.row3 .cdiv-contain-logo
+    {
+        margin:0%;
+        padding: 0%;
+        width: 0%;
+        height: 0%;
+    }
+    .row2 {height: 227px;}
+}
+@media(min-width:403px) and (max-width:589px)
+{
+    .cdiv-about-noon , .cdiv-noon-title, .ch2-our-mission-title , .cdiv-our-mission-title
+     {font-size: 25px;}
+    .cp-noon, .cp-our-mission , .cp-our-mission-description
+    {font-size: 10px;}
+    .cdiv-behind-our-mission
+    {
+        width: 78%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+}
+@media(min-width:590px) and (max-width:1149px)
+{
+    .cdiv-about-noon , .cdiv-noon-title, .ch2-our-mission-title , .cdiv-our-mission-title
+     {font-size: 35px;}
+    .cp-noon, .cp-our-mission , .cp-our-mission-description
+    {font-size: 14px;}
+    img , .cdiv-behind-image { width:90%;}
+    .cdiv-behind-logo
+    {
+        width:60%;
+        margin-right: 17%;
+    }
+    .row3 .cdiv-behind-logo {margin-top: 2%;}
+}
+@media(min-width:1150px) and (max-width:1199px)
+{
+    .cdiv-behind-logo { width:259px; }
+    .cdiv-behind-our-mission { margin-top:-21%;}
+}
+/*End Media Queries*/
