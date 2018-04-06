@@ -1,0 +1,116 @@
+.carousel .carousel-inner {
+    padding-bottom: 50px; /* check */
+}
+
+/* set slide durartion and direction */
+.carousel .carousel-inner .item {
+  transition: 500ms ease-in-out left;
+}
+
+/* set transition value */
+.carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.carousel .carousel-inner .next {
+  left: 33%;
+}
+.carousel .carousel-inner .prev {
+  left: -33%;
+}
+
+/* handle smooth sliding */
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel .carousel-inner .item {
+            transform: none!important;
+  }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.carousel-indicators li{
+    background-color: rgb(204, 204, 204);
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators li.active{
+    background-color: rgb(107, 71, 143);
+    margin: 1px;
+}
+
+.cdiv-media-video-item{
+    height: 69.43vh;
+    padding: 0;
+
+}
+
+.cimg-media-video-cover{
+    height:100%;
+    width:100%;
+}
+
+.cdiv-media-video-caption{
+    position: absolute;
+    bottom:0;
+    background-color: rgba(255, 255, 255,0.902);
+    font-family: "Bahij TheSansArabic Plain";
+    line-height: 1.2;
+    padding-left: 7.8%;
+    padding-right: 3%;
+    padding-top: 5.73%;
+    padding-bottom: 6.2%;
+    width: 100%;
+}
+
+.cdiv-media-video-caption .cspan-video-published-time{
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.cdiv-media-video-caption .cdiv-media-video-text{
+    font-size: 22px;
+    color: #6b478f;
+    margin-top: 3.3%;
+}
+
+/* carousel middle item style (when active) */
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-media-video-caption{
+    background-color: rgba(107,71,143,0.902);
+}
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-media-video-caption .cspan-video-published-time{
+    color: #ffffff;
+}
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-media-video-caption .cdiv-media-video-text{
+    color: #ffffff;
+}
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-media-video-caption .cimg-icon{
+    display: none;
+}
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-media-video-caption .fa-play-circle{
+    display: block;
+}
+
+.video{
+    height:100%;
+    width:100%; 
+    display: none;
+}
+
+.fa-play-circle{
+    font-size: 65px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.cimg-icon{
+    width: 62px;
+    height: 62px;
+}
+
