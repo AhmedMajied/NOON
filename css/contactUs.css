@@ -1,5 +1,5 @@
 body{direction:rtl;}
-/*Start First Component Design with its Media Queries*/
+/*Start First Component Style*/
 .row
 {
     margin-top:5%;
@@ -132,107 +132,9 @@ body{direction:rtl;}
     word-wrap: break-word;
     display: inline;
 }
-/*Mobile and tablet*/
-@media(max-width:402px)
-{
-    #ip-call-us
-    {
-        font-size: 20px;
-    }
-    .ch2-post-address-title
-    {
-        font-size: 11px;
-        margin: 15.83% 4% 5% auto;
-    }
-    #idiv-info
-    {
-        font-size: 5px;
-        margin: 0px;
-    }
-    .cdiv-back-post-address{height: 120px;}
-    #idiv-content-line
-    {height: 80px;margin-right: 9%;}
-    #ih2-our-offices{font-size: 14px;}
-    .li
-    {
-        width: 3px;height: 3px;
-        margin: 1% 1% 0% 0%;
-    }
-    #idiv-our-offices-places{font-size: 5px;}
-    .cdiv-back-our-offices
-    {height: 124px; top:4px;}
-}
-@media(min-width:403px) and (max-width:589px)
-{
-    #ip-call-us{font-size: 35px;}
-    .ch2-post-address-title
-    {
-        font-size: 16px;
-        margin: 15.83% 4% 5% auto;
-    }
-    #idiv-info
-    {
-        font-size: 9px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .cdiv-back-post-address{height: 150px;}
-    #idiv-content-line
-    {height: 85px;margin-right: 5%;}
-    #ih2-our-offices{font-size: 20px;}
-    .li
-    {
-        width: 4px;
-        height: 4px;
-        margin: 2% 4% 0% 0%;
-    }
-    #idiv-our-offices-places {font-size: 7px;}
-    .cdiv-back-our-offices
-    {height: 160px;top:4px;}
-}
-@media(min-width:590px) and (max-width:767px)
-{
-    #ip-call-us {font-size: 40px;}
-    .ch2-post-address-title
-    {
-        font-size: 24px;margin: 15.83% 4% 5% auto;
-    }
-    #idiv-info
-    {
-        font-size: 11px;margin: 0px;
-    }
-    .cdiv-back-post-address {height: 180px;}
-    #idiv-content-line
-    {
-        height: 95px;margin-right: 5%;
-    }
-    #ih2-our-offices {font-size: 26px;}
-    .li
-    {
-        width: 4px;
-        height: 4px;
-        margin: 2% 4% 0% 0%;
-    }
-    #idiv-our-offices-places {font-size: 10px; }
-    .cdiv-back-our-offices {height: 200px;top:4px;}
-}
-/*from small screen*/
-@media(min-width:768px) and (max-width:991px)
-{
-    .ch2-post-address-title {margin: 14.83% 9.0% 10.48% auto;}
-    .cdiv-back-post-address {height: 260px;}
-     .li
-    {
-        width: 4px;
-        height: 4px;
-        margin: 2% 4% 0% 0%;
-    }
-    #idiv-our-offices-places , #idiv-info{font-size: 12px;}
-    .cdiv-back-our-offices {height: 280px;top:4px;}
-}/*End First Component Design with its Media Queries*/
+/*End First Component Style*/
 
-/*End Second Component Design with its Media Queries*/
-
+/*Start Second Component Style*/
 .row2
 {
     margin-top:10.5%;
@@ -299,46 +201,10 @@ body{direction:rtl;}
     margin: 8.9% 13.13% auto auto;
 }
  #idiv-write-message-info {font-size: 50px; }
-@media(max-width:402px)
-{
-    #idiv-form-write-message {height: 170px;font-size: 7px;}
-    .ctextarea-message {height: 30px;}
-    .cbtn-send{
-        width: 40px;
-        height: 15px;
-        font-size:7px;
-        line-height: 1.5px;
-        margin-top: 6%;
-    }
-}
-@media(min-width:403px) and (max-width:767px)
-{
-    #idiv-form-write-message
-    {height: 250px;font-size: 10px;}
-    .ctextarea-message {height: 30px;}
-    .cbtn-send{
-        width: 40px;
-        height: 15px;
-        font-size:7px;
-        line-height: 1.5px;
-        margin-top: 4%;
-    }
-}
-@media(min-width:768px) and (max-width:991px)
-{
-    #idiv-form-write-message{height: 420px;font-size: 14px;}
-    .ctextarea-message {height: 90px;}
-    .cbtn-send{
-        width: 60px;
-        height: 30px;
-        margin-top:5%;
-    }
-}
-@media(max-width:1199px)
-{#idiv-behind-write-message{ visibility: hidden;}}
-/*End Second Component Design with its Media Queries*/
+/*End Second Component Style*/
 
-/*Start Third Component Design with its Media Queries*/
+
+/*Start Third Component Style*/
 .row3 {margin-top:10.5%;}
 .cdiv-front
 {
@@ -404,13 +270,138 @@ body{direction:rtl;}
     padding:0px 3px 0px 1px;
     margin:11.18% 8.47% 9.15% auto;
 }
+/*End Third Component Style*/
+
+/*Start Media Queries*/
 @media(max-width:402px)
 {
+    #ip-call-us {font-size: 20px;}
+    .ch2-post-address-title
+    {
+        font-size: 11px;
+        margin: 15.83% 4% 5% auto;
+    }
+    #idiv-info
+    {
+        font-size: 5px;
+        margin: 0px;
+    }
+    .cdiv-back-post-address{height: 120px;}
+    #idiv-content-line
+    {height: 80px;margin-right: 9%;}
+    #ih2-our-offices{font-size: 14px;}
+    .li
+    {
+        width: 3px;height: 3px;
+        margin: 1% 1% 0% 0%;
+    }
+    #idiv-our-offices-places{font-size: 5px;}
+    .cdiv-back-our-offices
+    {height: 124px; top:4px;}
     .cdiv-front , .cdiv-back{width: 150px;height: 100px;}
     .ch2-front{margin-top:21.6%;}
-    #idiv-info {font-size: 6px;}
+    #idiv-info {font-size: 5px;}
     .cselect-country{    width: 80px;font-size: 6px;}
     #idiv-map-location{height: 250px;}
+    #idiv-form-write-message {height: 170px;font-size: 7px;}
+    .ctextarea-message {height: 30px;}
+    .cbtn-send{
+        width: 40px;
+        height: 15px;
+        font-size:7px;
+        line-height: 1.5px;
+        margin-top: 6%;
+    }
+}
+@media(min-width:403px) and (max-width:589px)
+{
+    #ip-call-us{font-size: 35px;}
+    .ch2-post-address-title
+    {
+        font-size: 16px;
+        margin: 15.83% 4% 5% auto;
+    }
+    #idiv-info
+    {
+        font-size: 9px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .cdiv-back-post-address{height: 150px;}
+    #idiv-content-line
+    {height: 85px;margin-right: 5%;}
+    #ih2-our-offices{font-size: 20px;}
+    .li
+    {
+        width: 4px;
+        height: 4px;
+        margin: 2% 4% 0% 0%;
+    }
+    #idiv-our-offices-places {font-size: 7px;}
+    .cdiv-back-our-offices
+    {height: 160px;top:4px;}
+}
+@media(min-width:403px) and (max-width:767px)
+{
+    .cdiv-front , .cdiv-back{width: 200px;height: 150px;}
+    .ch2-front{margin-top:21.6%;}
+    #idiv-map-location{height: 300px;}
+    #idiv-form-write-message
+    {height: 250px;font-size: 10px;}
+    .ctextarea-message {height: 30px;}
+    .cbtn-send{
+        width: 40px;
+        height: 15px;
+        font-size:7px;
+        line-height: 1.5px;
+        margin-top: 4%;
+    }
+}
+@media(min-width:590px) and (max-width:767px)
+{
+    #ip-call-us {font-size: 40px;}
+    .ch2-post-address-title
+    {
+        font-size: 24px;margin: 15.83% 4% 5% auto;
+    }
+    #idiv-info
+    {
+        font-size: 11px;margin: 0px;
+    }
+    .cdiv-back-post-address {height: 180px;}
+    #idiv-content-line
+    {
+        height: 95px;margin-right: 5%;
+    }
+    #ih2-our-offices {font-size: 26px;}
+    .li
+    {
+        width: 4px;
+        height: 4px;
+        margin: 2% 4% 0% 0%;
+    }
+    #idiv-our-offices-places {font-size: 10px; }
+    .cdiv-back-our-offices {height: 200px;top:4px;}
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .ch2-post-address-title {margin: 14.83% 9.0% 10.48% auto;}
+    .cdiv-back-post-address {height: 260px;}
+     .li
+    {
+        width: 4px;
+        height: 4px;
+        margin: 2% 4% 0% 0%;
+    }
+    #idiv-our-offices-places , #idiv-info{font-size: 12px;}
+    .cdiv-back-our-offices {height: 280px;top:4px;}
+    #idiv-form-write-message{height: 420px;font-size: 14px;}
+    .ctextarea-message {height: 90px;}
+    .cbtn-send{
+        width: 60px;
+        height: 30px;
+        margin-top:5%;
+    }
 }
 @media(max-width:879px)
 {
@@ -422,9 +413,6 @@ body{direction:rtl;}
         height: 0px;
     }
 }
-@media(min-width:403px) and (max-width:767px)
-{
-    .cdiv-front , .cdiv-back{width: 200px;height: 150px;}
-    .ch2-front{margin-top:21.6%;}
-    #idiv-map-location{height: 300px;}
-}/*End Third Component Design with its Media Queries*/
+@media(max-width:1199px)
+{#idiv-behind-write-message{ visibility: hidden;}}
+/*End Media Queries*/
