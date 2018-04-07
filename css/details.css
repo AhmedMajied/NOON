@@ -17,17 +17,18 @@ a:hover {
     text-decoration: none;
 }
 
-.cdiv-time {
+time {
     margin-top: 20px;
     margin-bottom: 22px;
     font-size: 12px;
     font-family: "Bahij TheSansArabic";
     color: rgb(204, 204, 204);
     line-height: 1.2;
+    display:block
 }
 
 /* Begin News Container */
-#idiv-news-container {
+#isection-news-container {
     border: 1px solid #f0f0f0;
     padding: 22px;
 }
@@ -46,7 +47,7 @@ a:hover {
     margin-bottom: 20px
 }
 
-#idiv-text {
+#iarticle-text {
     font-size: 14px;
     font-family: "Bahij TheSansArabic";
     color: rgb(204, 204, 204);
@@ -63,14 +64,14 @@ a:hover {
 /* End More News */
 
 /* Begin Links */
-.cdiv-links-row{
-       margin-top:15px
+.csection-links-row{
+       margin-top:20px
     
 }
-.cdiv-links-row .cdiv-social a{
+.csection-links-row .cdiv-social a{
     margin-right:15px
 }
-.cdiv-links, .cdiv-news {
+.csection-links, .cdiv-news {
     border: 1px solid #f0f0f0;
     padding: 18px;
     margin-bottom: 20px;
@@ -111,7 +112,6 @@ a:hover {
 }
 
 
-
 .cdiv-social a:hover{
         color: rgb(107, 71, 143);
 }
@@ -124,7 +124,7 @@ a:hover {
     color: rgb(107, 71, 143);
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 }
 
 .cimg-news {
@@ -132,7 +132,7 @@ a:hover {
     height: 147px;
 }
 
-.cdiv-news .cdiv-time {
+.cdiv-news time {
     margin-bottom: 14px;
 }
 
@@ -171,14 +171,14 @@ a:hover {
 /* End News */
 
 /* Begin Advertisement */
-#idiv-advertisement {
+#isection-advertisement {
     border: 1px solid #f0f0f0;
     padding: 20px;
     height: 294px;
     margin-bottom: 20px;
 }
 
-#idiv-advertisement .cdiv-space {
+#isection-advertisement .cdiv-space {
     background-color: #efefef;
     height: 100%;
     font-size: 14px;
@@ -188,7 +188,7 @@ a:hover {
     text-align: center;
 }
 
-#idiv-advertisement .cdiv-space span{
+#isection-advertisement .cdiv-space span{
     position: relative;
     top: 49%;
 }
@@ -197,7 +197,7 @@ a:hover {
 /* Begin Profiles */
 #idiv-profiles {
     border: 1px solid #f0f0f0;
-    padding-top: 16px;
+    padding-top: 20px;
 }
 
 #idiv-profiles .cdiv-flag {
@@ -212,7 +212,7 @@ a:hover {
     font-family: "Bahij TheSansArabic";
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 15px
+    margin-bottom: 20px
 }
 
 #idiv-profiles .cdiv-profile {
@@ -256,8 +256,8 @@ a:hover {
 /* End Profiles */
 
 /* Begin Comments Container */
-#idiv-comments-container {
-    margin-top: 15px;
+#isection-comments-container {
+    margin-top: 20px;
     padding: 26px;
     border: 1px solid #f0f0f0;
     margin-bottom: 65px
@@ -382,16 +382,16 @@ a:hover {
 /* End Replies */
 
 /* Begin Related Topics */
-#idiv-related-topics {
+#isection-related-topics {
     background-color: #efefef;
     padding-bottom: 67px
 }
 
-#idiv-related-topics #idiv-related-topics-header {
+#isection-related-topics #idiv-related-topics-header {
     margin-bottom: 107px
 }
 
-#idiv-related-topics .cdiv-flag {
+#isection-related-topics .cdiv-flag {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     color: #fff;
@@ -407,13 +407,13 @@ a:hover {
     float: left;
 }
 
-#idiv-related-topics .cdiv-more {
+#isection-related-topics .cdiv-more {
     float: right;
     margin-top: 56px;
     margin-right: 20px
 }
 
-#idiv-related-topics .cdiv-more a {
+#isection-related-topics .cdiv-more a {
     font-size: 14px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
