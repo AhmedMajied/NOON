@@ -1,0 +1,438 @@
+/* author : Mariam Ashraf */
+@font-face
+{
+   font-family:Bahij TheSansArabic;
+   src:url(../../fonts/Bahij TheSansArabic-Bold.ttf);
+}
+body
+{
+    direction: rtl;
+}
+.row
+{
+    margin-top:5%;
+}
+.row1 , .row2 , .row3
+{font-family:"Bahij TheSansArabic"}
+/*Start First Component Style*/
+/* Start Call Us*/
+.cdiv-call-us
+{
+    background-color: rgb(232, 19, 119);
+    width: 39.34%;
+    display: inline-block;
+    float: right;
+}
+#ip-call-us
+{
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding:0px 4px 0px 8px;
+    margin:31.25% 13.95% 26.66% auto;
+}
+/* End Call Us*/
+/* Start Post Address*/
+.cdiv-back-post-address
+{
+    width:32.04%;
+    height: 300px;
+    position:relative;
+    background-color: rgb(107, 71, 143);
+    display: inline-block;
+    float:right;
+    margin-top: 6.75%;
+    margin-right: -2.82%;
+}
+.cdiv-front-post-address
+{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(237,237,237);
+    transform: translate(5.33%,-5%);
+}
+.ch2-post-address-title , #ih2-location-address-title
+{
+  color: rgb(107, 71, 143);
+  line-height: 1;
+  padding:0px 5px 0px 2px;
+  margin:14.83% 14.06% 10.48% auto;
+}
+#idiv-content-line
+{
+    width: 2px;
+    height: 108px;
+    margin-right:15.3%;
+    margin-left:5.11%;
+    background-color: rgb(107, 71, 143);
+    float: right;
+}
+#idiv-info
+{
+    color: rgb(143, 143, 143);
+    line-height: 1.429;
+    margin-right: 19.11%;
+}
+
+#ip-post-address , #ip-email ,#ip-phone
+{
+    color:rgb(107, 71, 143);
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 3px;
+}
+#ip-noon-magazine , #ip-location , #ispan-pa-number , #ispan-email , #ispan-phone
+{
+    font-weight: normal;
+    margin: 0%;
+    padding-bottom: 3px;
+
+}
+/* End Post Address*/
+.cdiv-back-our-offices
+{
+    width:33.1%;
+    height: 316px;
+    background-color: rgb(232, 19, 119);
+    position: relative;
+    display: inline-block;
+    top:16px;
+    margin-right: -3.15%;
+}
+.cdiv-front-our-offices
+{ 
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(237,237,237);
+    transform: translate(-4.71%,-4.18%);
+}
+#ih2-our-offices
+{
+    color: rgb(107, 71, 143);
+    line-height: 1;
+    padding:0px 4px;
+    margin:14.32% 12.83% 10.61% auto;
+}
+.li
+{
+    border-radius: 50%;
+    background-color: rgb(107, 71, 143);
+    width: 8px;
+    height: 8px;
+    display: inline;
+    float: right !important;
+    margin: 0% 13.82% 0% 0%;
+}
+.cdiv-our-offices
+{
+    font-weight: normal;
+    padding-bottom: 1.48%;
+    color:rgb(143,143,143);
+}
+.cspan-office
+{
+  color: rgb(107, 71, 143);
+  font-weight: bold;
+  line-height: 1.429;
+  padding-right: 2.22%;
+  padding-left: 1px;
+}
+#idiv-our-offices-places
+{
+    word-wrap: break-word;
+    display: inline;
+}
+/*End First Component Style*/
+
+/*Start Second Component Style*/
+.row2
+{
+    margin-top:10.5%;
+    background-image: url(../img/Soccer_Lady&Girl.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    border-color: transparent;
+}
+#idiv-img {margin-top: -23px;}
+#idiv-form-write-message
+{
+    
+    height: 580px;
+    background-color: rgb(107, 71, 143);
+    padding: 0px;
+}
+#idiv-behind-write-message{
+    width: 53.5%;
+    height: 50px;
+    margin-right: -9px;
+    background-color: rgb(232, 19, 119);
+    position: absolute;
+    z-index: -1;
+}
+.cspan-error-name , .cspan-error-email , .cspan-error-message
+{
+    color: rgb(233,21,12);
+    width: 40%;
+    height: 10px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+.cdiv-name {margin-top: 15.99%;}
+.cdiv-name , .cdiv-email , .cdiv-message
+{
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 13.13%;
+  display: inline-block;
+}
+.cinput-name , .cinput-email , .ctextarea-message
+{
+    border: none;
+    width:70%;
+    align-self: center;
+    border-bottom: 1px solid rgba(155,155,155,0.102);
+    background-color: transparent;
+    color: rgba(155,155,155,0.9);
+    margin-right: 13.13%;
+}
+.cdiv-email {margin-top:4.37%;}
+.cdiv-message {margin:5.89% 13.13% 2.5% auto;}
+.ctextarea-message
+{
+  border: 1px solid rgba(155,155,155,0.102);
+  width: 70%;
+  height: 179px;
+  resize: none;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.cbtn-send
+{
+    width:14.64%;
+    height: 38px;
+    border-radius: 30px;
+    color: rgb(107, 71, 143);
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 8.9% 13.13% auto auto;
+}
+ #idiv-write-message-info {font-size: 50px; }
+/*End Second Component Style*/
+
+
+/*Start Third Component Style*/
+.row3 {margin-top:10.5%;}
+.cdiv-front
+{
+    width:205px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(237,237,237);
+    z-index: 3;
+}
+.cdiv-back{
+    width:200px;
+    height: 150px;
+    background-color: rgb(232, 19, 119);
+    z-index: 2;
+    margin-right: 1.8%;
+    transform: translate(-5%,11%);
+}
+.cdiv-map-location {display: inline-block;}
+.ch2-front {margin-top: 34.6%;}
+.ch2-front , .cp-front {margin-right: 9.7%;padding: 0px 2px 1px 0px;color: rgb(107, 71, 143);}
+.cdiv-country {float: left;margin-top:4%;}
+.cselect-country
+{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid rgb(237,237,237);
+    color: rgb(107, 71, 143);
+    font-weight: bold;
+    margin-top: 30px;
+    position: relative;
+}
+#idiv-map-location
+{
+    width:100%;
+    height: 551px;
+    margin-top:-5.7%;
+    border: 1px solid rgb(237,237,237);
+
+}
+#idiv-front-location-address
+{
+    width:300px;
+    height: 229px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(237,237,237);
+    z-index: 3;
+    transform: translate(20%,-10%);
+}
+#idiv-location-address{
+    width: 268px;
+    height: 161px;
+    background-color: rgb(107, 71, 143);
+    z-index: 2;
+    margin-right: 71.8%;
+    margin-top: -19%;
+}
+#idiv-content-location-address > #idiv-info{margin-right: 8.47%;}
+#ih2-location-address-title
+{
+    padding:0px 3px 0px 1px;
+    margin:11.18% 8.47% 9.15% auto;
+}
+/*End Third Component Style*/
+
+/*Start Media Queries*/
+@media(max-width:402px)
+{
+    #ip-call-us {font-size: 20px;}
+    .ch2-post-address-title
+    {
+        font-size: 11px;
+        margin: 15.83% 4% 5% auto;
+    }
+    #idiv-info
+    {
+        font-size: 5px;
+        margin: 0px;
+    }
+    .cdiv-back-post-address{height: 120px;}
+    #idiv-content-line
+    {height: 80px;margin-right: 9%;}
+    #ih2-our-offices{font-size: 14px;}
+    .li
+    {
+        width: 3px;height: 3px;
+        margin: 1% 1% 0% 0%;
+    }
+    #idiv-our-offices-places{font-size: 4px;}
+    .cdiv-back-our-offices
+    {height: 124px; top:4px;}
+    .cdiv-front , .cdiv-back{width: 150px;height: 100px;}
+    .ch2-front{margin-top:21.6%;}
+    #idiv-info {font-size: 5px;}
+    .cselect-country{    width: 80px;font-size: 6px;}
+    #idiv-map-location{height: 250px;}
+    #idiv-form-write-message {height: 170px;font-size: 7px;}
+    .ctextarea-message {height: 30px;}
+    .cbtn-send{
+        width: 40px;
+        height: 15px;
+        font-size:7px;
+        line-height: 1.5px;
+        margin-top: 6%;
+    }
+}
+@media(min-width:403px) and (max-width:589px)
+{
+    #ip-call-us{font-size: 35px;}
+    .ch2-post-address-title
+    {
+        font-size: 16px;
+        margin: 15.83% 4% 5% auto;
+    }
+    #idiv-info
+    {
+        font-size: 9px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .cdiv-back-post-address{height: 150px;}
+    #idiv-content-line
+    {height: 85px;margin-right: 5%;}
+    #ih2-our-offices{font-size: 20px;}
+    .li
+    {
+        width: 4px;
+        height: 4px;
+        margin: 2% 4% 0% 0%;
+    }
+    #idiv-our-offices-places {font-size: 7px;}
+    .cdiv-back-our-offices
+    {height: 160px;top:4px;}
+}
+@media(min-width:403px) and (max-width:767px)
+{
+    .cdiv-front , .cdiv-back{width: 200px;height: 150px;}
+    .ch2-front{margin-top:21.6%;}
+    #idiv-map-location{height: 300px;}
+    #idiv-form-write-message
+    {height: 250px;font-size: 10px;}
+    .ctextarea-message {height: 30px;}
+    .cbtn-send{
+        width: 40px;
+        height: 15px;
+        font-size:7px;
+        line-height: 1.5px;
+        margin-top: 4%;
+    }
+}
+@media(min-width:590px) and (max-width:767px)
+{
+    #ip-call-us {font-size: 40px;}
+    .ch2-post-address-title
+    {
+        font-size: 24px;margin: 15.83% 4% 5% auto;
+    }
+    #idiv-info
+    {
+        font-size: 11px;margin: 0px;
+    }
+    .cdiv-back-post-address {height: 180px;}
+    #idiv-content-line
+    {
+        height: 95px;margin-right: 5%;
+    }
+    #ih2-our-offices {font-size: 26px;}
+    .li
+    {
+        width: 4px;
+        height: 4px;
+        margin: 2% 4% 0% 0%;
+    }
+    #idiv-our-offices-places {font-size: 10px; }
+    .cdiv-back-our-offices {height: 200px;top:4px;}
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .ch2-post-address-title {margin: 14.83% 9.0% 10.48% auto;}
+    .cdiv-back-post-address {height: 260px;}
+     .li
+    {
+        width: 4px;
+        height: 4px;
+        margin: 2% 4% 0% 0%;
+    }
+    #idiv-our-offices-places , #idiv-info{font-size: 12px;}
+    .cdiv-back-our-offices {height: 280px;top:4px;}
+    #idiv-form-write-message{height: 420px;font-size: 14px;}
+    .ctextarea-message {height: 90px;}
+    .cbtn-send{
+        width: 60px;
+        height: 30px;
+        margin-top:5%;
+    }
+}
+@media(max-width:879px)
+{
+    #idiv-front-location-address , #idiv-location-address
+    {
+        visibility: hidden;
+        margin: 0px;
+        width: 0px;
+        height: 0px;
+    }
+}
+@media(max-width:1199px)
+{#idiv-behind-write-message{ visibility: hidden;}}
+/*End Media Queries*/
