@@ -63,14 +63,21 @@ a:hover {
 /* End More News */
 
 /* Begin Links */
-#idiv-links, .cdiv-news {
+.cdiv-links-row{
+       margin-top:15px
+    
+}
+.cdiv-links-row .cdiv-social a{
+    margin-right:15px
+}
+.cdiv-links, .cdiv-news {
     border: 1px solid #f0f0f0;
     padding: 18px;
     margin-bottom: 20px;
     background-color: #fff
 }
 
-#idiv-link-title, #idiv-print-title {
+.cdiv-link-title, .cdiv-print-title {
     font-size: 22px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
@@ -78,7 +85,7 @@ a:hover {
     text-align: left;
 }
 
-#idiv-link-text>a, #idiv-print-text {
+.cdiv-link-text>a, .cdiv-print-text {
     color: rgb(107, 71, 143);
     font-size: 16px;
     font-family: "Bahij TheSansArabic";
@@ -86,12 +93,8 @@ a:hover {
     line-height: 1.697;
 }
 
-#idiv-link-text, #idiv-print-text {
+.cdiv-link-text, .cdiv-print-text {
     margin-bottom: 34px;
-}
-
-.fa-youtube {
-    margin: 0px
 }
 
 .cdiv-news .cdiv-social{
@@ -246,6 +249,9 @@ a:hover {
 
 #idiv-profiles .cdiv-social {
     margin-bottom: 23px
+}
+#idiv-profiles .cdiv-social a{
+    margin-right:5%
 }
 /* End Profiles */
 
