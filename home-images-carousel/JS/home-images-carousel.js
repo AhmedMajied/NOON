@@ -1,3 +1,5 @@
+/* author: Ahmed Mohamed Ahmed */
+
 $(document).ready(function(){
     
     // set carousel interval

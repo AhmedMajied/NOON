@@ -1,3 +1,5 @@
+/* author: Ahmed Mohamed Ahmed */
+
 $(document).ready(function(){
     
     // set carousel interval
@@ -34,7 +36,7 @@ $(document).ready(function(){
 
     });
 
-    // play video
+    // show video and hide its cover
     $(".fa-play-circle").click(function(){
         $(".item.active .cdiv-video-carousel-item:nth-child(2) .cimg-video-cover").hide();
         $(".item.active .cdiv-video-carousel-item:nth-child(2) .cdiv-video-caption").hide();
@@ -43,6 +45,11 @@ $(document).ready(function(){
 
 });
 
+/**
+ *  when move to another video slide :
+ *  hide video if still visible then show its cover again
+ *  pause video if it is still play
+ */
 function closeVideo(){
     // hide video if still visible and show cover again_
     if($(".item.active .cdiv-video-carousel-item:nth-child(2) video").is(':visible')){
