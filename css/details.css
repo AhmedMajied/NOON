@@ -28,7 +28,7 @@ time {
 }
 
 /* Begin News Container */
-#isection-news-container {
+#iarticle-news-container {
     border: 1px solid #f0f0f0;
     padding: 22px;
 }
@@ -47,7 +47,7 @@ time {
     margin-bottom: 20px
 }
 
-#iarticle-text {
+#ip-text {
     font-size: 14px;
     font-family: "Bahij TheSansArabic";
     color: rgb(204, 204, 204);
@@ -263,12 +263,12 @@ time {
     margin-bottom: 65px
 }
 
-#idiv-comments-header {
+#iheader-comments {
     font-size: 22px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
     line-height: 1.2;
-    margin-bottom: 20px
+    margin-bottom: 18px
 }
 
 #iinp-write-comment {
@@ -387,7 +387,7 @@ time {
     padding-bottom: 67px
 }
 
-#isection-related-topics #idiv-related-topics-header {
+#isection-related-topics #iheader-related-topics {
     margin-bottom: 107px
 }
 
