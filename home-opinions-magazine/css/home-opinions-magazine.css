@@ -1,0 +1,125 @@
+/* Author: Ahmed Hussein */
+
+@viewport {
+    width: device-width;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Bahij-TheSansArabic-Plain;
+     src: url('../../fonts/bahij-the-sans-arabic-plain.ttf') format('truetype');
+}
+@font-face {
+    font-family: Bahij-TheSansArabic-Bold;
+     src: url('../../fonts/bahij-the-sans-arabic-bold.ttf') format('truetype');
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+/* Component style */
+#isection-related-topics{
+    padding-left: 17.708%;
+    padding-right: 17.708%;
+    padding-bottom: 4.063rem;
+    width: 100%;
+    background-color: #efefef;
+}
+
+/* Component hearder style */
+#ihdr{
+    margin-bottom: 0.75rem;
+    height: 4.375rem;
+    font-family: Bahij-TheSansArabic-Plain;
+}
+#ispn-hdr-left{
+    display: table;
+    padding: 0rem 0.313rem;
+    height: 100%;
+    width: 3.75rem;
+    color: #ffffff;
+    background-color: #6b478f;
+    font-size: 0.875rem;
+    float: left;
+}
+#ilbl-sport-name{
+    display: table-cell;
+    vertical-align: bottom;
+}
+#ispn-hdr-right{
+    display: table;
+    padding-bottom: 0.313rem;
+    height: 100%;
+    color: #6b478f;
+    float: right;
+}
+#ilbl-all-page{
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+/* Component body */
+a:hover {
+    text-decoration: none;
+}
+time {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    font-size: 12px;
+    font-family: Bahij-TheSansArabic-Plain;
+    color: #cccccc;
+    line-height: 1.2;
+    display:block
+}
+.cdiv-opinion-magazine-cart{
+    padding: 0rem;
+}
+.cdiv-news{
+    border: 1px solid #f0f0f0;
+    padding: 1rem;
+    margin: 0.5rem 0.25rem;
+    background-color: #ffffff;
+}
+h5 {
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.2rem;
+    max-height: 2.4rem;
+    font-size: 18px;
+    font-family: Bahij-TheSansArabic-Bold;
+    color: #6b478f;
+    margin-bottom: 0.938rem;
+}
+.cimg-news {
+    width: 100%;
+    height: auto;
+}
+.cdiv-news time {
+    margin-bottom: 14px;
+}
+.cdiv-news p {
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.25rem;
+    max-height: 6.25rem;
+    font-size: 14px;
+    font-family: Bahij-TheSansArabic-Plain;
+    color: #cccccc;
+}
+.cdiv-news .cdiv-social {
+    display: inline-block
+}
+.fa {
+    margin-right: 10px;
+    color: #cccccc;
+    font-size: 14px;
+}
+.fa:hover {
+    color: #6b478f;
+}
+.cdiv-news:last-child {
+    margin-bottom: 0
+}
