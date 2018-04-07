@@ -1,3 +1,4 @@
+<!-- author : Mariam Ashraf -->
 <!DOCTYPE html>
     <html>
         <head>
@@ -10,7 +11,7 @@
             <script src="../js/contactUs.js"></script>
         </head>
         <body>
-            <!--Start Body Of Contact Us Page( By Mariam Ashraf)-->
+            <!--Start Body Of Contact Us Page-->
             <div class="container">
                 <!--Start First Component in Page-->
                 <div class="row row1">
@@ -118,10 +119,12 @@
                     </div>
                     <!--Start Write Message Form-->
                     <div id="idiv-form-write-message" class="col-xs-6">
-                        <form action="#" method="post">
+                        <form action="#" method="post" onsubmit="return false;">
                             <!--Start Write Your Name Part-->
                             <div class="idiv-write-message-info">
                                 <div class="cdiv-name">الإسم</div>
+                                <!--this span for display error message-->
+                                <span class="cspan-error-name"></span>
                                 <!--Input field to write Name-->
                                 <input type="text" class="cinput-name"/>
                             </div>
@@ -129,6 +132,8 @@
                             <!--Start Write Your Mail Part-->
                             <div class="idiv-write-message-info">
                                 <div class="cdiv-email">البريد الإلكتروني</div>
+                                <!--this span for display error message-->
+                                <span class="cspan-error-email"></span>
                                 <!--Input Field To Write E-mail-->
                                 <input type="email" class="cinput-email"/>
                             </div>
@@ -136,6 +141,8 @@
                             <!--Start Write Your Message Part-->
                             <div class="idiv-write-message-info">
                                 <div class="cdiv-message">الرسالة</div>
+                                <!--this span for display error message-->
+                                <span class="cspan-error-message"></span>
                                 <!--Input Field to Write Message-->
                                 <textarea class="ctextarea-message"placeholder="أكتب رسالتك هنا......."></textarea>
                             </div>
@@ -212,6 +219,6 @@
                 </div>
                 <!--End Our Location which is The Third Component In Page-->
             </div>
-            <!--End Body Of Contact Us Page( By Mariam Ashraf)-->
+            <!--End Body Of Contact Us Page-->
         </body>
     </html>
