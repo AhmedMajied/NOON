@@ -1,6 +1,7 @@
 /* author: Mariam Ashraf*/
+
 /*
- * @summary. getScript intialize google maps.
+ *@summary. getScript intialize google maps.
  * @description. this is used to get google maps api with location , display map to html , put marker on the place
  * @param: url of google maps and call back function
 */
