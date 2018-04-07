@@ -1,11 +1,20 @@
 /* author : Mariam Ashraf */
-body{direction:rtl;}
-/*Start First Component Style*/
+@font-face
+{
+   font-family:Bahij TheSansArabic;
+   src:url(../../fonts/Bahij TheSansArabic-Bold.ttf);
+}
+body
+{
+    direction: rtl;
+}
 .row
 {
     margin-top:5%;
-    font-family: "Bahij TheSansArabic";
 }
+.row1 , .row2 , .row3
+{font-family:"Bahij TheSansArabic"}
+/*Start First Component Style*/
 /* Start Call Us*/
 .cdiv-call-us
 {
@@ -237,7 +246,7 @@ body{direction:rtl;}
 }
 .cdiv-map-location {display: inline-block;}
 .ch2-front {margin-top: 34.6%;}
-.ch2-front , .cp-front {margin-right: 9.7%;padding: 0px 2px 1px 0px;}
+.ch2-front , .cp-front {margin-right: 9.7%;padding: 0px 2px 1px 0px;color: rgb(107, 71, 143);}
 .cdiv-country {float: left;margin-top:4%;}
 .cselect-country
 {
