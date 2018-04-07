@@ -187,7 +187,7 @@ body {
 }
 
 .bottom-header .navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    padding: 7px 15px;
+    padding: 11px 15px;
     border-bottom: 1px solid #EEE;
 }
 
@@ -247,14 +247,104 @@ body {
 }
 
 .bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+    font-family: 'Plain';
     width: -webkit-max-content;
     width: -moz-max-content;
     width: -m-max-content;
-    max-width: 58vw;
+    max-width: 65vw;
+    top: -4px !important;
+    left: 159px !important;
+    padding-right: 15px
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .first {
+    border-right: 1px solid #EEE;
+    padding-right: 0
 }
 
 .bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table {
     width: 100%;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr th {
+    padding: 11px
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td {
+    border: 1px solid #EEE;
+    color: #CCC;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td:first-of-type {
+    border-left: 0;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td:last-of-type {
+    border-right: 0;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr:first-of-type td {
+    border-top: 0
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr:last-of-type td {
+    border-bottom: 0
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td img {
+    margin-right: 5px
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td a {
+    text-decoration: none;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td a:hover {
+    color: #6b478f;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third {
+    padding: 15px 0;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second .cart,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third .cart {
+    box-shadow: 0px 0px 15px #E9E9E9
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second .cart .image img,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third .cart .image img {
+    width: 100%;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second .cart .text,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third .cart .text {
+    padding: 10px
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second .cart .text .head h6,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third .cart .text .head h6 {
+    float: left;
+    font-family: 'ExtraLight';
+    font-size: 13px;
+    color: #6b478f;
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second .cart .text .head span,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third .cart .text .head span {
+    float: right;
+    font-size: 12px;
+    color: #DDD
+}
+
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .second .cart .text p,
+.bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .third .cart .text p {
+    clear: both;
+    font-size: 15px;
+    margin: 0;
+    color: #6b478f
 }
 
 
