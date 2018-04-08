@@ -1,0 +1,110 @@
+/* Start of footer */
+
+.cfooter-footer {
+    background-color: #6b478f;
+    color: white;
+    padding: 40px 0px;
+    overflow: hidden;
+    font-family: 'Plain';
+}
+
+.cfooter-footer h5 {
+    font-family: 'Bold';
+    padding-left: 15px
+}
+
+.cfooter-footer .cdiv-logo img {
+    width: 100%;
+}
+
+.cfooter-footer .cdiv-copyright {
+    font-family: 'Plain';
+    color: #533670;
+    margin-top: 60px;
+    font-size: 13px
+}
+
+.cfooter-footer .cdiv-home table tbody tr td {
+    padding: 5px 15px;
+    font-family: 'SemiLight';
+}
+
+.cfooter-footer .cdiv-home table tbody tr td a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cfooter-footer .cdiv-home table tbody tr td a:hover {
+    color: #533670
+}
+
+.cfooter-footer .cdiv-social-media {
+    padding-left: 15px;
+    margin: 20px 0
+}
+
+.cfooter-footer .cdiv-social-media .btn {
+    background-color: #6b478f;
+    color: #fff;
+    margin: 1%;
+    padding: 0%;
+}
+
+.cfooter-footer .cdiv-social-media .btn:hover {
+    color: #5a3c78;
+}
+
+.cfooter-footer .form-group {
+    position: relative;
+    padding-left: 15px;
+    margin: 20px 0
+}
+
+.cfooter-footer .form-group .form-control {
+    background-color: #604080;
+    border-radius: 25px;
+    border: 0;
+    padding: 5px 15px;
+    color: #6b478f;
+    box-shadow: none;
+}
+
+.cfooter-footer .form-group .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    color: #6b478f;
+    background: #FFF;
+    font-family: Bold;
+}
+
+.cfooter-footer .cdiv-about-us a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    padding-left: 15px;
+    margin: 12px 0
+}
+
+.cfooter-footer .cdiv-about-us a:hover {
+    color: #5a3c78;
+}
+
+.cfooter-footer .cdiv-about-us .cdiv-right a {
+    padding-left: 0;
+    margin-top: 0
+}
+
+.cfooter-footer .cdiv-about-us .cdiv-right a span {
+    padding-right: 5px
+}
+
+.cfooter-footer .cdiv-about-us .cdiv-right a i {
+    padding-right: 10px
+}
+
+
+/* End of footer */
