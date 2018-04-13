@@ -1,4 +1,9 @@
-/*Author: Amr Saeed*/
+/*
+  *******************************
+              Amr Saeed
+         Photos section styles
+  *******************************
+*/
 
 .cdiv-gray-bg{
   width: 100%;
@@ -31,8 +36,8 @@
 }
 
 .cdiv-photo-container{
-  width: 200px;
-  height: 140px;
+  width: 20%;
+  height: 160px;
   background: #6b478f;
   padding: 0px;
 }
