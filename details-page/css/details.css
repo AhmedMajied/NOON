@@ -58,7 +58,7 @@ time {
 
 /* Begin More News */
 #idiv-more-news {
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 0;
 }
 /* End More News */
@@ -74,7 +74,7 @@ time {
 .csection-links, .cdiv-news {
     border: 1px solid #f0f0f0;
     padding: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background-color: #fff
 }
 
