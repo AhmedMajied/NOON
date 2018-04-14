@@ -2,18 +2,17 @@
 @font-face
 {
    font-family:Bahij TheSansArabic;
-   src:url(../../fonts/Bahij TheSansArabic-Bold.ttf);
-}
-body
-{
-    direction: rtl;
+   src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
 }
 .row
 {
     margin-top:20px;
 }
 .row1 , .row2 , .row3
-{font-family: "Bahij TheSansArabic";}
+{font-family: "Bahij TheSansArabic";
+    direction: rtl;
+    text-align: justify;
+}
 
 /*Start About Noon Style*/
 
@@ -30,7 +29,6 @@ body
     font-size: 52px;
     color: rgb(255, 255, 255);
     line-height: 1.2;
-    text-align: right;
 }
 .cspan-about {font-weight: bold;}
 /*Finish About Noon Style*/
@@ -64,10 +62,9 @@ body
 }
 .cp-noon , .cp-our-mission
 {
-    font-size: 14px;
     color: rgb(143, 143, 143);
     line-height: 1.429;
-    margin:11.2% 8.62% 15% auto;
+    margin:11.2% 8.62% 15% 12.6%;
     word-wrap: break-word;
 }
 /*End Noon Style*/
@@ -82,6 +79,7 @@ body
                                           rgb(232, 19, 119) 9.62%,rgb(232, 19, 119) 46.90%,
                                           rgb(255,255,255)46.90%);
     margin-right: -4.5%;
+    margin-top:2%;
 }
 .cdiv-contain-image
 { 
@@ -95,8 +93,6 @@ body
 /*Start Logo Style*/
 .cdiv-behind-logo
 {
-    width: 20%;
-    height: 30%;
     width:310px;
     height: 227px;
     position: relative;
@@ -105,8 +101,7 @@ body
                                           rgb(255,255,255)76.77%);
     margin-top:4%;
     margin-right:2%;
-    float: right;
-    
+    float: right;    
 }
 .cdiv-contain-logo
 {
@@ -125,36 +120,27 @@ body
 .row2
 {
     margin-top:10.5%;
-    background-image: url(../img/Laundry.jpg);
+    background-image: url(../img/Laundry.png);
     background-repeat: no-repeat;
     background-size: cover;
     height:366px;
 }
-#idiv-img{
-    height:100%;
-    margin-top: -23px;
-}
-
 .cdiv-vision{
-    height: 100%;
-    background-color:rgba(107, 71, 143,0.8);
-    padding: 0px;
+   padding:  8.19% 5.9% 0px 0px;
 }
 .cdiv-our-mission-title {
   font-size: 30px;
   color: rgb(255, 255, 255);
   line-height: 0.8;
-  text-align: justify;
   padding: 0px 3px;
   margin: 0px;
-  padding:  8.19% 5.9% 0px 0px;
 }
 .cp-our-mission-description
 {
     color: rgb(255, 255, 255);
     line-height: 1.429;
     margin: 0px;
-    padding: 1.55% 6.22% ;
+    padding: 1.55% 0.32% 1.55% 6.22%;
 }
 /*Finish Vision Style*/
 
@@ -197,10 +183,9 @@ body
 .cdiv-front-our-mission
 {
     transform: translate(1.5%,-4%);
-    min-height:50%;
 }
 .ch2-our-mission-title {margin-bottom:3.83%; }
-.cp-our-mission {margin:0% 8.62% 11.3% auto;}
+.cp-our-mission {margin:0% 8.62% 11.3% 12.6%;}
 /*End Our Mission Style*/
 
 /*Start White Logo Style*/

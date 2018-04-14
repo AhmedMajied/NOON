@@ -2,18 +2,17 @@
 @font-face
 {
    font-family:Bahij TheSansArabic;
-   src:url(../../fonts/Bahij TheSansArabic-Bold.ttf);
-}
-body
-{
-    direction: rtl;
+   src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
 }
 .row
 {
     margin-top:5%;
 }
 .row1 , .row2 , .row3
-{font-family:"Bahij TheSansArabic"}
+{font-family:"Bahij TheSansArabic";
+direction: rtl;
+text-align: justify;
+}
 /*Start First Component Style*/
 /* Start Call Us*/
 .cdiv-call-us
@@ -51,6 +50,7 @@ body
     border:1px solid rgb(237,237,237);
     transform: translate(5.33%,-5%);
 }
+h2{font-weight: bold;}
 .ch2-post-address-title , #ih2-location-address-title
 {
   color: rgb(107, 71, 143);
@@ -86,6 +86,7 @@ body
     font-weight: normal;
     margin: 0%;
     padding-bottom: 3px;
+    color:rgb(143, 143, 143);
 
 }
 /* End Post Address*/
@@ -121,7 +122,7 @@ body
     height: 8px;
     display: inline;
     float: right !important;
-    margin: 0% 13.82% 0% 0%;
+    margin: 1.4% 13.82% 0% 0%;
 }
 .cdiv-our-offices
 {
@@ -247,6 +248,7 @@ body
 .cdiv-map-location {display: inline-block;}
 .ch2-front {margin-top: 34.6%;}
 .ch2-front , .cp-front {margin-right: 9.7%;padding: 0px 2px 1px 0px;color: rgb(107, 71, 143);}
+.cp-front{font-size: 27px;}
 .cdiv-country {float: left;margin-top:4%;}
 .cselect-country
 {
@@ -308,14 +310,14 @@ body
     }
     .cdiv-back-post-address{height: 120px;}
     #idiv-content-line
-    {height: 80px;margin-right: 9%;}
+    {height: 50%;margin-right: 9%;}
     #ih2-our-offices{font-size: 14px;}
     .li
     {
         width: 3px;height: 3px;
         margin: 1% 1% 0% 0%;
     }
-    #idiv-our-offices-places{font-size: 4px;}
+    #idiv-our-offices-places{font-size: 5px;}
     .cdiv-back-our-offices
     {height: 124px; top:4px;}
     .cdiv-front , .cdiv-back{width: 150px;height: 100px;}
@@ -332,6 +334,7 @@ body
         line-height: 1.5px;
         margin-top: 6%;
     }
+    .cp-front{font-size: 18px;}
 }
 @media(min-width:403px) and (max-width:589px)
 {
@@ -425,12 +428,15 @@ body
 }
 @media(max-width:879px)
 {
+   .row2{background-size: cover;}
+   .cdiv-back-our-offices{width:33%;}
     #idiv-front-location-address , #idiv-location-address
     {
         visibility: hidden;
         margin: 0px;
         width: 0px;
         height: 0px;
+        font-size: 0px;
     }
 }
 @media(max-width:1199px)
