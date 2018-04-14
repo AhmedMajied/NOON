@@ -4,16 +4,15 @@
    font-family:Bahij TheSansArabic;
    src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
 }
-body
-{
-    direction: rtl;
-}
 .row
 {
     margin-top:5%;
 }
 .row1 , .row2 , .row3
-{font-family:"Bahij TheSansArabic"}
+{font-family:"Bahij TheSansArabic";
+direction: rtl;
+text-align: justify;
+}
 /*Start First Component Style*/
 /* Start Call Us*/
 .cdiv-call-us

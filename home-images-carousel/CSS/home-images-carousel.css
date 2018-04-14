@@ -1,0 +1,89 @@
+/* author: Ahmed Mohamed Ahmed */
+
+/* Fonts */
+@font-face {
+    font-family: Bahij-TheSansArabic-Plain;
+    src: url(../../fonts/bahij-the-sans-arabic-plain.ttf) format('truetype');
+}
+
+/* set slide durartion and direction */
+.carousel .carousel-inner .item {
+  transition: 500ms ease-in-out left;
+}
+
+/* set transition value */
+.carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.carousel .carousel-inner .next {
+  left: 33%;
+}
+.carousel .carousel-inner .prev {
+  left: -33%;
+}
+
+/* handle smooth sliding */
+.carousel .carousel-inner .item {
+    transform: none!important;
+}
+
+.carousel .carousel-inner {
+    padding-bottom: 55px;
+}
+
+/* carousel indicator style */
+.carousel-indicators li{
+    background-color: rgb(204, 204, 204);
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+}
+.carousel-indicators li.active{
+    background-color: rgb(107, 71, 143);
+    margin: 1px;
+}
+
+/* carousel item style */
+.cdiv-carousel-item{
+    height: 69.2vh;
+    padding: 0;
+}
+.cimg-carousel-image{
+    height:100%;
+    width:100%;
+}
+.cdiv-carousel-item-caption{
+    position: absolute;
+    bottom:0;
+    background-color: rgba(255, 255, 255,0.902);
+    font-family: Bahij-TheSansArabic-Plain;
+    line-height: 1.2;
+    padding-left: 7.7%;
+    padding-right: 3%;
+    padding-top: 6%;
+    padding-bottom: 5.9%;
+    width: 100%;
+}
+.cdiv-carousel-item-caption .cspan-published-time{
+    font-size: 12px;
+    color: #cccccc;
+}
+.cdiv-carousel-item-caption .cdiv-text{
+    font-size: 22px;
+    color: #6b478f;
+    margin-top: 3%;
+}
+
+/* carousel middle item style (when active) */
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-carousel-item-caption{
+    background-color: rgba(107,71,143,0.902);
+}
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-carousel-item-caption span{
+    color: #ffffff;
+}
+.carousel .carousel-inner .item.active div:nth-child(2) .cdiv-carousel-item-caption div{
+    color: #ffffff;
+}
