@@ -1,0 +1,3 @@
+[submodule "noon-react"]
+	path = noon-react
+	url = git:https://githb.com/ahmedMajeed/NOON.git
