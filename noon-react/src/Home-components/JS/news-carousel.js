@@ -4,7 +4,7 @@ import $ from "jquery"
 $(document).ready(function(){
 
     // for every slide in carousel, copy the next slide's item in the slide
-    $('.carousel .item').each(function(){
+    $('#idiv-news-carousel.carousel .item').each(function(){
         var next = $(this).next();
         
         if (!next.length) {
