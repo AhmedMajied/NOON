@@ -1,0 +1,47 @@
+@font-face{
+    font-family:BahijTheSansArabic Bold;
+    src:url('../../fonts/bahij-the-sans-arabic-bold.ttf');
+ }
+ @font-face{
+    font-family:BahijTheSansArabic ExtraLight;
+    src:url('../../fonts/bahij-the-sans-arabic-extra-light.ttf');
+ }
+ /*Start About Noon Style*/
+ .cdiv-about-us
+ {
+     background-color: rgb(232, 19, 119);
+     width: 39.3%;
+     display: inline-block;
+     float: right;
+ }
+ .cdiv-about-noon{
+     margin:25% 22% 18.3% 53.5%;
+     padding:0px 5px;
+     font-size: 52px;
+     color: rgb(255, 255, 255);
+     line-height: 1.2;
+ }
+ .cspan-about {
+     font-family:BahijTheSansArabic Bold;
+     display: block;
+ }
+ .cspan-noon{
+     font-family:BahijTheSansArabic ExtraLight;
+ }
+ /*Finish About Noon Style*/
+ 
+ /*Start Media Query*/
+ @media(max-width:402px)
+ {
+     .cdiv-about-us {width:50%}
+     .cdiv-about-noon {font-size: 19px;}
+ }
+ @media(min-width:403px) and (max-width:589px)
+ {
+     .cdiv-about-noon
+      {font-size: 25px;}
+ }
+ @media(min-width:590px) and (max-width:1149px)
+ {
+     .cdiv-about-noon {font-size: 35px;}
+ }

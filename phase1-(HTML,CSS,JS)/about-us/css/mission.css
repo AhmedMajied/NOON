@@ -1,0 +1,71 @@
+/*author:Mariam Ashraf*/
+
+@font-face{
+   font-family:BahijTheSansArabic Plain;
+   src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
+}
+/*Start Our Mission Style*/
+.cdiv-behind-our-mission
+{
+    width: 70.89%;
+    margin-right: 29%;
+    margin-top: -18%;
+}
+.cdiv-front-our-mission
+{
+    transform: translate(1.5%,-4%);
+}
+.ch2-our-mission-title {
+    margin-bottom:3.83%;
+    font-family:BahijTheSansArabic Plain;
+    }
+.cp-our-mission {
+    margin:0% 8.62% 11.3% 12.6%;
+    font-family:BahijTheSansArabic Plain;
+}
+/*End Our Mission Style*/
+/*Start Media Query*/
+@media(max-width:402px)
+{
+    .ch2-our-mission-title 
+     {font-size: 19px;}
+    .cp-our-mission
+    {font-size: 8px;}
+    .cdiv-behind-our-mission
+    {
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+}
+@media(min-width:403px) and (max-width:589px)
+{
+     .ch2-our-mission-title
+     {font-size: 25px;}
+     .cp-our-mission
+    {font-size: 10px;}
+    .cdiv-behind-our-mission
+    {
+        width: 78%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+}
+@media(min-width:590px) and (max-width:1149px)
+{
+    .ch2-our-mission-title
+     {font-size: 35px;}
+    .cp-our-mission
+    {font-size: 14px;}
+    .cdiv-behind-our-mission
+    {
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+}
+@media(min-width:1150px) and (max-width:1199px)
+{
+    .cdiv-behind-our-mission { margin-top:-21%;}
+}
+/*End Media Query*/

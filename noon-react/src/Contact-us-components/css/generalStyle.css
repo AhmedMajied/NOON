@@ -1,0 +1,26 @@
+@font-face
+{
+   font-family:Bahij TheSansArabic Plain;
+   src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
+}
+.row1 , .row2 , .row3
+{
+    font-family:"Bahij TheSansArabic Plain";
+    direction: rtl;
+    text-align: right;
+    margin-top:5%;
+
+}
+.row2
+{
+    margin-top:10.5%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    border-color: transparent;
+}
+.row3 {margin-top:10.5%;}
+@media(max-width:879px)
+{
+   .row2{background-size: cover;}
+}

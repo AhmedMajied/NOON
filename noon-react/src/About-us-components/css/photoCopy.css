@@ -1,0 +1,39 @@
+/*Start Gathering Image Style*/
+.aboutus_row3>.cdiv-behind-image
+{
+    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 100%);
+     width:33.11%;
+    height: 295px;
+    margin-right:0%;
+    float: right;
+}
+.aboutus_row3 .cdiv-contain-image {transform: translate(0%,0%);}
+.cdiv-vertical {
+  background-color: rgb(232, 19, 119);
+  width: 6.47%;
+  height: 25%;
+  margin-right:100%;
+  position: absolute;
+  margin-top: 7.17%;
+}
+.aboutus_cdiv-horizontal
+{
+  background-color: rgb(107, 71, 143);
+  position: absolute;
+  width: 50.9%;
+  height: 100%;
+  margin-top:2%;
+  margin-right: 4.7%;
+}
+/*End Gathering Image Style*/
+/*Start Media Query*/
+@media(max-width:1149px)
+{
+    .row3 .cdiv-behind-image
+    {
+        margin:0%;
+        padding: 0%;
+        width: 0%;
+        height: 0%;
+    }
+}

@@ -1,0 +1,44 @@
+/*Start Image Style*/
+.cdiv-behind-image
+{
+    width:31.5%;
+    height: 294px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 9.62%,
+                                          rgb(232, 19, 119) 9.62%,rgb(232, 19, 119) 46.90%,
+                                          rgb(255,255,255)46.90%);
+    margin-right: -4.5%;
+    margin-top:2%;
+}
+.cdiv-contain-image
+{ 
+    height: 100%;
+    border:1px solid rgb(237,237,237);
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;    
+    transform: translate(0%,2%);
+}
+/*End Image Style*/
+/*Start Media Query*/
+@media(max-width:1149px)
+{
+    img , .cdiv-behind-image
+    {
+        width:90%;
+        height: 180px;
+        margin-top: 1%;
+        margin-right:6%;
+        margin-left: 1%;
+    }
+    .cdiv-contain-image
+    {
+        width: 100%;
+        border: none
+    }
+}
+
+@media(min-width:590px) and (max-width:1149px)
+{
+   img , .cdiv-behind-image { width:90%;}
+}
