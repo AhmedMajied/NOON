@@ -6,7 +6,7 @@
     src: url(./../../fonts/bahij-the-sans-arabic-plain.ttf) format('truetype');
 }
 
-.carousel .carousel-inner {
+.carousel .carousel-inner#idiv-carousel-inner-images {
     padding-bottom: 55px;
 }
 
@@ -43,11 +43,11 @@
     padding-bottom: 5.9%;
     width: 100%;
 }
-.cdiv-carousel-item-caption .cspan-published-time{
+.cspan-published-time{
     font-size: 12px;
     color: #cccccc;
 }
-.cdiv-carousel-item-caption .cdiv-text{
+.cdiv-text{
     font-size: 22px;
     color: #6b478f;
     margin-top: 3%;

@@ -1,6 +1,9 @@
 import React from 'react';
-import {NewsCarousel as ImagesCarousel} from "./Home-components/News-carousel";
-//import {VideosCarousel} from "./Home-components/videos-carousel";
+
+import "./shared-libraries/bootstrap-3.3.7.min.css";
+import "./Home-components/CSS/all.css";
+import {VideosCarousel} from "./Home-components/Videos-carousel";
+import {ImagesCarousel} from "./Home-components/Images-carousel"
 
 export class Home extends React.Component
 {
@@ -17,7 +20,7 @@ export class Home extends React.Component
         return(
             <div>
                 <ImagesCarousel data={this.state.imagesCarouselData} />
-                {/*<VideosCarousel data={this.state.videosCarouselData} />*/}
+                <VideosCarousel data={this.state.videosCarouselData} />
                 {/* call your components here */}
             </div>
         );

@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
 
     // for every slide in carousel, copy the next slide's item in the slide
-    $(".carousel .item").each(function(){
+    $("#idiv-videos-carousel.carousel .item").each(function(){
         var next = $(this).next();
 
         // redisplay the same image if there is only it in the carousel
@@ -26,10 +26,10 @@ $(document).ready(function(){
         }
 
         // change size of middle item in each slide
-        $(this).children(":nth-child(2)").removeClass("col-xs-3");
+        /*$(this).children(":nth-child(2)").removeClass("col-xs-3");
         $(this).children(":nth-child(2)").addClass("col-xs-6");
         $(this).children(":nth-child(3)").removeClass("col-xs-6");
-        $(this).children(":nth-child(3)").addClass("col-xs-3");
+        $(this).children(":nth-child(3)").addClass("col-xs-3");*/
 
     });
 

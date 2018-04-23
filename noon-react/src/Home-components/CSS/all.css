@@ -1,4 +1,26 @@
-/* author: Ahmed Mohamed Ahmed */
+/* set slide durartion and direction */
+.carousel .carousel-inner .item {
+    transition: 500ms ease-in-out left;
+}
+
+/* set transition value */
+.carousel .carousel-inner .active.left {
+    left: -33%;
+}
+.carousel .carousel-inner .active.right {
+    left: 33%;
+}
+.carousel .carousel-inner .next {
+    left: 33%;
+}
+.carousel .carousel-inner .prev {
+    left: -33%;
+}
+
+/* handle smooth sliding */
+.carousel .carousel-inner .item {
+    transform: none!important;
+}
 
 /* Fonts */
 @font-face {
@@ -113,3 +135,4 @@ body{
 .carousel .carousel-inner .item.active div:nth-child(2) .cimg-video-cover{
     opacity: 1;
 }
+

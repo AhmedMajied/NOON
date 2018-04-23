@@ -1,16 +1,16 @@
 /* author: Ahmed Mohamed Ahmed */
 
 import React from "react";
-import "./../shared-libraries/bootstrap-3.3.7.min.css";
-import "./CSS/news-carousel.css";
+//import "./../shared-libraries/bootstrap-3.3.7.min.css";
+//import "./CSS/news-carousel.css";
 
-import "jquery"
-import "./../shared-libraries/bootstrap-3.3.7.min.js";
-import "./JS/news-carousel.js";
+//import "jquery"
+//import "./../shared-libraries/bootstrap-3.3.7.min.js";
+//import "./JS/news-carousel.js";
 
 import {Carousel} from "./Carousel"
 
-export class NewsCarousel extends React.Component{
+export class ImagesCarousel extends React.Component{
 
 	constructor(props){
 		super();
@@ -24,7 +24,7 @@ export class NewsCarousel extends React.Component{
 		return(
 			<Carousel carouselID={"idiv-news-carousel"}>
 				{/* images slides */}
-				<div className="carousel-inner">
+				<div className="carousel-inner" id="idiv-carousel-inner-images">
 					{this.state.data.data.map((carouselItem,i) =>
 						<div className={"item "+((i===0)?"active":"") } key={i} >
 							<div className="col-xs-4 cdiv-carousel-item">
