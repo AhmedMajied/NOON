@@ -1,9 +1,7 @@
 /* author: Ahmed Mohamed Ahmed */
 
 import React from "react";
-//import "./../shared-libraries/bootstrap-3.3.7.min.css";
-//import "./CSS/carousel.css";
-
+import "./CSS/carousel.css";
 
 export class Carousel extends React.Component{
 

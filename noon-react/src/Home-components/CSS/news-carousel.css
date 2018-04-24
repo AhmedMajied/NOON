@@ -43,11 +43,11 @@
     padding-bottom: 5.9%;
     width: 100%;
 }
-.cspan-published-time{
+.cdiv-carousel-item-caption .cspan-published-time{
     font-size: 12px;
     color: #cccccc;
 }
-.cdiv-text{
+.cdiv-carousel-item-caption .cdiv-text{
     font-size: 22px;
     color: #6b478f;
     margin-top: 3%;
