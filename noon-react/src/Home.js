@@ -1,9 +1,8 @@
 import React from 'react';
 
-import "./shared-libraries/bootstrap-3.3.7.min.css";
-
-import "jquery"
-import "./shared-libraries/bootstrap-3.3.7.min.js";
+import "./shared-libraries/font-awesome-4.min.css";
+import "./Home-components/home.css";
+import "./Home-components/home.js";
 
 import {VideosCarousel} from "./Home-components/Videos-carousel";
 import {ImagesCarousel} from "./Home-components/Images-carousel"
