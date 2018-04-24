@@ -1,7 +1,10 @@
 import React from 'react';
 
 import "./shared-libraries/bootstrap-3.3.7.min.css";
-import "./Home-components/CSS/all.css";
+
+import "jquery"
+import "./shared-libraries/bootstrap-3.3.7.min.js";
+
 import {VideosCarousel} from "./Home-components/Videos-carousel";
 import {ImagesCarousel} from "./Home-components/Images-carousel"
 

@@ -1,3 +1,9 @@
+/* author: Ahmed Mohamed Ahmed */
+
+body{
+    overflow-x: hidden;
+}
+
 /* set slide durartion and direction */
 .carousel .carousel-inner .item {
     transition: 500ms ease-in-out left;

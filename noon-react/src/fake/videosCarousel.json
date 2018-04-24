@@ -1,6 +1,6 @@
 {
   "data":[
-    {"cover":"./images/1.jpg","title":"swimming","captionText":"lorem ipsum","video":"./videos/1.mp4"},
+    {"cover":"./images/1.jpg","title":"swimming","captionText":"first","video":"./videos/1.mp4"},
     {"cover":"./images/2.jpg","title":"football","captionText":"second","video":"./videos/1.mp4"},
     {"cover":"./images/3.jpg","title":"vollyball","captionText":"third","video":"./videos/1.mp4"},
     {"cover":"./images/4.jpg","title":"basketball","captionText":"forth","video":"./videos/1.mp4"}
