@@ -3,7 +3,7 @@
    font-family:Bahij TheSansArabic Plain;
    src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
 }
-.row1 , .row2 , .row3
+.contactus_row1 , .contactus_row2 , .contactus_row3
 {
     font-family:"Bahij TheSansArabic Plain";
     direction: rtl;
@@ -11,7 +11,7 @@
     margin-top:5%;
 
 }
-.row2
+.contactus_row2
 {
     margin-top:10.5%;
     background-repeat: no-repeat;
@@ -19,8 +19,8 @@
     background-size: contain;
     border-color: transparent;
 }
-.row3 {margin-top:10.5%;}
+.contactus_row3 {margin-top:10.5%;}
 @media(max-width:879px)
 {
-   .row2{background-size: cover;}
+   .contactus_row2{background-size: cover;}
 }

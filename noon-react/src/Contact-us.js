@@ -2,7 +2,7 @@ import React from 'react';
 import "jquery"
 import "./shared-libraries/bootstrap-3.3.7.min.css";
 import "./shared-libraries/bootstrap-3.3.7.min.js";
-import "./Contact-us-components/css/generalStyle.css"
+import "./Contact-us-components/css/contact-usStyle.css"
 import { CallUs } from './Contact-us-components/CallUs';
 import { Form } from './Contact-us-components/Form';
 import { OurOffices } from './Contact-us-components/OurOffices';
@@ -67,13 +67,13 @@ export class ContactUs extends React.Component
     render(){
         return(
             <div className="container">
-                <div className="row row1">
+                <div className="row contactus_row1">
                     <CallUs callUs={this.state.callUs}/>
                     <PostAddress postAddress={this.state.postAddress}/>
                     <OurOffices OurOffices={this.state.OurOffices}/>
                 </div>
                 <Form formImage={this.state.formImage}/>
-                <div className="row row3">
+                <div className="row contactus_row3">
                     <LocationOnMap locationOnMap={this.state.locationOnMap}/>
                     <CountrySelect country={this.state.country}/>
                     <Map/>

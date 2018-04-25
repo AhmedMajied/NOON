@@ -33,15 +33,15 @@
  /*Start Media Query*/
  @media(max-width:402px)
  {
-     .cdiv-about-us {width:50%}
-     .cdiv-about-noon {font-size: 19px;}
+    .aboutus_row1 .cdiv-about-us {width:50%}
+    .aboutus_row1 .cdiv-about-noon {font-size: 19px;}
  }
  @media(min-width:403px) and (max-width:589px)
  {
-     .cdiv-about-noon
+    .aboutus_row1 .cdiv-about-noon
       {font-size: 25px;}
  }
  @media(min-width:590px) and (max-width:1149px)
  {
-     .cdiv-about-noon {font-size: 35px;}
+    .aboutus_row1 .cdiv-about-noon {font-size: 35px;}
  }

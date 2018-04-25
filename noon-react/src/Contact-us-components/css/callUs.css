@@ -1,47 +1,28 @@
-@font-face
-{
-    font-family: BahijTheSansArabic Bold;
-    src:url('../../fonts/bahij-the-sans-arabic-bold.ttf'); 
-}
-@font-face
-{
-    font-family: BahijTheSansArabic ExtraLight;
-    src:url('../../fonts/bahij-the-sans-arabic-extra-light.ttf'); 
-}
 /* Start Call Us*/
-.cdiv-call-us
+.contactus_row1 .cdiv-about-us
 {
-    background-color: rgb(232, 19, 119);
     width: 39.34%;
-    display: inline-block;
-    float: right;
 }
-#ip-call-us
+.contactus_row1 .cdiv-about-noon 
 {
-    font-size: 52px;
-    color: rgb(255, 255, 255);
-    font-weight: normal;
     padding:0px 4px 0px 8px;
     margin:31.25% 13.95% 26.66% auto;
 }
-.cspan-call{
-    font-family: BahijTheSansArabic Bold;
-}
-.cspan-us{
-        font-family: BahijTheSansArabic ExtraLight;
+.contactus_row1 .cspan-about{
+    display: inline-block;
 }
 /* End Call Us*/
 /*Start Media Query*/
 @media(max-width:402px)
 {
-    #ip-call-us {font-size: 17px;}
+    .contactus_row1 .cdiv-about-noon {font-size: 17px;}
 }
 @media(min-width:403px) and (max-width:589px)
 {
-    #ip-call-us{font-size: 35px;}
+    .contactus_row1 .cdiv-about-noon{font-size: 35px;}
 }
 @media(min-width:590px) and (max-width:767px)
 {
-    #ip-call-us {font-size: 40px;}
+    .contactus_row1 .cdiv-about-noon {font-size: 40px;}
 }
 /*End Media Query*/
