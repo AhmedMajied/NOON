@@ -1,27 +1,16 @@
-import React from "react";
-import "./css/vision.css";
-export class Vision extends React.Component{
-    constructor(props)
-    {
-        super();
-        this.state={
-            title:props.vision.title,
-            content:props.vision.content,
-            image:props.vision.image
-        }
-        this.style={ 
-            backgroundImage: 'url('+this.state.image+')'
+import React from "react"
+import "./css/vision.css"
+export const Vision =(props)=>
+{
+    const style={ 
+        backgroundImage: 'url('+props.vision.image+')'
     }
-    }
-    render()
-    {
-        return(
-            <div className="row aboutus_row2"style={this.style}>
-                <div className="cdiv-vision">
-                    <h2 className="cdiv-our-mission-title">{this.state.title}</h2>
-                    <p className="cp-our-mission-description">{this.state.content}</p>
-                </div>
+    return(
+        <div className="row aboutus_row2"style={style}>
+            <div className="cdiv-vision">
+                <h2 className="cdiv-our-vision-title">{props.vision.title}</h2>
+                <p className="cp-our-vision-description">{props.vision.content}</p>
             </div>
-        );
-    }
+        </div>
+    );
 }

@@ -1,35 +1,27 @@
+/*author : Mariam Ashraf*/
 /*Start Gathering Image Style*/
 .aboutus_row3>.cdiv-behind-image
 {
-    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 100%);
-     width:33.11%;
+    background: linear-gradient(to top, rgb(255,255,255) 0%,rgb(255,255,255) 60%, rgb(232, 19, 119) 60%,rgb(232, 19, 119) 90%, rgb(255,255,255)90%);
+    width:35.11%;
     height: 295px;
     margin-right:0%;
     float: right;
 }
-.aboutus_row3 .cdiv-contain-image {transform: translate(0%,0%);}
-.cdiv-vertical {
-  background-color: rgb(232, 19, 119);
-  width: 6.47%;
-  height: 25%;
-  margin-right:100%;
-  position: absolute;
-  margin-top: 7.17%;
-}
-.aboutus_cdiv-horizontal
+.aboutus_row3 .cdiv-contain-image {border-left:transparent ;transform: translate(0.5%,0%);}
+.aboutus_row3 .cdiv-horizontal
 {
-  background-color: rgb(107, 71, 143);
-  position: absolute;
-  width: 50.9%;
-  height: 100%;
-  margin-top:2%;
-  margin-right: 4.7%;
+    background: linear-gradient(to right,transparent 0% ,transparent 40%,rgb(107, 71, 143)40%,rgb(107, 71, 143) 90%,rgb(255,255,255)90%);
+    position: absolute;
+    width: 100%;
+    height: 8px;
+ 
 }
 /*End Gathering Image Style*/
 /*Start Media Query*/
 @media(max-width:1149px)
 {
-    .row3 .cdiv-behind-image
+    .aboutus_row3>.cdiv-behind-image , .aboutus_row3 .cdiv-horizontal , .aboutus_row3 .cimg-photo
     {
         margin:0%;
         padding: 0%;
@@ -37,3 +29,4 @@
         height: 0%;
     }
 }
+/*End Media Query*/

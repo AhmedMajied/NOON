@@ -1,22 +1,14 @@
-import React from "react";
-import "./css/photo.css";
-export class Photo extends React.Component{
-    constructor(props)
-        {
-            super();
-            this.state={
-                image:props.photo.image,
-            }
-        }
-    render()
-    {
-        
-        return(
-            <div className="cdiv-behind-image">
-                <div className="cdiv-contain-image">
-                    <img src={this.state.image} alt=""/> 
+import React from "react"
+import "./css/photo.css"
+export const Photo =(props)=>
+{
+    return(
+        <div className="cdiv-behind-image">
+            <div className="cdiv-contain-image">
+                <img className= "cimg-photo" src={props.photo.image} alt=""/> 
+                <div className="cdiv-horizontal">
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }

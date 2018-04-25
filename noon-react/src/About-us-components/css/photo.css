@@ -1,5 +1,6 @@
+/*Author : Mariam Ashraf*/
 /*Start Image Style*/
-.cdiv-behind-image
+.aboutus_row1 .cdiv-behind-image
 {
     width:31.5%;
     height: 294px;
@@ -23,7 +24,7 @@
 /*Start Media Query*/
 @media(max-width:1149px)
 {
-    img , .cdiv-behind-image
+    .aboutus_row1 img ,.aboutus_row1 .cdiv-behind-image
     {
         width:90%;
         height: 180px;
@@ -40,5 +41,5 @@
 
 @media(min-width:590px) and (max-width:1149px)
 {
-   img , .cdiv-behind-image { width:90%;}
+    .aboutus_row1 img , .aboutus_row1 .cdiv-behind-image { width:90%;}
 }

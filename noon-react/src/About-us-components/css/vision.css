@@ -6,41 +6,41 @@
  .cdiv-vision{
     padding:  8.19% 5.9% 0px 0px;
  }
- .cdiv-our-mission-title {
-   font-size: 30px;
-   color: rgb(255, 255, 255);
-   line-height: 0.8;
-   padding: 0px 3px;
-   margin: 0px;
+ .cdiv-our-vision-title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 0.8;
+    padding: 0px 3px;
+    margin: 0px;
     font-family:BahijTheSansArabic Plain;
  }
- .cp-our-mission-description
+ .cp-our-vision-description
  {
-     color: rgb(255, 255, 255);
-     line-height: 1.429;
-     margin: 0px;
-     padding: 1.55% 0.32% 1.55% 6.22%;
-     font-family:BahijTheSansArabic Plain;
+    color: rgb(255, 255, 255);
+    line-height: 1.429;
+    margin: 0px;
+    padding: 1.55% 0.32% 1.55% 6.22%;
+    font-family:BahijTheSansArabic Plain;
  }
  /*Finish Vision Style*/
  /*Start Media Query*/
  @media(max-width:402px)
  {
-     .cdiv-our-mission-title{font-size: 19px;}
-     .cp-our-mission-description
-     {font-size: 8px;}
+    .cdiv-our-vision-title{font-size: 19px;}
+    .cp-our-vision-description
+    {font-size: 8px;}
  }
  @media(min-width:403px) and (max-width:589px)
  {
-     .cdiv-our-mission-title
-      {font-size: 25px;}
-      .cp-our-mission-description
-     {font-size: 10px;}
+    .cdiv-our-vision-title
+    {font-size: 25px;}
+    .cp-our-vision-description
+    {font-size: 10px;}
  }
  @media(min-width:590px) and (max-width:1149px)
  {
-     .cdiv-our-mission-title
-      {font-size: 35px;}
-      .cp-our-mission-description
-     {font-size: 14px;}
+    .cdiv-our-vision-title
+    {font-size: 35px;}
+    .cp-our-vision-description
+    {font-size: 14px;}
  }
