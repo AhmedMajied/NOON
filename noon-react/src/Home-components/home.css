@@ -120,14 +120,10 @@ body{
     display: table;
     height: 8.2vh;
     background-color: rgb(107, 71, 143);
-    padding-left: 7px;
-    padding-right: 25px;
-    padding-bottom: 5px;
 }
 #ispan-videos-headline{
     display: table-cell;
     color: #ffffff;
-    vertical-align: bottom;
 }
 #idiv-videos-allpage{
     float: right;

@@ -19,10 +19,23 @@ export class Home extends React.Component
     }
 
     render(){
+        var videosHeadlineStyle = {
+            width: '75px',
+            paddingLeft: '7px',
+            paddingBottom: '5px'
+        };
+        var videosHeadlineTextStyle = {
+            verticalAlign: 'bottom'
+        };
+
         return(
             <div>
                 <ImagesCarousel data={this.state.imagesCarouselData} />
-                <VideosCarousel data={this.state.videosCarouselData} />
+                <VideosCarousel
+                    data={this.state.videosCarouselData}
+                    videosHeadlineStyle ={videosHeadlineStyle}
+                    videosHeadlineTextStyle = {videosHeadlineTextStyle}
+                />
                 {/* call your components here */}
             </div>
         );
