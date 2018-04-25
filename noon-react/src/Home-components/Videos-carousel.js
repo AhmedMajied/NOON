@@ -13,6 +13,7 @@ export class VideosCarousel extends React.Component{
         };
     }
 
+
     render(){
         return(
             <div id="idiv-videos-section">
@@ -21,8 +22,8 @@ export class VideosCarousel extends React.Component{
                 <div id="idiv-videos-header">
                     <div className="row">
                         <div className="col-6">
-                            <div id="idiv-videos-headline">
-                                <span id="ispan-videos-headline">Videos</span>
+                            <div id="idiv-videos-headline" style={this.props.videosHeadlineStyle}>
+                                <span id="ispan-videos-headline" style={this.props.videosHeadlineTextStyle}>Videos</span>
                             </div>
                         </div>
                         <div className="col-6">
