@@ -26,7 +26,9 @@ class App extends React.Component
                         <Route exact path="/" component={Home} />
                         <Route path="/About-us" component={AboutUs} />
                         <Route path="/Contact-us" component={ContactUs} />
-                        <Route path="/Details" component={Details} />
+                        <Route exact path="/details/:id" render={(props)=>{
+                            return(<Details id={props.match.params.id}/>);
+                        }} />
                         <Route path="/Live-streaming" component={LiveStreaming} />
                         <Route path="/Media" component={Media} />
                         <Route path="/Section" component={Section} />

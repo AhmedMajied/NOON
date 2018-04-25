@@ -1,8 +1,309 @@
 import React from 'react';
-import { News } from "./Details-components/News"
-import "./details.css"
+import { NewsArticle } from "./Details-components/NewsArticle"
+import { Links } from "./Details-components/Links"
+import { NewsBreif } from "./Details-components/NewsBreif"
+import "./Details-components/details.css"
+import "./shared-libraries/font-awesome-4.min.css"
 
 export class Details extends React.Component {
+    constructor(props) {
+        super();
+        this.state = {
+            news: {
+                id:props.newsId,
+        
+                imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
+                
+                time: (function () {
+                    var today = new Date();
+                    var newsDate = new Date("2017/02/21");
+                    var diffMs = (today - newsDate); // milliseconds
+                    var diffMins = Math.round(diffMs / 60000); // minutes
+                    var diffHrs = Math.floor(diffMins / 60); // hours
+                    var diffDays = Math.floor(diffHrs / 24); // days
+                    var diffWeeks = Math.floor(diffDays / 7); // weeks
+                    var diffMonths = Math.floor(diffDays / 30); // months
+                    var diffYears = Math.floor(diffDays / 365); // years
+                    if (diffMins <= 1)
+                        return "1 min ago.";
+                    else if (diffMins <= 59)
+                        return diffMins.toString() + " mins ago.";
+
+                    else if (diffHrs <= 1)
+                        return "1 hour ago.";
+
+                    else if (diffHrs <= 23)
+                        return diffHrs.toString() + " hrs ago.";
+
+                    else if (diffDays <= 1)
+                        return "1 day ago.";
+
+                    else if (diffDays <= 6)
+                        return diffDays.toString() + " days ago.";
+
+                    else if (diffWeeks <= 1)
+                        return "1 week ago.";
+
+                    else if (diffWeeks <= 4)
+                        return diffWeeks.toString() + " weeks ago.";
+
+                    else if (diffMonths <= 1)
+                        return "1 month ago.";
+
+                    else if (diffMonths <= 11)
+                        return diffMonths.toString() + " months ago.";
+
+                    else if (diffYears <= 1)
+                        return "1 year ago.";
+
+                    else
+                        return diffYears.toString() + " years ago.";
+
+                })(),
+
+                title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
+
+                text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.`
+            },
+
+
+            links : {
+                site: window.location.href,
+                facebook:"https://www.facebook.com",
+                twitter:"https://www.twitter.com",
+                instagram:"https://www.instagram.com",
+                google:"https://www.google.com",
+                youtube:"https://www.youtube.com"
+            },
+
+            moreNews:[
+                {
+                    id:"1",
+        
+                    imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
+                    
+                    time: (function () {
+                        var today = new Date();
+                        var newsDate = new Date("2017/02/21");
+                        var diffMs = (today - newsDate); // milliseconds
+                        var diffMins = Math.round(diffMs / 60000); // minutes
+                        var diffHrs = Math.floor(diffMins / 60); // hours
+                        var diffDays = Math.floor(diffHrs / 24); // days
+                        var diffWeeks = Math.floor(diffDays / 7); // weeks
+                        var diffMonths = Math.floor(diffDays / 30); // months
+                        var diffYears = Math.floor(diffDays / 365); // years
+                        if (diffMins <= 1)
+                            return "1 min ago.";
+                        else if (diffMins <= 59)
+                            return diffMins.toString() + " mins ago.";
+    
+                        else if (diffHrs <= 1)
+                            return "1 hour ago.";
+    
+                        else if (diffHrs <= 23)
+                            return diffHrs.toString() + " hrs ago.";
+    
+                        else if (diffDays <= 1)
+                            return "1 day ago.";
+    
+                        else if (diffDays <= 6)
+                            return diffDays.toString() + " days ago.";
+    
+                        else if (diffWeeks <= 1)
+                            return "1 week ago.";
+    
+                        else if (diffWeeks <= 4)
+                            return diffWeeks.toString() + " weeks ago.";
+    
+                        else if (diffMonths <= 1)
+                            return "1 month ago.";
+    
+                        else if (diffMonths <= 11)
+                            return diffMonths.toString() + " months ago.";
+    
+                        else if (diffYears <= 1)
+                            return "1 year ago.";
+    
+                        else
+                            return diffYears.toString() + " years ago.";
+    
+                    })(),
+    
+                    title: "Lorem Ipsum is simply dummy text of the printing",
+                    
+                    links:{
+                        facebook:"https://www.facebook.com",
+                        twitter:"https://www.twitter.com",
+                        instagram:"https://www.instagram.com",
+                        google:"https://www.google.com",
+                        youtube:"https://www.youtube.com"
+                    }
+                },
+
+                {
+                    id:props.newsId,
+        
+                    imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
+                    
+                    time: (function () {
+                        var today = new Date();
+                        var newsDate = new Date("2017/02/21");
+                        var diffMs = (today - newsDate); // milliseconds
+                        var diffMins = Math.round(diffMs / 60000); // minutes
+                        var diffHrs = Math.floor(diffMins / 60); // hours
+                        var diffDays = Math.floor(diffHrs / 24); // days
+                        var diffWeeks = Math.floor(diffDays / 7); // weeks
+                        var diffMonths = Math.floor(diffDays / 30); // months
+                        var diffYears = Math.floor(diffDays / 365); // years
+                        if (diffMins <= 1)
+                            return "1 min ago.";
+                        else if (diffMins <= 59)
+                            return diffMins.toString() + " mins ago.";
+    
+                        else if (diffHrs <= 1)
+                            return "1 hour ago.";
+    
+                        else if (diffHrs <= 23)
+                            return diffHrs.toString() + " hrs ago.";
+    
+                        else if (diffDays <= 1)
+                            return "1 day ago.";
+    
+                        else if (diffDays <= 6)
+                            return diffDays.toString() + " days ago.";
+    
+                        else if (diffWeeks <= 1)
+                            return "1 week ago.";
+    
+                        else if (diffWeeks <= 4)
+                            return diffWeeks.toString() + " weeks ago.";
+    
+                        else if (diffMonths <= 1)
+                            return "1 month ago.";
+    
+                        else if (diffMonths <= 11)
+                            return diffMonths.toString() + " months ago.";
+    
+                        else if (diffYears <= 1)
+                            return "1 year ago.";
+    
+                        else
+                            return diffYears.toString() + " years ago.";
+    
+                    })(),
+    
+                    title: "Lorem Ipsum is simply dummy text of the printing",
+                    
+                    links:{
+                        facebook:"https://www.facebook.com",
+                        twitter:"https://www.twitter.com",
+                        instagram:"https://www.instagram.com",
+                        google:"https://www.google.com",
+                        youtube:"https://www.youtube.com"
+                    }
+                },
+
+                {
+                    id:props.newsId,
+        
+                    imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
+                    
+                    time: (function () {
+                        var today = new Date();
+                        var newsDate = new Date("2017/02/21");
+                        var diffMs = (today - newsDate); // milliseconds
+                        var diffMins = Math.round(diffMs / 60000); // minutes
+                        var diffHrs = Math.floor(diffMins / 60); // hours
+                        var diffDays = Math.floor(diffHrs / 24); // days
+                        var diffWeeks = Math.floor(diffDays / 7); // weeks
+                        var diffMonths = Math.floor(diffDays / 30); // months
+                        var diffYears = Math.floor(diffDays / 365); // years
+                        if (diffMins <= 1)
+                            return "1 min ago.";
+                        else if (diffMins <= 59)
+                            return diffMins.toString() + " mins ago.";
+    
+                        else if (diffHrs <= 1)
+                            return "1 hour ago.";
+    
+                        else if (diffHrs <= 23)
+                            return diffHrs.toString() + " hrs ago.";
+    
+                        else if (diffDays <= 1)
+                            return "1 day ago.";
+    
+                        else if (diffDays <= 6)
+                            return diffDays.toString() + " days ago.";
+    
+                        else if (diffWeeks <= 1)
+                            return "1 week ago.";
+    
+                        else if (diffWeeks <= 4)
+                            return diffWeeks.toString() + " weeks ago.";
+    
+                        else if (diffMonths <= 1)
+                            return "1 month ago.";
+    
+                        else if (diffMonths <= 11)
+                            return diffMonths.toString() + " months ago.";
+    
+                        else if (diffYears <= 1)
+                            return "1 year ago.";
+    
+                        else
+                            return diffYears.toString() + " years ago.";
+    
+                    })(),
+    
+                    title: "Lorem Ipsum is simply dummy text of the printing",
+                    
+                    links:{
+                        facebook:"https://www.facebook.com",
+                        twitter:"https://www.twitter.com",
+                        instagram:"https://www.instagram.com",
+                        google:"https://www.google.com",
+                        youtube:"https://www.youtube.com"
+                    }
+                }
+            ]
+        }
+    }
+
     render() {
         return (
             <div>
@@ -13,179 +314,23 @@ export class Details extends React.Component {
                         <div className="col-md-9 col-sm-8 col-xs-7">
                             {/* Begin News Row */}
                             <div className="row">
-                                {/* Begin News Container */}
-                                <News />
-                                {/* End News Container */}
+                                <NewsArticle news={this.state.news} />
                                 {/* Begin More News */}
                                 <div id="idiv-more-news" className="col-md-4 hidden-sm hidden-xs">
-                                    {/* Begin Links */}
-                                    <section className="csection-links">
-                                        <div className="cdiv-link-title">Link</div>
-                                        <div className="cdiv-link-text">
-                                            <a href="#">noon.ae/newslink</a>
-                                        </div>
-                                        <div className="cdiv-print-title">Print</div>
-                                        <div className="cdiv-print-text">Print this screen</div>
-                                        <div className="cdiv-social">
-                                            <a href="#">
-                                                <i className="fa fa-facebook-f" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-twitter" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-instagram" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-google-plus" />
-                                            </a>
-                                            <a href="#">
-                                                <i className="fa fa-youtube" />
-                                            </a>
-                                        </div>
-                                    </section>
-                                    {/* End Links */}
-                                    {/* Begin News */}
-                                    <div className="cdiv-news">
-                                        <img className="cimg-news" src="img/news.png" alt="News" />
-                                        <time className="cnews-time">
-                                            1 min. ago
-                    </time>
-                                        <div className="cdiv-news-title">
-                                            Lorem Ipsum is simply dummy text of the printing
-                    </div>
-                                        <div className="row">
-                                            <div className="cdiv-social col-lg-6 col-xs-12">
-                                                <a href="#">
-                                                    <i className="fa fa-facebook-f" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-twitter" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-instagram" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-google-plus" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-youtube" />
-                                                </a>
-                                            </div>
-                                            <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                                <a href="#">Read More
-                          <span className="arrow">→</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* End News */}
-                                    {/* Begin News */}
-                                    <div className="cdiv-news">
-                                        <img className="cimg-news" src="img/news.png" alt="News" />
-                                        <time className="cnews-time">
-                                            1 min. ago
-                    </time>
-                                        <div className="cdiv-news-title">
-                                            Lorem Ipsum is simply dummy text of the printing
-                    </div>
-                                        <div className="row">
-                                            <div className="cdiv-social col-lg-6 col-xs-12">
-                                                <a href="#">
-                                                    <i className="fa fa-facebook-f" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-twitter" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-instagram" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-google-plus" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-youtube" />
-                                                </a>
-                                            </div>
-                                            <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                                <a href="#">Read More
-                          <span className="arrow">→</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* End News */}
-                                    {/* Begin News */}
-                                    <div className="cdiv-news">
-                                        <img className="cimg-news" src="img/news.png" alt="News" />
-                                        <time className="cnews-time">
-                                            1 min. ago
-                    </time>
-                                        <div className="cdiv-news-title">
-                                            Lorem Ipsum is simply dummy text of the printing
-                    </div>
-                                        <div className="row">
-                                            <div className="cdiv-social col-lg-6 col-xs-12">
-                                                <a href="#">
-                                                    <i className="fa fa-facebook-f" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-twitter" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-instagram" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-google-plus" />
-                                                </a>
-                                                <a href="#">
-                                                    <i className="fa fa-youtube" />
-                                                </a>
-                                            </div>
-                                            <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                                <a href="#">Read More
-                          <span className="arrow">→</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* End News */}
+                                    <Links className="csection-links" newsLinks={this.state.links} />
+                                    {this.state.moreNews.map((news) => <NewsBreif key={news.id} news={news}/>)}
                                 </div>
                                 {/* End More News */}
                             </div>
                             {/* End News Row */}
                             {/* Begin Links Row */}
-                            <section className="csection-links row csection-links-row hidden-lg hidden-md">
-                                <div className="cdiv-link-title">Link</div>
-                                <div className="cdiv-link-text">
-                                    <a href="#">noon.ae/newslink</a>
-                                </div>
-                                <div className="cdiv-print-title">Print</div>
-                                <div className="cdiv-print-text">Print this screen</div>
-                                <div className="cdiv-social">
-                                    <a href="#">
-                                        <i className="fa fa-facebook-f" />
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-twitter" />
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-instagram" />
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-google-plus" />
-                                    </a>
-                                    <a href="#">
-                                        <i className="fa fa-youtube" />
-                                    </a>
-                                </div>
-                            </section>
+                            <Links className="csection-links row csection-links-row hidden-lg hidden-md" newsLinks={this.state.links}/>
                             {/* End Links Row */}
                             {/* Begin Comments Row */}
                             <section className="row" id="isection-comments-container">
                                 <header id="iheader-comments">
                                     Comments:
-                </header>
+                                </header>
                                 <input id="iinp-write-comment" className="form-control" placeholder="Write a comment..." type="text" />
                                 {/* Begin Comment */}
                                 <div className="cdiv-comment">
@@ -195,14 +340,14 @@ export class Details extends React.Component {
                                         {/* Begin Comment Username */}
                                         <div className="cdiv-comment-username">
                                             Maria Sharapova
-                    </div>
+                                        </div>
                                         {/* End Comment Username */}
                                         {/* Begin Comment Text */}
                                         <div className="cdiv-comment-text">
                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
                                             to make a type specimen
-                    </div>
+                                        </div>
                                         {/* End Comment Text */}
                                         {/* Begin Like-Reply */}
                                         <div className="cdiv-like-reply">

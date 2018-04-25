@@ -3,22 +3,22 @@
 /* Begin Fonts */
 @font-face {
     font-family: "Bahij TheSansArabic";
-    src: url('./fonts/BahijTheSansArabic-Plain.eot');
-    src: url('./fonts/BahijTheSansArabic-Plain.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
-        url('./fonts/BahijTheSansArabic-Plain.woff') format('woff'),
-        url('./fonts/BahijTheSansArabic-Plain.ttf') format('truetype'),
-        url('./fonts/BahijTheSansArabic-Plain.svg#BahijTheSansArabic-Plain') format('svg');
+    src: url('./../fonts/BahijTheSansArabic-Plain.eot');
+    src: url('./../fonts/BahijTheSansArabic-Plain.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
+        url('./../fonts/BahijTheSansArabic-Plain.woff') format('woff'),
+        url('./../fonts/BahijTheSansArabic-Plain.ttf') format('truetype'),
+        url('./../fonts/BahijTheSansArabic-Plain.svg#BahijTheSansArabic-Plain') format('svg');
 }
 
 @font-face {
     font-family: "Bahij TheSansArabic";
-    src: url('./fonts/BahijTheSansArabic-Black.eot');
-    src: url('./fonts/BahijTheSansArabic-Black.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/BahijTheSansArabic-Black.woff2') format('woff2'),
-        url('./fonts/BahijTheSansArabic-Black.woff') format('woff'),
-        url('./fonts/BahijTheSansArabic-Black.ttf') format('truetype'),
-        url('./fonts/BahijTheSansArabic-Black.svg#BahijTheSansArabic-Black') format('svg');
+    src: url('./../fonts/BahijTheSansArabic-Black.eot');
+    src: url('./../fonts/BahijTheSansArabic-Black.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/BahijTheSansArabic-Black.woff2') format('woff2'),
+        url('./../fonts/BahijTheSansArabic-Black.woff') format('woff'),
+        url('./../fonts/BahijTheSansArabic-Black.ttf') format('truetype'),
+        url('./../fonts/BahijTheSansArabic-Black.svg#BahijTheSansArabic-Black') format('svg');
     font-weight: bold
 }
 /* End Fonts */
@@ -75,10 +75,13 @@ time {
 
 /* Begin Links */
 .csection-links-row{
-       margin-top:20px
-    
+    margin-top:20px
+ 
 }
 .csection-links-row .cdiv-social a{
+ margin-right:15px
+}
+.csection-links .cdiv-social a{
     margin-right:15px
 }
 .csection-links, .cdiv-news {
@@ -96,16 +99,22 @@ time {
     text-align: left;
 }
 
-.cdiv-link-text>a, .cdiv-print-text {
+.cdiv-link-text>a, .cbtn-print-text {
     color: rgb(107, 71, 143);
     font-size: 16px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
     line-height: 1.697;
+    word-wrap: break-word;
+    border:none;
+    background: none;
+    padding:0;
+    text-align: left
 }
 
-.cdiv-link-text, .cdiv-print-text {
+.cdiv-link-text, .cbtn-print-text {
     margin-bottom: 34px;
+
 }
 
 .cdiv-news .cdiv-social{
@@ -115,7 +124,7 @@ time {
 }
 
 .cdiv-social a {
-    margin-right: 6px;
+    margin-right: 9px;
     color: rgb(204, 204, 204);
     font-size: 14px;
     transition:all 0.2s ease-in-out;
