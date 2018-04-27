@@ -1,0 +1,14 @@
+/* news videos carousel component style start */
+.cimg-icon{
+    width: 50px;
+    height: 50px;
+}
+
+/* carousel middle item style (when active) */
+.carousel .carousel-inner .carousel-item.active .row div:nth-child(2) .cdiv-carousel-item-caption .cimg-icon{
+    display: none;
+}
+.carousel .carousel-inner .carousel-item.active .row div:nth-child(2) .cdiv-carousel-item-caption .fa-play-circle{
+    display: block !important;
+}
+/* news videos carousel component style end */

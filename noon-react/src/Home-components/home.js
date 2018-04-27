@@ -1,6 +1,5 @@
 import $ from "jquery"
 
-
 $(document).ready(function(){
 
     /* images carousel component JS start */
@@ -24,8 +23,10 @@ $(document).ready(function(){
     /* images carousel component JS end */
 
     /* videos carousel component JS start */
-    $("#idiv-videos-carousel").on("slide.bs.carousel", function() {
-        closeVideo();
+
+    $('.carousel-control-next, .carousel-control-prev').click(function(){
+        var id = ".carousel-item.active .row .cdiv-video-carousel-item:nth-child(2)";
+        closeVideo(id);
     });
 
     // for every slide in carousel, copy the next slide's item in the slide
@@ -68,14 +69,14 @@ $(document).ready(function(){
  *  hide video if still visible then show its cover again
  *  pause video if it is still play
  */
-function closeVideo(){
+function closeVideo(id){
     // hide video if still visible and show cover again_
-    if($(".carousel-item.active .row .cdiv-video-carousel-item:nth-child(2) video").is(':visible')){
-        $(".carousel-item.active .row .cdiv-video-carousel-item:nth-child(2) .cimg-video-cover").show();
-        $(".carousel-item.active .row .cdiv-video-carousel-item:nth-child(2) .cdiv-video-caption").show();
-        $(".carousel-item.active .row .cdiv-video-carousel-item:nth-child(2) video").hide();
+    if($(id+" video").is(':visible')){
+        $(id+" .cimg-video-cover").show();
+        $(id+" .cdiv-video-caption").show();
+        $(id+" video").hide();
     }
 
     // pause video
-    $("video").trigger("pause");
+    $(id+" video").trigger("pause");
 }
