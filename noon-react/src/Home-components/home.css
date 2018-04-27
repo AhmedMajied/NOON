@@ -42,15 +42,15 @@ body{
 
 /* images carousel component style start */
 
-.carousel .carousel-inner#idiv-carousel-inner-images {
+.carousel .carousel-inner#idiv-news-carousel-inner {
     padding-bottom: 55px;
 }
 
 /* carousel indicator style */
 .carousel-indicators li{
     background-color: rgb(204, 204, 204);
-    width: 8px !important;
-    height: 8px !important;
+    width: 6px !important;
+    height: 6px !important;
     border-radius: 50%;
 }
 .carousel-indicators li.active{
