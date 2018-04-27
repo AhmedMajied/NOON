@@ -11,15 +11,16 @@ import { Vision } from './About-us-components/Vision';
 import { PhotoCopy } from './About-us-components/PhotoCopy';
 import { Mission } from './About-us-components/Mission';
 import { LogoCopy } from './About-us-components/LogoCopy';
-export class AboutUs extends React.Component
+export const AboutUs =(props)=>
 {
-    state={
+    props={
         AboutNoon:{
             content:'عن نون',
         },
         noon:{
             title:'نون',
             content:'عهٌدجديٌد،دا اً ُجملةتتك ررع مسامعنامن القادة   كل ا جا ت عندما يتم انتخابهم أو تأييدهم أو اعت ئهم  ناصب التوجيه والتعديلوالفكروالتأث ..جميلٌةهذهالعبارة فهي تبعث   نفس ا تلقي ا يجابية والتقدم وا مــل والطموح وأيضاً السعادة حسب الدراسات الحديثة.عهٌدجديٌد،دا اً ُجملةتتك ررع مسامعنامن القادة   كل ا جا ت عندما يتم انتخابهم أو تأييدهم أو اعت ئهم  ناصب التوجيه والتعديلوالفكروالتأث ..جميلٌةهذهالعبارة فهي تبعث   نفس ا تلقي ا يجابية والتقدم وا مــل والطموح وأيضاً السعادةحسب الدراسات الحديثة'
+            ,id:1
         },
         photo:{
             image:'./images/Gathering.png'
@@ -38,27 +39,26 @@ export class AboutUs extends React.Component
         mission:{
             title:'رسالتنا',
             content:'عهٌدجديٌد،دا اً ُجملةتتك ررع مسامعنامن القادة   كل ا جا ت عندما يتم انتخابهم أو تأييدهم أو اعت ئهم  ناصب التوجيه والتعديلوالفكروالتأث ..جميلٌةهذهالعبارة فهي تبعث   نفس ا تلقي ا يجابية والتقدم وا مــل والطموح وأيضاً السعادة عهٌدجديٌد،دا اً ُجملةتتك ررع مسامعنامن القادة   كل ا جا ت عندما يتم انتخابهم أو تأييدهم أو اعت ئهم  ناصب التوجيه والتعديلوالفكروالتأث ..جميلٌةهذهالعبارة فهي تبعث   نفس ا تلقي ا يجابية والتقدم وا مــل والطموح وأيضاً السعادة عهٌدجديٌد،دا اً ُجملةتتك ررع مسامعنامن القادة   كل ا جا ت عندما يتم انتخابهم أو تأييدهم أو اعت ئهم  ناصب التوجيه والتعديلوالفكروالتأث ..جميلٌةهذهالعبارة فهي تبعث   نفس ا تلقي ا يجابية والتقدم وا مــل والطموح وأيضاً السعادة عهٌدجديٌد،دا اً ُجملةتتك ررع مسامعنامن القادة   كل ا جا ت عندما يتم انتخابهم أو تأييدهم أو اعت ئهم  ناصب التوجيه والتعديلوالفكروالتأث ..جميلٌةهذهالعبارة فهي تبعث   نفس ا تلقي ا يجابية والتقدم وا مــل والطموح وأيضاً السعادة.'
+            ,id:1
         },
         logoCopy:{
             image:'./images/whiteLogo.png'
         }
     }
-    render(){
-        return(
-            <div className="container">
-                <div className="row aboutus_row1">                    
-                  <About aboutNoon={this.state.AboutNoon} />
-                  <NOON noon={this.state.noon}/>
-                  <Photo photo={this.state.photo}/>
-                  <Logo logo={this.state.logo}/>
-                </div>
-                <Vision vision={this.state.vision}/>
-                <div className="row aboutus_row3">
-                    <PhotoCopy photoCopy={this.state.photoCopy}/>
-                    <Mission mission={this.state.mission}/>
-                    <LogoCopy logoCopy={this.state.logoCopy}/>
-                </div>
+    return(
+        <div className="container">
+            <div className="row aboutus_row1">                    
+                <About aboutNoon={props.AboutNoon} />
+                <NOON noon={props.noon}/>
+                <Photo photo={props.photo}/>
+                <Logo logo={props.logo}/>
             </div>
-        );
-    }
+            <Vision vision={props.vision}/>
+            <div className="row aboutus_row3">
+                <PhotoCopy photoCopy={props.photoCopy}/>
+                <Mission mission={props.mission}/>
+                <LogoCopy logoCopy={props.logoCopy}/>
+            </div>
+        </div>
+    );
 }

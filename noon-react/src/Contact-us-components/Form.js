@@ -3,6 +3,10 @@ import "./css/form.css"
 import "./js/formValidation"
 export const Form =(props)=>
 {
+    function getFalse()
+    {
+        return false;
+    }
     const style={ 
         backgroundImage: 'url('+props.formImage.image+')'
     }
@@ -10,7 +14,7 @@ export const Form =(props)=>
         <div className="row contactus_row2"style={style}>
             <div id="idiv-img"className="col-xs-6 pull-right"></div>
             <div id="idiv-form-write-message" className="col-xs-6">
-                <form action="#" method="post" onsubmit="return false;">
+                <form action="#" method="post" onSubmit={getFalse()}>
                     <div className="idiv-write-message-info">
                         <div className="cdiv-name">الإسم</div>
                         <span className="cspan-error-name"></span>

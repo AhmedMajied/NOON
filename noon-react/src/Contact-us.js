@@ -12,9 +12,9 @@ import { PostAddress } from './Contact-us-components/PostAddress';
 import { LocationAddress } from './Contact-us-components/LocationAddress';
 import { Map } from './Contact-us-components/Map';
 
-export class ContactUs extends React.Component
+export const ContactUs =(props)=>
 {
-    state={
+    props={
         callUs:{
             content:'إتصل بنا'
         }
@@ -50,7 +50,8 @@ export class ContactUs extends React.Component
                 {name:'',value:'الإمارات العربية المتحدة ـ ابوظبي'},
                 {name:'البريد الإلكتروني: ',value:'info@noonsport.com'},
                 {name:'الهاتف: ',value:'+971 26270007'},
-            ]
+            ],
+            id:2
         },
         locationAddress:{
             title:'البحرين',
@@ -64,22 +65,20 @@ export class ContactUs extends React.Component
         }
     }
     
-    render(){
-        return(
-            <div className="container">
-                <div className="row contactus_row1">
-                    <CallUs callUs={this.state.callUs}/>
-                    <PostAddress postAddress={this.state.postAddress}/>
-                    <OurOffices OurOffices={this.state.OurOffices}/>
-                </div>
-                <Form formImage={this.state.formImage}/>
-                <div className="row contactus_row3">
-                    <LocationOnMap locationOnMap={this.state.locationOnMap}/>
-                    <CountrySelect country={this.state.country}/>
-                    <Map/>
-                    <LocationAddress locationAddress={this.state.locationAddress}/>
-                </div>
+    return(
+        <div className="container">
+            <div className="row contactus_row1">
+                <CallUs callUs={props.callUs}/>
+                <PostAddress postAddress={props.postAddress}/>
+                <OurOffices OurOffices={props.OurOffices}/>
             </div>
-        );
-    }
+            <Form formImage={props.formImage}/>
+            <div className="row contactus_row3">
+                <LocationOnMap locationOnMap={props.locationOnMap}/>
+                <CountrySelect country={props.country}/>
+                <Map/>
+                <LocationAddress locationAddress={props.locationAddress}/>
+            </div>
+        </div>
+    );
 }

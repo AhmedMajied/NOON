@@ -1,39 +1,21 @@
-@font-face
-{
-    font-family:BahijTheSansArabic Bold ;
-    src:url('../../fonts/bahij-the-sans-arabic-bold.ttf');
-}
-@font-face
-{
-    font-family:BahijTheSansArabic Plain ;
-    src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
-}
 /* Start Post Address*/
-.cdiv-back-post-address
+.contactus_row1 .cdiv-behind-content-noon
 {
     width:32.04%;
-    background-color: rgb(107, 71, 143);
-    display: inline-block;
-    float:right;
     margin-top: 6.75%;
     margin-right: -2.82%;
 }
-.cdiv-front-post-address
+.contactus_row1 .cdiv-front-content-noon
 {
     height: 100%;
-    background-color: rgb(255, 255, 255);
-    border:1px solid rgb(237,237,237);
     transform: translate(5.33%,-5%);
 }
-.ch2-post-address-title , #ih2-location-address-title
+.contactus_row1 .cdiv-noon-title
 {
-  font-family:BahijTheSansArabic Plain ;
-  color: rgb(107, 71, 143);
-  line-height: 1;
   padding:0px 5px 0px 2px;
   margin:14.83% 14.06% 10.48% auto;
 }
-#idiv-content-line
+.contactus_row1 #idiv-content-line
 {
     width: 2px;
     height: 108px;
@@ -43,7 +25,7 @@
     background-color: rgb(107, 71, 143);
     float: right;
 }
-#idiv-info
+.contactus_row1 .cdiv-info , .contactus_row3 .cdiv-info
 {
     color: rgb(143, 143, 143);
     line-height: 1.429;
@@ -51,41 +33,46 @@
     margin:2% 19.11% 12.98% 15.3%;
 }
 
-#ip-name
+.contactus_row1 .cp-name , .contactus_row3 .cp-name
+
 {
     color:rgb(107, 71, 143);
     font-family: BahijTheSansArabic Bold;
 }
-#ispan-value
+.contactus_row1 .cspan-value .contactus_row3 .cspan-value
 {
     font-family: BahijTheSansArabic Plain;
     color:rgb(143, 143, 143);
 
 }
-.cdiv-our-info{
+.contactus_row1 .cdiv-our-info{
     padding-bottom: 3px;
+}
+.contactus_row1 #idiv-content{
+    width: 100%;
+    height: 100%;
 }
 /* End Post Address*/
 /* Start Media Query*/
 @media(max-width:402px)
 {
-    .cdiv-back-post-address{height: 120px;}
-    .ch2-post-address-title
+    .contactus_row1  .cdiv-behind-content-noon{height: 120px;}
+    .contactus_row1  .cdiv-noon-title 
     {
         font-size: 11px;
         margin: 15.83% 4% 10% auto;
     }
-    #idiv-content-line{
+    .contactus_row1 #idiv-content-line{
         margin-top: -2%;
         height: 53%;margin-right: 9%;}
-    #idiv-info{
+    .contactus_row1 .cdiv-info{
         font-size: 5px;
         margin-right: 15.11%;
     }
 }
 @media(max-width:279px)
 {
-    .ch2-post-address-title
+    .contactus_row1  .cdiv-noon-title 
     {
         font-size: 10px;
         margin: 15.83% 4% 12% auto;
@@ -94,40 +81,40 @@
 }
 @media(min-width:403px) and (max-width:589px)
 {
-    .cdiv-back-post-address{height: 150px;}
-    .ch2-post-address-title
+    .contactus_row1  .cdiv-behind-content-noon{height: 150px;}
+    .contactus_row1  .cdiv-noon-title 
     {
         font-size: 16px;
         margin: 15.83% 4% 5% auto;
     }
-    #idiv-content-line
+    .contactus_row1 #idiv-content-line
     {height: 85px;margin-right: 5%;}
-    #idiv-info
+    .contactus_row1 .cdiv-info
     {
-        font-size: 9px;
+        font-size: 8px;
         margin: 0px;
         padding: 0px;
     }
 }
 @media(min-width:590px) and (max-width:767px)
 {
-    .cdiv-back-post-address {height: 180px;}
-    .ch2-post-address-title
+    .contactus_row1  .cdiv-behind-content-noon {height: 180px;}
+    .contactus_row1  .cdiv-noon-title 
     {
         font-size: 24px;margin: 15.83% 4% 5% auto;
     }
-    #idiv-content-line
+    .contactus_row1 #idiv-content-line
     {
         height: 95px;margin-right: 5%;
     }
-    #idiv-info
+    .contactus_row1 .cdiv-info
     {
         font-size: 11px;margin: 0px;
     }
 }
 @media(min-width:768px) and (max-width:991px)
 {
-    .cdiv-back-post-address {height: 260px;}
-    .ch2-post-address-title {margin: 14.83% 9.0% 10.48% auto;}
-    #idiv-info{font-size: 12px;}
+    .contactus_row1 .cdiv-behind-content-noon  {height: 260px;}
+    .contactus_row1 .cdiv-noon-title {margin: 14.83% 9.0% 10.48% auto;}
+    .contactus_row1 .cdiv-info{font-size: 12px;}
 }
