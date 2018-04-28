@@ -2,7 +2,7 @@ import React from 'react';
 import { NewsArticle } from "./Details-components/NewsArticle"
 import { Links } from "./Details-components/Links"
 import { NewsBreif } from "./Details-components/NewsBreif"
-import "./Details-components/details.css"
+import "./Details-components/css/details.css"
 import "./shared-libraries/font-awesome-4.min.css"
 
 export class Details extends React.Component {
@@ -10,10 +10,10 @@ export class Details extends React.Component {
         super();
         this.state = {
             news: {
-                id:props.newsId,
-        
+                id: props.newsId,
+
                 imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
-                
+
                 time: (function () {
                     var today = new Date();
                     var newsDate = new Date("2017/02/21");
@@ -98,25 +98,41 @@ export class Details extends React.Component {
                     make a type specimen book. It has survived not only five centuries, but also the leap into electronic
                     typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
                     of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                     software like Aldus PageMaker including versions of Lorem Ipsum.`
             },
 
 
-            links : {
+            links: {
                 site: window.location.href,
-                facebook:"https://www.facebook.com",
-                twitter:"https://www.twitter.com",
-                instagram:"https://www.instagram.com",
-                google:"https://www.google.com",
-                youtube:"https://www.youtube.com"
+                facebook: "https://www.facebook.com",
+                twitter: "https://www.twitter.com",
+                instagram: "https://www.instagram.com",
+                google: "https://www.google.com",
+                youtube: "https://www.youtube.com"
             },
 
-            moreNews:[
+            moreNews: [
                 {
-                    id:"1",
-        
+                    id: "1",
+
                     imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
-                    
+
                     time: (function () {
                         var today = new Date();
                         var newsDate = new Date("2017/02/21");
@@ -131,55 +147,55 @@ export class Details extends React.Component {
                             return "1 min ago.";
                         else if (diffMins <= 59)
                             return diffMins.toString() + " mins ago.";
-    
+
                         else if (diffHrs <= 1)
                             return "1 hour ago.";
-    
+
                         else if (diffHrs <= 23)
                             return diffHrs.toString() + " hrs ago.";
-    
+
                         else if (diffDays <= 1)
                             return "1 day ago.";
-    
+
                         else if (diffDays <= 6)
                             return diffDays.toString() + " days ago.";
-    
+
                         else if (diffWeeks <= 1)
                             return "1 week ago.";
-    
+
                         else if (diffWeeks <= 4)
                             return diffWeeks.toString() + " weeks ago.";
-    
+
                         else if (diffMonths <= 1)
                             return "1 month ago.";
-    
+
                         else if (diffMonths <= 11)
                             return diffMonths.toString() + " months ago.";
-    
+
                         else if (diffYears <= 1)
                             return "1 year ago.";
-    
+
                         else
                             return diffYears.toString() + " years ago.";
-    
+
                     })(),
-    
+
                     title: "Lorem Ipsum is simply dummy text of the printing",
-                    
-                    links:{
-                        facebook:"https://www.facebook.com",
-                        twitter:"https://www.twitter.com",
-                        instagram:"https://www.instagram.com",
-                        google:"https://www.google.com",
-                        youtube:"https://www.youtube.com"
+
+                    links: {
+                        facebook: "https://www.facebook.com",
+                        twitter: "https://www.twitter.com",
+                        instagram: "https://www.instagram.com",
+                        google: "https://www.google.com",
+                        youtube: "https://www.youtube.com"
                     }
                 },
 
                 {
-                    id:props.newsId,
-        
+                    id: "2",
+
                     imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
-                    
+
                     time: (function () {
                         var today = new Date();
                         var newsDate = new Date("2017/02/21");
@@ -194,55 +210,55 @@ export class Details extends React.Component {
                             return "1 min ago.";
                         else if (diffMins <= 59)
                             return diffMins.toString() + " mins ago.";
-    
+
                         else if (diffHrs <= 1)
                             return "1 hour ago.";
-    
+
                         else if (diffHrs <= 23)
                             return diffHrs.toString() + " hrs ago.";
-    
+
                         else if (diffDays <= 1)
                             return "1 day ago.";
-    
+
                         else if (diffDays <= 6)
                             return diffDays.toString() + " days ago.";
-    
+
                         else if (diffWeeks <= 1)
                             return "1 week ago.";
-    
+
                         else if (diffWeeks <= 4)
                             return diffWeeks.toString() + " weeks ago.";
-    
+
                         else if (diffMonths <= 1)
                             return "1 month ago.";
-    
+
                         else if (diffMonths <= 11)
                             return diffMonths.toString() + " months ago.";
-    
+
                         else if (diffYears <= 1)
                             return "1 year ago.";
-    
+
                         else
                             return diffYears.toString() + " years ago.";
-    
+
                     })(),
-    
+
                     title: "Lorem Ipsum is simply dummy text of the printing",
-                    
-                    links:{
-                        facebook:"https://www.facebook.com",
-                        twitter:"https://www.twitter.com",
-                        instagram:"https://www.instagram.com",
-                        google:"https://www.google.com",
-                        youtube:"https://www.youtube.com"
+
+                    links: {
+                        facebook: "https://www.facebook.com",
+                        twitter: "https://www.twitter.com",
+                        instagram: "https://www.instagram.com",
+                        google: "https://www.google.com",
+                        youtube: "https://www.youtube.com"
                     }
                 },
 
                 {
-                    id:props.newsId,
-        
+                    id: "3",
+
                     imageLink: "http://images.all-free-download.com/images/graphiclarge/beautiful_flowers_02_hd_picture_166969.jpg",
-                    
+
                     time: (function () {
                         var today = new Date();
                         var newsDate = new Date("2017/02/21");
@@ -257,47 +273,47 @@ export class Details extends React.Component {
                             return "1 min ago.";
                         else if (diffMins <= 59)
                             return diffMins.toString() + " mins ago.";
-    
+
                         else if (diffHrs <= 1)
                             return "1 hour ago.";
-    
+
                         else if (diffHrs <= 23)
                             return diffHrs.toString() + " hrs ago.";
-    
+
                         else if (diffDays <= 1)
                             return "1 day ago.";
-    
+
                         else if (diffDays <= 6)
                             return diffDays.toString() + " days ago.";
-    
+
                         else if (diffWeeks <= 1)
                             return "1 week ago.";
-    
+
                         else if (diffWeeks <= 4)
                             return diffWeeks.toString() + " weeks ago.";
-    
+
                         else if (diffMonths <= 1)
                             return "1 month ago.";
-    
+
                         else if (diffMonths <= 11)
                             return diffMonths.toString() + " months ago.";
-    
+
                         else if (diffYears <= 1)
                             return "1 year ago.";
-    
+
                         else
                             return diffYears.toString() + " years ago.";
-    
+
                     })(),
-    
+
                     title: "Lorem Ipsum is simply dummy text of the printing",
-                    
-                    links:{
-                        facebook:"https://www.facebook.com",
-                        twitter:"https://www.twitter.com",
-                        instagram:"https://www.instagram.com",
-                        google:"https://www.google.com",
-                        youtube:"https://www.youtube.com"
+
+                    links: {
+                        facebook: "https://www.facebook.com",
+                        twitter: "https://www.twitter.com",
+                        instagram: "https://www.instagram.com",
+                        google: "https://www.google.com",
+                        youtube: "https://www.youtube.com"
                     }
                 }
             ]
@@ -311,21 +327,21 @@ export class Details extends React.Component {
                     {/* Begin Main Row */}
                     <div className="row">
                         {/* Begin News Column */}
-                        <div className="col-md-9 col-sm-8 col-xs-7">
+                        <div className="col-lg-9 col-sm-7 col-12">
                             {/* Begin News Row */}
                             <div className="row">
-                                <NewsArticle news={this.state.news} />
+                                <div className="col-lg-8 col-12">
+                                    <NewsArticle news={this.state.news} />
+                                </div>
                                 {/* Begin More News */}
-                                <div id="idiv-more-news" className="col-md-4 hidden-sm hidden-xs">
-                                    <Links className="csection-links" newsLinks={this.state.links} />
-                                    {this.state.moreNews.map((news) => <NewsBreif key={news.id} news={news}/>)}
+                                <div id="idiv-more-news" className="col-lg-4 col-12">
+                                    <Links newsLinks={this.state.links} />
+                                    {this.state.moreNews.map((news) => <NewsBreif key={news.id} news={news} />)}
                                 </div>
                                 {/* End More News */}
                             </div>
                             {/* End News Row */}
-                            {/* Begin Links Row */}
-                            <Links className="csection-links row csection-links-row hidden-lg hidden-md" newsLinks={this.state.links}/>
-                            {/* End Links Row */}
+
                             {/* Begin Comments Row */}
                             <section className="row" id="isection-comments-container">
                                 <header id="iheader-comments">
@@ -449,7 +465,7 @@ export class Details extends React.Component {
                         </div>
                         {/* End News Column */}
                         {/* Begin Profiles Column */}
-                        <aside className="col-md-3 col-sm-4 col-xs-5">
+                        <aside className="col-lg-3 col-sm-5 col-12">
                             {/* Begin Advertisement */}
                             <section id="isection-advertisement">
                                 <div className="cdiv-space">
@@ -651,153 +667,155 @@ export class Details extends React.Component {
                                 <a href="#">More</a>
                             </div>
                         </header>
-                        <div className="col-md-3 col-sm-4 col-xs-6">
-                            {/* Begin News */}
-                            <div className="cdiv-news">
-                                <img className="cimg-news" src="img/news.png" alt="News" />
-                                <time className="cnews-time">
-                                    1 min. ago
+                        <div className="row">
+                        <div className="col-xl-3 col-md-6 col-12">
+                                {/* Begin News */}
+                                <div className="cdiv-news">
+                                    <img className="cimg-news" src="img/news.png" alt="News" />
+                                    <time className="cnews-time">
+                                        1 min. ago
                 </time>
-                                <div className="cdiv-news-title">
-                                    Lorem Ipsum is simply dummy text of the printing
+                                    <div className="cdiv-news-title">
+                                        Lorem Ipsum is simply dummy text of the printing
                 </div>
-                                <div className="row">
-                                    <div className="cdiv-social col-lg-6 col-xs-12">
-                                        <a href="#">
-                                            <i className="fa fa-facebook-f" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-twitter" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-instagram" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-google-plus" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-youtube" />
-                                        </a>
-                                    </div>
-                                    <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                        <a href="#">Read More
+                                    <div className="row">
+                                        <div className="cdiv-social col-6">
+                                            <a href="#">
+                                                <i className="fa fa-facebook-f" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-twitter" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-instagram" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-google-plus" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-youtube" />
+                                            </a>
+                                        </div>
+                                        <div className="cdiv-read-more col-6">
+                                            <a href="#">Read More
                       <span className="arrow">→</span>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                {/* End News */}
                             </div>
-                            {/* End News */}
-                        </div>
-                        <div className="col-md-3 col-sm-4 col-xs-6">
-                            {/* Begin News */}
-                            <div className="cdiv-news">
-                                <img className="cimg-news" src="img/news.png" alt="News" />
-                                <time className="cnews-time">
-                                    1 min. ago
+                            <div className="col-xl-3 col-md-6 col-12">
+                                {/* Begin News */}
+                                <div className="cdiv-news">
+                                    <img className="cimg-news" src="img/news.png" alt="News" />
+                                    <time className="cnews-time">
+                                        1 min. ago
                 </time>
-                                <div className="cdiv-news-title">
-                                    Lorem Ipsum is simply dummy text of the printing
+                                    <div className="cdiv-news-title">
+                                        Lorem Ipsum is simply dummy text of the printing
                 </div>
-                                <div className="row">
-                                    <div className="cdiv-social col-lg-6 col-xs-12">
-                                        <a href="#">
-                                            <i className="fa fa-facebook-f" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-twitter" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-instagram" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-google-plus" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-youtube" />
-                                        </a>
-                                    </div>
-                                    <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                        <a href="#">Read More
+                                    <div className="row">
+                                        <div className="cdiv-social col-lg-6 col-12">
+                                            <a href="#">
+                                                <i className="fa fa-facebook-f" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-twitter" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-instagram" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-google-plus" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-youtube" />
+                                            </a>
+                                        </div>
+                                        <div className="cdiv-read-more col-lg-6 col-12">
+                                            <a href="#">Read More
                       <span className="arrow">→</span>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                {/* End News */}
                             </div>
-                            {/* End News */}
-                        </div>
-                        <div className="col-md-3 col-sm-4 col-xs-6 hidden-xs">
-                            {/* Begin News */}
-                            <div className="cdiv-news">
-                                <img className="cimg-news" src="img/news.png" alt="News" />
-                                <time className="cnews-time">
-                                    1 min. ago
+                            <div className="col-xl-3 col-md-6 col-12">
+                                {/* Begin News */}
+                                <div className="cdiv-news">
+                                    <img className="cimg-news" src="img/news.png" alt="News" />
+                                    <time className="cnews-time">
+                                        1 min. ago
                 </time>
-                                <div className="cdiv-news-title">
-                                    Lorem Ipsum is simply dummy text of the printing
+                                    <div className="cdiv-news-title">
+                                        Lorem Ipsum is simply dummy text of the printing
                 </div>
-                                <div className="row">
-                                    <div className="cdiv-social col-lg-6 col-xs-12">
-                                        <a href="#">
-                                            <i className="fa fa-facebook-f" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-twitter" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-instagram" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-google-plus" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-youtube" />
-                                        </a>
-                                    </div>
-                                    <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                        <a href="#">Read More
+                                    <div className="row">
+                                        <div className="cdiv-social col-lg-6 col-12">
+                                            <a href="#">
+                                                <i className="fa fa-facebook-f" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-twitter" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-instagram" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-google-plus" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-youtube" />
+                                            </a>
+                                        </div>
+                                        <div className="cdiv-read-more col-lg-6 col-12">
+                                            <a href="#">Read More
                       <span className="arrow">→</span>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                {/* End News */}
                             </div>
-                            {/* End News */}
-                        </div>
-                        <div className="col-md-3 col-sm-4 col-xs-6 hidden-sm hidden-xs">
-                            {/* Begin News */}
-                            <div className="cdiv-news">
-                                <img className="cimg-news" src="img/news.png" alt="News" />
-                                <time className="cnews-time">
-                                    1 min. ago
+                            <div className="col-xl-3 col-md-6 col-12">
+                                {/* Begin News */}
+                                <div className="cdiv-news">
+                                    <img className="cimg-news" src="img/news.png" alt="News" />
+                                    <time className="cnews-time">
+                                        1 min. ago
                 </time>
-                                <div className="cdiv-news-title">
-                                    Lorem Ipsum is simply dummy text of the printing
+                                    <div className="cdiv-news-title">
+                                        Lorem Ipsum is simply dummy text of the printing
                 </div>
-                                <div className="row">
-                                    <div className="cdiv-social col-lg-6 col-xs-12">
-                                        <a href="#">
-                                            <i className="fa fa-facebook-f" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-twitter" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-instagram" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-google-plus" />
-                                        </a>
-                                        <a href="#">
-                                            <i className="fa fa-youtube" />
-                                        </a>
-                                    </div>
-                                    <div className="cdiv-read-more col-lg-6 col-xs-12">
-                                        <a href="#">Read More
+                                    <div className="row">
+                                        <div className="cdiv-social col-lg-6 col-12">
+                                            <a href="#">
+                                                <i className="fa fa-facebook-f" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-twitter" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-instagram" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-google-plus" />
+                                            </a>
+                                            <a href="#">
+                                                <i className="fa fa-youtube" />
+                                            </a>
+                                        </div>
+                                        <div className="cdiv-read-more col-lg-6 col-12">
+                                            <a href="#">Read More
                       <span className="arrow">→</span>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                {/* End News */}
                             </div>
-                            {/* End News */}
                         </div>
                     </div>
                 </section>

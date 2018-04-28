@@ -7,7 +7,7 @@ export const NewsBreif = (props) => {
             <time className="cnews-time">{props.news.time}</time>
             <div className="cdiv-news-title">{props.news.title}</div>
             <div className="row">
-                <div className="cdiv-social col-lg-6 col-xs-12">
+                <div className="cdiv-social col-xl-6 col-lg-12 col-6">
                     <a href={props.news.links.facebook}>
                         <i className="fa fa-facebook-f" />
                     </a>
@@ -24,7 +24,7 @@ export const NewsBreif = (props) => {
                         <i className="fa fa-youtube" />
                     </a>
                 </div>
-                <div className="cdiv-read-more col-lg-6 col-xs-12">
+                <div className="cdiv-read-more col-xl-6 col-lg-12 col-6">
                     <a href={"/details/"+props.news.id}>Read More
                         <span className="arrow">→</span>
                     </a>

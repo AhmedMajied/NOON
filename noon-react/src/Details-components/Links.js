@@ -2,7 +2,7 @@ import React from "react"
 
 export const Links = (props) => {
     return (
-        <section className={props.className}>
+        <section className="csection-links">
             <div className="cdiv-link-title">Link</div>
             <div className="cdiv-link-text">
                 <a href={props.newsLinks.site}>{props.newsLinks.site}</a>

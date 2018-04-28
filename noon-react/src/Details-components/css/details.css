@@ -3,22 +3,22 @@
 /* Begin Fonts */
 @font-face {
     font-family: "Bahij TheSansArabic";
-    src: url('./../fonts/BahijTheSansArabic-Plain.eot');
-    src: url('./../fonts/BahijTheSansArabic-Plain.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
-        url('./../fonts/BahijTheSansArabic-Plain.woff') format('woff'),
-        url('./../fonts/BahijTheSansArabic-Plain.ttf') format('truetype'),
-        url('./../fonts/BahijTheSansArabic-Plain.svg#BahijTheSansArabic-Plain') format('svg');
+    src: url('./../../fonts/BahijTheSansArabic-Plain.eot');
+    src: url('./../../fonts/BahijTheSansArabic-Plain.eot?#iefix') format('embedded-opentype'),
+        url('./../../fonts/BahijTheSansArabic-Plain.woff2') format('woff2'),
+        url('./../../fonts/BahijTheSansArabic-Plain.woff') format('woff'),
+        url('./../../fonts/BahijTheSansArabic-Plain.ttf') format('truetype'),
+        url('./../../fonts/BahijTheSansArabic-Plain.svg#BahijTheSansArabic-Plain') format('svg');
 }
 
 @font-face {
     font-family: "Bahij TheSansArabic";
-    src: url('./../fonts/BahijTheSansArabic-Black.eot');
-    src: url('./../fonts/BahijTheSansArabic-Black.eot?#iefix') format('embedded-opentype'),
-        url('./../fonts/BahijTheSansArabic-Black.woff2') format('woff2'),
-        url('./../fonts/BahijTheSansArabic-Black.woff') format('woff'),
-        url('./../fonts/BahijTheSansArabic-Black.ttf') format('truetype'),
-        url('./../fonts/BahijTheSansArabic-Black.svg#BahijTheSansArabic-Black') format('svg');
+    src: url('./../../fonts/BahijTheSansArabic-Black.eot');
+    src: url('./../../fonts/BahijTheSansArabic-Black.eot?#iefix') format('embedded-opentype'),
+        url('./../../fonts/BahijTheSansArabic-Black.woff2') format('woff2'),
+        url('./../../fonts/BahijTheSansArabic-Black.woff') format('woff'),
+        url('./../../fonts/BahijTheSansArabic-Black.ttf') format('truetype'),
+        url('./../../fonts/BahijTheSansArabic-Black.svg#BahijTheSansArabic-Black') format('svg');
     font-weight: bold
 }
 /* End Fonts */
@@ -41,6 +41,8 @@ time {
 #iarticle-news-container {
     border: 1px solid #f0f0f0;
     padding: 22px;
+    padding-bottom:15px;
+    margin-left:-15px;
 }
 
 #iimg-news {
@@ -48,7 +50,9 @@ time {
     height: auto;
     max-height: 308px
 }
-
+.cdiv-news-body{
+    height:862px
+}
 #idiv-title {
     font-size: 22px;
     font-family: "Bahij TheSansArabic";
@@ -69,19 +73,14 @@ time {
 
 /* Begin More News */
 #idiv-more-news {
-    padding-left: 15px;
+    padding-left: 0px;
     padding-right: 0;
 }
 /* End More News */
 
 /* Begin Links */
-.csection-links-row{
-    margin-top:20px
- 
-}
-.csection-links-row .cdiv-social a{
- margin-right:15px
-}
+
+
 .csection-links .cdiv-social a{
     margin-right:15px
 }
@@ -98,6 +97,14 @@ time {
     color: rgb(107, 71, 143);
     line-height: 1.2;
     text-align: left;
+}
+
+.cdiv-link-text{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    width:100%
 }
 
 .cdiv-link-text>a, .cbtn-print-text {
@@ -120,7 +127,6 @@ time {
 
 .cdiv-news .cdiv-social{
     padding-right: 0;
-    text-align: center;
 
 }
 
@@ -145,6 +151,11 @@ time {
     line-height: 1.2;
     text-align: left;
     margin-bottom: 29px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height:42px
 }
 
 .cimg-news {
@@ -160,7 +171,7 @@ time {
 .cdiv-news .cdiv-read-more {
     padding-top: 3px;
     font-size: 12px;
-    text-align: center
+    text-align: right;
 }
 
 .cdiv-news .cdiv-read-more a {
@@ -180,6 +191,7 @@ time {
 
 .cdiv-news .cdiv-read-more a .arrow {
     color: rgb(107, 71, 143);
+    margin-left:5px
 }
 
 .cdiv-news .cdiv-social {
@@ -409,9 +421,11 @@ time {
 }
 
 #isection-related-topics #iheader-related-topics {
-    margin-bottom: 107px
+    padding-bottom: 90px
 }
-
+#isection-related-topics .cdiv-news{
+    margin-top:20px
+}
 #isection-related-topics .cdiv-flag {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -442,5 +456,21 @@ time {
 }
 /* End Related Topics */
 
+/* Media Queries */
+
+@media (max-width:1199px) and (min-width:992px){
+    .cdiv-news .cdiv-social , .cdiv-news .cdiv-read-more{
+        text-align: center
+    }
+    .cdiv-news .cdiv-social a~a{
+        margin-left:10px
+    }
+}
+
+@media(max-width:991px){
+    .csection-links{
+        margin-top:15px
+    }
+}
 
 /* Author: Andrew Emad Nassif */
