@@ -2,6 +2,7 @@ import React from 'react';
 import { NewsArticle } from "./Details-components/NewsArticle"
 import { Links } from "./Details-components/Links"
 import { NewsBreif } from "./Details-components/NewsBreif"
+import { ComentsContainer, CommentsContainer } from "./Details-components/CommentsContainer"
 import "./Details-components/css/details.css"
 import "./shared-libraries/font-awesome-4.min.css"
 
@@ -316,6 +317,44 @@ export class Details extends React.Component {
                         youtube: "https://www.youtube.com"
                     }
                 }
+            ],
+
+            comments: [
+                {
+                    id: "1",
+                    userName: "Maria Sharapova",
+                    userPhoto: "https://pbs.twimg.com/profile_images/786423002820784128/cjLHfMMJ_400x400.jpg",
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and         scrambled it to make a type specimen`,
+                    replies: [{
+                        id: "1",
+                        userName: "Maria Sharapova",
+                        userPhoto: "https://pbs.twimg.com/profile_images/786423002820784128/cjLHfMMJ_400x400.jpg",
+                        text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  industry's`,
+                        replies: []
+                    },
+                    {
+                        id: "1",
+                        userName: "Maria Sharapova",
+                        userPhoto: "https://pbs.twimg.com/profile_images/786423002820784128/cjLHfMMJ_400x400.jpg",
+                        text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  industry's`,
+                        replies: []
+                    }
+                    ]
+                },
+                {
+                    id: "2",
+                    userName: "Maria Sharapova",
+                    userPhoto: "https://pbs.twimg.com/profile_images/786423002820784128/cjLHfMMJ_400x400.jpg",
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and         scrambled it to make a type specimen`,
+                    replies: []
+                },
+                {
+                    id: "3",
+                    userName: "Maria Sharapova",
+                    userPhoto: "https://pbs.twimg.com/profile_images/786423002820784128/cjLHfMMJ_400x400.jpg",
+                    text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and         scrambled it to make a type specimen`,
+                    replies: []
+                }
             ]
         }
     }
@@ -343,124 +382,7 @@ export class Details extends React.Component {
                             {/* End News Row */}
 
                             {/* Begin Comments Row */}
-                            <section className="row" id="isection-comments-container">
-                                <header id="iheader-comments">
-                                    Comments:
-                                </header>
-                                <input id="iinp-write-comment" className="form-control" placeholder="Write a comment..." type="text" />
-                                {/* Begin Comment */}
-                                <div className="cdiv-comment">
-                                    <img src="img/comment.png" alt="User" />
-                                    {/* Begin Comment Body */}
-                                    <div className="cdiv-comment-body">
-                                        {/* Begin Comment Username */}
-                                        <div className="cdiv-comment-username">
-                                            Maria Sharapova
-                                        </div>
-                                        {/* End Comment Username */}
-                                        {/* Begin Comment Text */}
-                                        <div className="cdiv-comment-text">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                            to make a type specimen
-                                        </div>
-                                        {/* End Comment Text */}
-                                        {/* Begin Like-Reply */}
-                                        <div className="cdiv-like-reply">
-                                            <a href="#">Like</a>
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        {/* End Like-Reply */}
-                                        {/* Begin Replies */}
-                                        <div className="cdiv-replies">
-                                            <img src="img/comment.png" alt="User" />
-                                            {/* Begin Reply Body */}
-                                            <div className="cdiv-reply-body">
-                                                {/* Begin Reply Username */}
-                                                <div className="cdiv-reply-username">
-                                                    Maria Sharapova
-                        </div>
-                                                {/* End Reply Username */}
-                                                {/* Begin Reply Text */}
-                                                <div className="cdiv-reply-text">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        </div>
-                                                {/* End Reply Text */}
-                                                {/* Begin Like-Reply */}
-                                                <div className="cdiv-like-reply">
-                                                    <a href="#">Like</a>
-                                                    <a href="#">Reply</a>
-                                                </div>
-                                                {/* End Like-Reply */}
-                                            </div>
-                                            <div className="cdiv-view-more">
-                                                <a href="#">
-                                                    <span className="arrow">→</span>
-                                                    View more replies
-                        </a>
-                                            </div>
-                                            {/* End Reply Body */}
-                                        </div>
-                                        {/* End Replies */}
-                                    </div>
-                                    {/* End Comment Body */}
-                                </div>
-                                {/* End Comment */}
-                                {/* Begin Comment */}
-                                <div className="cdiv-comment">
-                                    <img src="img/comment.png" alt="User" />
-                                    {/* Begin Comment Body */}
-                                    <div className="cdiv-comment-body">
-                                        {/* Begin Comment Username */}
-                                        <div className="cdiv-comment-username">
-                                            Maria Sharapova
-                    </div>
-                                        {/* End Comment Username */}
-                                        {/* Begin Comment Text */}
-                                        <div className="cdiv-comment-text">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                            to make a type specimen
-                    </div>
-                                        {/* End Comment Text */}
-                                        {/* Begin Like-Reply */}
-                                        <div className="cdiv-like-reply">
-                                            <a href="#">Like</a>
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        {/* End Like-Reply */}
-                                    </div>
-                                    {/* End Comment Body */}
-                                </div>
-                                {/* End Comment */}
-                                {/* Begin Comment */}
-                                <div className="cdiv-comment">
-                                    <img src="img/comment.png" alt="User" />
-                                    {/* Begin Comment Body */}
-                                    <div className="cdiv-comment-body">
-                                        {/* Begin Comment Username */}
-                                        <div className="cdiv-comment-username">
-                                            Maria Sharapova
-                    </div>
-                                        {/* End Comment Username */}
-                                        {/* Begin Comment Text */}
-                                        <div className="cdiv-comment-text">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                            to make a type specimen
-                    </div>
-                                        {/* End Comment Text */}
-                                        {/* Begin Like-Reply */}
-                                        <div className="cdiv-like-reply">
-                                            <a href="#">Like</a>
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        {/* End Like-Reply */}
-                                    </div>
-                                    {/* End Comment Body */}
-                                </div>
-                                {/* End Comment */}
-                            </section>
+                            <CommentsContainer comments={this.state.comments} />
                             {/* End Comments Row */}
                         </div>
                         {/* End News Column */}
@@ -668,7 +590,7 @@ export class Details extends React.Component {
                             </div>
                         </header>
                         <div className="row">
-                        <div className="col-xl-3 col-md-6 col-12">
+                            <div className="col-xl-3 col-md-6 col-12">
                                 {/* Begin News */}
                                 <div className="cdiv-news">
                                     <img className="cimg-news" src="img/news.png" alt="News" />

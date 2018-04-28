@@ -36,7 +36,9 @@ time {
     line-height: 1.2;
     display:block
 }
-
+button:hover{
+    cursor: pointer;
+}
 /* Begin News Container */
 #iarticle-news-container {
     border: 1px solid #f0f0f0;
@@ -122,7 +124,6 @@ time {
 
 .cdiv-link-text, .cbtn-print-text {
     margin-bottom: 34px;
-
 }
 
 .cdiv-news .cdiv-social{
@@ -377,11 +378,11 @@ time {
     border: 1px solid #f0f0f0;
 }
 
-.cdiv-comment .cdiv-replies .cdiv-reply-body {
+.cdiv-comment .cdiv-replies .cdiv-comment-body {
     margin-left: 40px
 }
 
-.cdiv-comment .cdiv-replies .cdiv-reply-body .cdiv-reply-username {
+.cdiv-comment .cdiv-replies .cdiv-comment-body .cdiv-comment-username {
     font-size: 16px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
@@ -389,7 +390,7 @@ time {
     margin-bottom: 2px;
 }
 
-.cdiv-comment .cdiv-replies .cdiv-reply-body .cdiv-reply-text {
+.cdiv-comment .cdiv-replies .cdiv-comment-body .cdiv-recommentply-text {
     font-size: 14px;
     font-family: "Bahij TheSansArabic";
     color: rgb(204, 204, 204);
@@ -401,14 +402,16 @@ time {
     margin-top: 25px;
 }
 
-.cdiv-comment .cdiv-replies .cdiv-view-more a {
+.cdiv-comment .cdiv-replies .cdiv-view-more button {
     font-size: 14px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
     line-height: 1.357;
+    background: none;
+    border:none
 }
 
-.cdiv-comment .cdiv-replies .cdiv-view-more a .arrow {
+.cdiv-comment .cdiv-replies .cdiv-view-more button .arrow {
     margin-right: 12px;
     margin-left: 12px
 }
