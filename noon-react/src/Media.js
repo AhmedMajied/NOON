@@ -5,18 +5,10 @@ import "./Media-components/media.css";
 
 export class Media extends React.Component
 {
-
-    constructor(){
-        super();
-        this.state = {
-            videosCarouselData: require("./fake/videosCarousel.json")
-        };
-    }
-
     render(){
         return(
             <div>
-                <NewsVideosCarousel data={this.state.videosCarouselData} />
+                <NewsVideosCarousel />
                 {/* call your components here */}
             </div>
         );
