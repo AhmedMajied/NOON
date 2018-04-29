@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/photo.css"
+import "./css/photoStyle.css"
 export const Photo =(props)=>
 {
     return(

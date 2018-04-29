@@ -2,7 +2,7 @@ import React from 'react';
 import "jquery"
 import "./shared-libraries/bootstrap-3.3.7.min.css";
 import "./shared-libraries/bootstrap-3.3.7.min.js";
-import "./Contact-us-components/css/contact-usStyle.css"
+import "./Contact-us-components/css/generalContactUsStyle.css"
 import { CallUs } from './Contact-us-components/CallUs';
 import { Form } from './Contact-us-components/Form';
 import { OurOffices } from './Contact-us-components/OurOffices';
@@ -62,6 +62,10 @@ export const ContactUs =(props)=>
                 {name:'البريد الإلكتروني: ',value:'info@noonsport.com'},
                 {name:'الهاتف: ',value:'+971 26270007'},
             ]
+        },
+        marker:{
+            lat:30.0594838 ,
+            lng:31.2934839
         }
     }
     
@@ -76,7 +80,7 @@ export const ContactUs =(props)=>
             <div className="row contactus_row3">
                 <LocationOnMap locationOnMap={props.locationOnMap}/>
                 <CountrySelect country={props.country}/>
-                <Map/>
+                <Map marker={props.marker}/>
                 <LocationAddress locationAddress={props.locationAddress}/>
             </div>
         </div>

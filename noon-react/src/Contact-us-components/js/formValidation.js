@@ -1,3 +1,4 @@
+/* author : Mariam Ashraf */
 import $ from "jquery"
 /* @description. this function is used when user click on button submit to sent his message
  *                and sent his message by ajax then alert user by action

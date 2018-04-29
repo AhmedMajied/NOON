@@ -1,0 +1,91 @@
+/* author : Mariam Ashraf */
+/*Start  LocationAddress Style*/
+
+@font-face
+{
+    font-family: BahijTheSansArabic Bold;
+    src:url('../../fonts/bahij-the-sans-arabic-bold.ttf'); 
+}
+#idiv-front-location-address
+{
+    width:300px;
+    height: 229px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(237,237,237);
+    z-index: 3;
+    transform: translate(9%,0%);
+}
+#idiv-location-address{
+    width:300px;
+    height: 229px;
+    z-index: 2;
+    margin-top:-234px; 
+    margin-right: 67%;
+ 
+    background: linear-gradient(to top, transparent 0% , transparent 10% ,rgb(107,71,143)10% ,rgb(107,71,143)90% , transparent 90%)
+}
+#idiv-content-location-address > .cdiv-info{margin-right: 8.47%;margin-left: auto;}
+#idiv-front-location-address  #ih2-location-address-title
+{
+    font-family: BahijTheSansArabic Bold;
+    color: rgb(107,71,143);
+    padding:0px 3px 0px 1px;
+    margin:11.18% 8.47% 9.15% auto;
+}   
+/*Start Media Query*/
+@media(max-width:402px){
+    #idiv-location-address{margin-right: 60%; width:115px;    }
+    #idiv-front-location-address , #idiv-location-address
+    {
+        margin-top: -105px;
+        height:100px;
+    }
+    #idiv-front-location-address{
+        margin-right:-5px;
+        width:110px;
+    }
+    #idiv-front-location-address #ih2-location-address-title{font-size: 11px;}
+    .cdiv-info{font-size: 6px;}
+}
+
+@media(min-width:403px) and (max-width:767px){
+    #idiv-location-address{margin-right: 65%;width:170px}
+    #idiv-front-location-address , #idiv-location-address
+    {
+        margin-top: -125px;
+        height:120px;
+    }
+    #idiv-front-location-address{
+        margin-right:-5px;
+        width:170px;
+    }
+    #idiv-front-location-address #ih2-location-address-title{font-size: 13px;}
+    .cdiv-info{font-size: 8px;}
+}
+@media(min-width:403px) and (max-width:502px){
+    #idiv-location-address{width:140px;}
+    #idiv-front-location-address{width: 135px;}
+}
+@media(min-width:768px) and (max-width:991px){
+    #idiv-location-address{margin-right: 70%;width:205px}
+    #idiv-front-location-address , #idiv-location-address
+    {
+        margin-top: -145px;
+        height:140px;
+    }
+    #idiv-front-location-address{
+        margin-right:-5px;
+        width:200px;
+    }
+    #idiv-front-location-address #ih2-location-address-title{font-size: 14px;}
+    .cdiv-info{font-size: 10px;}
+}
+@media(min-width:1200px){
+    #idiv-location-address{
+        margin-right: 0%;
+        margin-left:4%;
+    }
+}
+/*End Media Query*/
+/*End  LocationAddress Style*/

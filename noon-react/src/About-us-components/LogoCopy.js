@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/logoCopy.css"
+import "./css/logoCopyStyle.css"
 import {Logo} from "./Logo"
 export const LogoCopy =(props)=>
 {   

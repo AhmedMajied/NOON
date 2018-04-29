@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/about-us.css"
+import "./css/about-usStyle.css"
 export const About =(props)=>
 {
     return(

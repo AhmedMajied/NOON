@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/mission.css"
+import "./css/missionStyle.css"
 import {NOON} from "./NOON"
 export const Mission =(props)=>
 {

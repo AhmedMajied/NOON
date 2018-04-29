@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/photoCopy.css"
+import "./css/photoCopyStyle.css"
 import { Photo } from "./Photo"
 export const PhotoCopy =(props)=>
 {

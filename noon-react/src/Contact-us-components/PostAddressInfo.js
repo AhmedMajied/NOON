@@ -1,9 +1,12 @@
+/**Author : Mariam Ashraf */
 import React from "react"
 export const PostAddressInfo =(props)=>
 {
     return(
+        /**Start Info Div */
         <div className="cdiv-info">
-            {   props.noon.info.map((information, index) => {
+            {   /**Start Loop on informations and put name and value to spans */
+                props.noon.info.map((information, index) => {
                 return( 
                 <div className="cdiv-our-info" key={index}>
                     <span className="cp-name">{information.name}</span>
@@ -11,7 +14,9 @@ export const PostAddressInfo =(props)=>
                 </div> 
                 );
             })}
+            {/*End Loop*/}
         </div>
+        /**End Info Div */
     );
 }
        

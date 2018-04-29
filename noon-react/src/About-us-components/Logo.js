@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/logo.css"
+import "./css/logoStyle.css"
 export const Logo =(props)=>
 {
     return(

@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/noon.css"
+import "./css/noonStyle.css"
 import { PostAddressInfo } from "./../Contact-us-components/PostAddressInfo";
 export const NOON =(props)=>
 {

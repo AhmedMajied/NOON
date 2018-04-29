@@ -1,5 +1,6 @@
+/* author : Mariam Ashraf */
 import React from "react"
-import "./css/vision.css"
+import "./css/visionStyle.css"
 export const Vision =(props)=>
 {
     const style={ 
