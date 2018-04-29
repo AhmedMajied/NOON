@@ -36,9 +36,19 @@ time {
     line-height: 1.2;
     display:block
 }
+button{
+    border:none;
+    background: none;
+    padding:0
+}
 button:hover{
     cursor: pointer;
 }
+
+form{
+    width:100%;
+}
+
 /* Begin News Container */
 #iarticle-news-container {
     border: 1px solid #f0f0f0;
@@ -305,6 +315,12 @@ button:hover{
     margin-bottom: 18px
 }
 
+.cinp-write-reply {
+    border: 1px solid #f0f0f0;
+    border-radius: 0px;
+    padding: 12px 15px;
+    margin-top:10px
+}
 #iinp-write-comment {
     border: 1px solid #f0f0f0;
     border-radius: 0px;
@@ -312,7 +328,7 @@ button:hover{
     margin-bottom: 40px
 }
 
-#iinp-write-comment::placeholder {
+#iinp-write-comment::placeholder,.cinp-write-reply::placeholder {
     color: #f0f0f0;
     opacity: 1;
 }
@@ -356,7 +372,7 @@ button:hover{
     margin-bottom: 5px
 }
 
-.cdiv-comment .cdiv-like-reply a {
+.cdiv-comment .cdiv-like-reply button {
     font-size: 14px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
@@ -468,11 +484,19 @@ button:hover{
     .cdiv-news .cdiv-social a~a{
         margin-left:10px
     }
+    .cdiv-news-body{
+        height:921px
+    }
 }
+
+
 
 @media(max-width:991px){
     .csection-links{
         margin-top:15px
+    }
+    #iarticle-news-container{
+        margin-right:-15px
     }
 }
 

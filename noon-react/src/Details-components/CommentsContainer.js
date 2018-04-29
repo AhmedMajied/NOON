@@ -7,17 +7,29 @@ export class CommentsContainer extends React.Component {
             comments: props.comments
         }
     }
+    addComment(e){
+        e.preventDefault();
+        var comment = {
+            id: "10",
+            userName: "Maria Sharapova",
+            userPhoto: "https://pbs.twimg.com/profile_images/786423002820784128/cjLHfMMJ_400x400.jpg",
+            text: e.target.comment.value,
+            replies: []
+        }
+        this.setState({...this.state.comments.push(comment)});
+        document.getElementById("ifrm-add-comment").reset();
+    }
     render() {
         return (
             <section className="row" id="isection-comments-container">
                 <header id="iheader-comments">
                     Comments:
                 </header>
-                <input id="iinp-write-comment" className="form-control" placeholder="Write a comment..." type="text" />
-                {/* Begin Comment */}
+                <form onSubmit={ (e) => this.addComment(e) } id="ifrm-add-comment">
+                    <input id="iinp-write-comment" className="form-control" name="comment" placeholder="Write a comment..." type="text"/>
+                </form>
                 {this.state.comments.map((comment) => <Comment comment={comment} key={comment.id} />)}
-                {/* End Comment */}
-                </section >
+            </section >
         );
     }
 }

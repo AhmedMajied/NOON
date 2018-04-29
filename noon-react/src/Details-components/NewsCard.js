@@ -1,6 +1,6 @@
 import React from "react"
 
-export const NewsBreif = (props) => {
+export const NewsCard = (props) => {
     return (
         <div className="cdiv-news">
             <img className="cimg-news" src={props.news.imageLink} alt="News" />
