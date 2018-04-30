@@ -55,15 +55,15 @@ form{
     padding: 22px;
     padding-bottom:15px;
     margin-left:-15px;
+    height:1265px;
+    display:flex;
+    flex-direction: column
 }
 
 #iimg-news {
     width: 100%;
     height: auto;
     max-height: 308px
-}
-.cdiv-news-body{
-    height:862px
 }
 #idiv-title {
     font-size: 22px;
@@ -95,6 +95,14 @@ form{
 
 .csection-links .cdiv-social a{
     margin-right:15px
+}
+
+.cdiv-news{
+    height:328px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between
+
 }
 .csection-links, .cdiv-news {
     border: 1px solid #f0f0f0;
@@ -242,6 +250,7 @@ form{
 #idiv-profiles {
     border: 1px solid #f0f0f0;
     padding-top: 20px;
+    margin-bottom:65px;
 }
 
 #idiv-profiles .cdiv-flag {
@@ -258,21 +267,32 @@ form{
     text-align: center;
     margin-bottom: 20px
 }
+#idiv-profiles .cdiv-profile-scroll{
+    height:1592px;
+    padding-right:0px;
+    margin-right:1px;
 
+}
 #idiv-profiles .cdiv-profile {
     text-align: center;
-    margin: 12px 25px
+    margin: 12px 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:300px;
 }
 
 #idiv-profiles .cdiv-profile ~.cdiv-profile{
     border-top:1px solid #f0f0f0;
-    padding-top:22px
+    padding-top:22px;
+    height:322px
 }
 
 #idiv-profiles img {
     border: 1px solid #f0f0f0;
     width: 100%;
-    margin-bottom: 22px
+    margin-bottom: 22px;
+    max-height:134px;
 }
 
 #idiv-profiles .cdiv-profile-name {
@@ -280,7 +300,11 @@ form{
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
     line-height: 1.2;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #idiv-profiles .cdiv-profile-text {
@@ -288,7 +312,12 @@ form{
     font-family: "Bahij TheSansArabic";
     color: rgb(204, 204, 204);
     line-height: 1.357;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height:36px
 }
 
 #idiv-profiles .cdiv-social {
@@ -302,9 +331,9 @@ form{
 /* Begin Comments Container */
 #isection-comments-container {
     margin-top: 20px;
-    padding: 26px;
+    padding: 25px;
     border: 1px solid #f0f0f0;
-    margin-bottom: 65px
+    margin-bottom: 15px
 }
 
 #iheader-comments {
@@ -331,6 +360,10 @@ form{
 #iinp-write-comment::placeholder,.cinp-write-reply::placeholder {
     color: #f0f0f0;
     opacity: 1;
+}
+
+.cdiv-comments{
+    height:503px;
 }
 /* End Comments Container */
 
@@ -487,6 +520,14 @@ form{
     .cdiv-news-body{
         height:921px
     }
+    
+}
+
+
+@media (max-width:991px) and (min-width:576px){
+    #idiv-profiles .cdiv-profile-scroll{
+        height:2872px
+    }
 }
 
 
@@ -497,6 +538,15 @@ form{
     }
     #iarticle-news-container{
         margin-right:-15px
+    }
+}
+
+
+
+@media(max-width:575px){
+    #isection-advertisement,#idiv-profiles{
+        margin-left:-15px;
+        margin-right:-15px;
     }
 }
 

@@ -1,3 +1,5 @@
+/* Author: Andrew Emad Nassif */
+
 import React from "react"
 
 export const NewsCard = (props) => {

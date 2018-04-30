@@ -1,3 +1,5 @@
+/* Author: Andrew Emad Nassif */
+
 import React from "react"
 import { NewsCard } from "./NewsCard"
 export const NewsSection = (props) => {
@@ -9,12 +11,12 @@ export const NewsSection = (props) => {
                         {props.title}
                     </div>
                     <div className="cdiv-more">
-                        <a href="#">More</a>
+                        <a href={props.more}>More</a>
                     </div>
                 </header>
                 <div className="row">
                     {
-                        props.news.map((news) => (
+                        props.news.news.map((news) => (
                             <div key={news.id} className="col-lg-3 col-md-6 col-12">
                                 <NewsCard news={news} />
                             </div>

@@ -1,3 +1,5 @@
+/* Author: Andrew Emad Nassif */
+
 import React from "react"
 import ScrollArea from "react-scrollbar"
 import "./css/scroll.css"

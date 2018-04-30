@@ -1,5 +1,9 @@
+/* Author: Andrew Emad Nassif */
+
 import React from "react"
 import { Comment } from "./Comment"
+import ScrollArea from "react-scrollbar"
+
 export class CommentsContainer extends React.Component {
     constructor(props) {
         super();
@@ -28,7 +32,9 @@ export class CommentsContainer extends React.Component {
                 <form onSubmit={ (e) => this.addComment(e) } id="ifrm-add-comment">
                     <input id="iinp-write-comment" className="form-control" name="comment" placeholder="Write a comment..." type="text"/>
                 </form>
+                <ScrollArea className="cdiv-comments">
                 {this.state.comments.map((comment) => <Comment comment={comment} key={comment.id} />)}
+                </ScrollArea>
             </section >
         );
     }
