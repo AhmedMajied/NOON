@@ -5,9 +5,9 @@
     width:310px;
     height: 227px;
     position: relative;
-    background: linear-gradient(to right, rgb(255,255,255) 0%,rgb(255,255,255) 11.6%,
+    background: linear-gradient(to right, transparent 0%,transparent 11.6%,
                                           rgb(232, 19, 119) 11.6%,rgb(232, 19, 119) 76.77%,
-                                          rgb(255,255,255)76.77%);
+                                          transparent 76.77%);
     margin-top:4%;
     margin-right:2%;
     float: right;    
@@ -23,33 +23,61 @@
     margin-top:23%;
     margin-right: 15%; 
 }
-/*End Logo Style*/
 /*Start Media Query*/
-@media(max-width:589px)
-{
-    .cdiv-behind-logo
-    {
-        width:88%;
-        height:180px;
-        margin-top: 8%;
+@media(max-width:402px){
+    .cdiv-behind-logo{
+        height: 55px;
+        width: 27%;
+        margin-top: -14%;
+        margin-right: 71%
     }
     .cimg-logo{
-        height: 50%;
+        height:50%;
+        width:90%;
         margin-right:5%;
         margin-top:10%; 
+    }  
+}
+@media(min-width:403px) and (max-width:589px){
+    .cdiv-behind-logo{
+        height: 75px;
+        width: 27%;
+        margin-top: -16%;
+        margin-right: 71%
+    }
+    .cimg-logo{
+        height:50%;
+        width:90%;
+        margin-right:5%;
+        margin-top:18%; 
+    } 
+}
+@media(min-width:590px) and (max-width:1149px){
+    .cdiv-behind-logo{
+        height: 145px;
+        width: 27%;
+        margin-right: 71%
+    }
+    .cimg-logo{
+        height:50%;
+        width:70%;
+        margin-right:15%;
+    } 
+}
+@media(min-width:590px) and (max-width:767px){
+    .cdiv-behind-logo{ 
+        margin-top: -19%;
+    }
+    .cimg-logo{
+        margin-top:25%; 
     }
 }
-@media(min-width:590px) and (max-width:1149px)
-{
-    .cdiv-behind-logo
-    {
-        width:60%;
-        margin-right: 17%;
+@media(min-width:768px) and (max-width:1149px){
+    .cdiv-behind-logo{ 
+        margin-top: -17%;
     }
     .cimg-logo{
-        height: 50%;
-        margin-right:5%;
-        margin-top:10%; 
+        margin-top:14%; 
     }
 }
 @media(min-width:1150px) and (max-width:1199px)
@@ -57,8 +85,9 @@
     .cdiv-behind-logo { width:259px; }
     .cimg-logo{
         width:80%;
-        height: 50%;
+        height: 40%;
         margin-right: 9%;
     }
 }
-/*End Media Queries*/
+/*End Media Query*/
+/*End Logo Style*/

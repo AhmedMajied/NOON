@@ -5,6 +5,8 @@ import {NOON} from "./NOON"
 export const Mission =(props)=>
 {
     return(
+        /**Start Mission by NOON Component */
         <NOON noon={props.mission} /> 
+        /**End Mission */
     );
 }

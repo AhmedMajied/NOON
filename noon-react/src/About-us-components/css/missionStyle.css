@@ -16,49 +16,47 @@
 .aboutus_row3 .cp-noon{
      margin:0% 8.62% 11.3% 12.6%;
 }
- /*End Our Mission Style*/
- /*Start Media Query*/
+/*Start Media Query*/
  @media(max-width:402px)
  {
     .aboutus_row3  .cdiv-noon-title
-      {font-size: 19px;}
+      {font-size: 15px;}
     .aboutus_row3 .cp-noon
-     {font-size: 8px;}
-    .aboutus_row3 .cdiv-behind-content-noon
-    {
-         width: 80%;
-         margin-right: 10%;
-         margin-top: 0%;
-    }
+     {font-size: 5px;}
+     .aboutus_row3 .cdiv-behind-content-noon{
+        margin-top: -17%;
+     }
  }
  @media(min-width:403px) and (max-width:589px)
  {
     .aboutus_row3  .cdiv-noon-title
-      {font-size: 25px;}
+      {font-size: 23px;}
     .aboutus_row3 .cp-noon
-     {font-size: 10px;}
+     {font-size: 7px;}
     .aboutus_row3 .cdiv-behind-content-noon
      {
-         width: 78%;
-         margin-right: 10%;
-         margin-top: 0%;
+         margin-top: -13%;
      }
  }
  @media(min-width:590px) and (max-width:1149px)
  {
     .aboutus_row3  .cdiv-noon-title
-      {font-size: 35px;}
+      {font-size: 30px;}
     .aboutus_row3 .cp-noon
-     {font-size: 14px;}
-    .aboutus_row3 .cdiv-behind-content-noon
-     {
-         width: 80%;
-         margin-right: 10%;
-         margin-top: 0%;
+     {font-size: 11px;}
+     .aboutus_row3 .cdiv-behind-content-noon{
+         margin-top: -14%;
      }
+ }
+ @media(min-width:992px) and (max-width:1149px){
+    .aboutus_row3 .cdiv-behind-content-noon{
+        margin-top: -12%;
+        margin-right: 30%;
+    }
  }
  @media(min-width:1150px) and (max-width:1199px)
  {
     .aboutus_row3 .cdiv-behind-content-noon{ margin-top:-21%;}
  }
  /*End Media Query*/
+  /*End Our Mission Style*/

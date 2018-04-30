@@ -1,27 +1,37 @@
 /* Author : Mariam Ashraf*/
+ /*Start General Style of Page About Us*/
 @font-face{
     font-family:BahijTheSansArabic Plain;
     src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
  }
- .aboutus_row1 , .aboutus_row2 , .aboutus_row3
+.aboutus_row1 , .aboutus_row2 , .aboutus_row3
  {
-     font-family:BahijTheSansArabic Plain;
-     direction: rtl;
-     text-align: justify;
-     margin-top:20px;
+    font-family:BahijTheSansArabic Plain;
+    direction: rtl;
+    text-align: justify;
+    margin-top:20px;
  }
- .aboutus_row2
+.aboutus_row2
  {
-     margin-top:10.5%;
-     background-repeat: no-repeat;
-     background-size: cover;
-     height:366px;
+    margin-top:10.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:366px;
  }
- .aboutus_row3 {margin-top:10%;}
+.aboutus_row3 {margin-top:10%;}
  
- /*Start Media Queries*/
+ /*Start Media Query*/
  @media(max-width:589px)
  {
-     .aboutus_row2 {height: 227px;}
+    .aboutus_row2 {
+         height: 227px;
+    }
+ }
+ @media(min-width:403px) and (max-width:589px){
+    .aboutus_row2 {
+        margin-right: 0%;
+        margin-left: 0%;
+   }
  }
  /*End Media Query*/
+ /*End General Style of Page About Us*/

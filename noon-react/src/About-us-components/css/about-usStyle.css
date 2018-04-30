@@ -35,13 +35,10 @@
  }
  .aboutus_row1 .cspan-about{
      display: block;
- }
- /*Finish About Noon Style*/
- 
+ } 
  /*Start Media Query*/
  @media(max-width:402px)
  {
-    .aboutus_row1 .cdiv-about-us {width:50%}
     .aboutus_row1 .cdiv-about-noon {font-size: 19px;}
  }
  @media(min-width:403px) and (max-width:589px)
@@ -53,3 +50,5 @@
  {
     .aboutus_row1 .cdiv-about-noon {font-size: 35px;}
  }
+/*End Media Query*/
+/*End About Noon Style*/

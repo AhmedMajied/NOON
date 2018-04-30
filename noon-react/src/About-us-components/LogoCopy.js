@@ -5,6 +5,8 @@ import {Logo} from "./Logo"
 export const LogoCopy =(props)=>
 {   
     return(
+        /**Start Logo Copy by call Logo Component */
         <Logo logo={props.logoCopy} />
+        /**End Logo Copy */
     );
 }
