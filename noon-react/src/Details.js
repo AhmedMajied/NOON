@@ -1,3 +1,5 @@
+/* Author: Andrew Emad Nassif */
+
 import React from 'react';
 import { NewsArticle } from "./Details-components/NewsArticle"
 import { Links } from "./Details-components/Links"
@@ -5,9 +7,11 @@ import { NewsCard } from "./Details-components/NewsCard"
 import { CommentsContainer } from "./Details-components/CommentsContainer"
 import { NewsSection } from "./Details-components/NewsSection"
 import { Advertisement } from "./Details-components/Advertisement"
+import { ProfilesContainer } from './Details-components/ProfilesContainer';
+
 import "./Details-components/css/details.css"
 import "./shared-libraries/font-awesome-4.min.css"
-import { ProfilesContainer } from './Details-components/ProfilesContainer';
+import "./Details-components/css/scroll.css"
 
 export class Details extends React.Component {
     constructor(props) {

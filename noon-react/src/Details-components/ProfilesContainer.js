@@ -3,7 +3,6 @@
 import React from "react"
 import {Profile} from "./Profile.js"
 import ScrollArea from "react-scrollbar"
-import "./css/scroll.css"
 
 export const ProfilesContainer = (props) => {
     return (
