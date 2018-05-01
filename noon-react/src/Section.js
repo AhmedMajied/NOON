@@ -1,5 +1,6 @@
 import React from 'react';
 import {VideosCarousel} from "./Home-components/Videos-carousel"
+import {Photos} from "./Section-components/Photos"
 
 export class Section extends React.Component
 {
@@ -24,12 +25,13 @@ export class Section extends React.Component
 
         return(
             <div>
+                <Photos/>
                 <VideosCarousel
                     data={this.state.videosCarouselData}
                     videosHeadlineStyle ={videosHeadlineStyle}
                     videosHeadlineTextStyle = {videosHeadlineTextStyle}
                 />
-                {/* call your components here */}
+
             </div>
         );
     }
