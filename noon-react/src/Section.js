@@ -9,6 +9,8 @@ export class Section extends React.Component
     constructor(){
         super();
         this.state = {
+            sportsData: require("./fake/sports.json"),
+            photosData: require("./fake/photos.json"),
             videosCarouselData: require("./fake/videosCarousel.json")
         };
     }
@@ -26,8 +28,12 @@ export class Section extends React.Component
 
         return(
             <div>
-                <Sports/>
-                <Photos/>
+                <Sports
+                    data={this.state.sportsData}
+                />
+                <Photos
+                    data={this.state.photosData}
+                />
                 <VideosCarousel
                     data={this.state.videosCarouselData}
                     videosHeadlineStyle ={videosHeadlineStyle}

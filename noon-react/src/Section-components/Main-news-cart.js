@@ -3,13 +3,13 @@ import './Section.css'
 
 export default class MainNewsCart extends Component {
   render(){
-    let props = this.props;
+    let mainNews = this.props.mainNews;
     return (
       <div id="idiv-news" class="col-lg-6">
-          <img id="iimg-news" src={props.src} alt="Main sports news" />
-          <label class="clbl-time">{props.time}</label>
-          <h5>{props.title}</h5>
-          <p>{props.description}</p>
+          <img id="iimg-news" src={mainNews.src} alt="Main sports news" />
+          <label class="clbl-time">{mainNews.time}</label>
+          <h5>{mainNews.title}</h5>
+          <p>{mainNews.description}</p>
       </div>
     );
   }
