@@ -1,8 +1,5 @@
 import React from 'react';
-import "jquery"
-import "./shared-libraries/bootstrap-3.3.7.min.css";
-import "./shared-libraries/bootstrap-3.3.7.min.js";
-import "./Contact-us-components/css/generalContactUsStyle.css"
+import "./Contact-us-components/css/generalContactUsStyle.css";
 import { CallUs } from './Contact-us-components/CallUs';
 import { Form } from './Contact-us-components/Form';
 import { OurOffices } from './Contact-us-components/OurOffices';

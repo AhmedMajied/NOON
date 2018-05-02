@@ -12,10 +12,10 @@ export const Form =(props)=>
         /**Start The second row in contact us page */
         <div className="row contactus_row2"style={style}>
             {/**Start Image  */}
-            <div id="idiv-img"className="col-xs-6 pull-right"></div>
+            <div id="idiv-img"className="col-6 pull-right"></div>
             {/**End Image  */}
             {/**Start Div Form */}
-            <div id="idiv-form-write-message" className="col-xs-6">
+            <div id="idiv-form-write-message" className="col-6">
                 {/**Start form */}
                 <form action="#" method="post" onSubmit="return false;">
                     <div className="idiv-write-message-info">

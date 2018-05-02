@@ -1,7 +1,5 @@
 import React from 'react';
 
-import "./shared-libraries/bootstrap-3.3.7.min.css";
-import "./shared-libraries/bootstrap-3.3.7.min.js";
 import "./About-us-components/css/generalAboutUsStyle.css";
 import {About} from "./About-us-components/About";
 import {NOON} from "./About-us-components/NOON";

@@ -6,7 +6,7 @@ export const LocationAddress=(props)=>
 {
     return(
         /**Start LocationAddress */
-        <div id="idiv-location-address" className="col-lg-3 col-sm-offset-1 col-lg-offset-0">
+        <div id="idiv-location-address" className="col-lg-3 offset-sm-1 offset-lg-0">
             {/**Start Front Div */}
             <div id="idiv-front-location-address">
                 {/*Title Of locationAddress*/}
