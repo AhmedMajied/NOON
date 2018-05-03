@@ -1,0 +1,13 @@
+{
+    "data":[
+        {"id": "s1", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s2", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s3", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s4", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s5", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s6", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s7", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s8", "logo": "./images/logo.png", "alt": "Nescafe"},
+        {"id": "s9", "logo": "./images/logo.png", "alt": "Nescafe"}
+    ]
+}

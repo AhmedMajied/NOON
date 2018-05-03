@@ -1,5 +1,11 @@
+@viewport {
+    width: device-width;
+}
 
 body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -199,3 +205,23 @@ body{
     opacity: 1;
 }
 /* video carousel component style end */
+
+/* Sponsors list */
+#idiv-sponsors{
+    margin: 2rem 0rem;
+    padding: 0rem 17.708%;
+    width: 100%;
+}
+.cspn-sponsor{
+    display: block;
+    margin: 0.5rem auto;
+}
+.cspn-sponsor img{
+    width: 100%;
+    height: auto;
+}
+
+/* Sponsor logo for extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cspn-sponsor{ width: 33.333%;}
+} 

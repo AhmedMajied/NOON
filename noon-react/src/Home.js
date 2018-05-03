@@ -5,7 +5,8 @@ import "./Home-components/home.css";
 import "./Home-components/home.js";
 
 import {VideosCarousel} from "./Home-components/Videos-carousel";
-import {ImagesCarousel} from "./Home-components/Images-carousel"
+import {ImagesCarousel} from "./Home-components/Images-carousel";
+import SponsorsSection from "./Home-components/Sponsors-section";
 
 export class Home extends React.Component
 {
@@ -13,8 +14,9 @@ export class Home extends React.Component
     constructor(){
         super();
         this.state = {
-            imagesCarouselData: require("./fake/imagesCarousel.json"),
-            videosCarouselData: require("./fake/videosCarousel.json")
+            imagesCarouselData: require("./fake-api/imagesCarousel.json"),
+            videosCarouselData: require("./fake-api/videosCarousel.json"),
+            sponsorsData: require("./fake-api/sponsors.json")
         };
     }
 
@@ -36,6 +38,7 @@ export class Home extends React.Component
                     videosHeadlineStyle ={videosHeadlineStyle}
                     videosHeadlineTextStyle = {videosHeadlineTextStyle}
                 />
+                <SponsorsSection data={this.state.sponsorsData} />
                 {/* call your components here */}
             </div>
         );
