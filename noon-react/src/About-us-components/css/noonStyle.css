@@ -36,6 +36,7 @@
     margin:11.2% 8.62% 15% 12.6%;
     word-wrap: break-word;
     font-family: BahijTheSansArabic Plain;
+    font-size: 14px;
  }
  /*Start Media Query*/
  @media(max-width:402px)
