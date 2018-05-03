@@ -1,4 +1,4 @@
-/**Author : Mariam Ashraf */
+/**Author : Mariam Ashraf Fekry*/
 import React from "react"
 import{withGoogleMap , GoogleMap , Marker} from "react-google-maps"
 export const InitMap = withGoogleMap(props=>{

@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 import React from "react"
 import "./css/visionStyle.css"
 export const Vision =(props)=>

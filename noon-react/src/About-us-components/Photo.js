@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 import React from "react"
 import "./css/photoStyle.css"
 export const Photo =(props)=>

@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 import React from "react"
 import "./css/about-usStyle.css"
 export const About =(props)=>

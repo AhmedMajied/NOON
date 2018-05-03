@@ -1,5 +1,5 @@
+/*author : Mariam Ashraf Fekry */
 import React from 'react';
-
 import "./About-us-components/css/generalAboutUsStyle.css";
 import {About} from "./About-us-components/About";
 import {NOON} from "./About-us-components/NOON";
@@ -44,7 +44,7 @@ export const AboutUs =(props)=>
         }
     }
     return(
-        <div className="container">
+        <div className="container aboutus">
             <div className="row aboutus_row1">                    
                 <About aboutNoon={props.AboutNoon} />
                 <NOON noon={props.noon}/>

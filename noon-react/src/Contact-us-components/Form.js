@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 import React from "react"
 import "./css/formStyle.css"
 import "./js/formValidation"
@@ -19,19 +19,19 @@ export const Form =(props)=>
                 {/**Start form */}
                 <form action="#" method="post" onSubmit="return false;">
                     <div className="idiv-write-message-info">
-                        <div className="cdiv-name">الإسم</div>
                         <span className="cspan-error-name"></span>
+                        <div className="cdiv-name">الإسم</div>
                         <input type="text" className="cinput-name"/>
                     </div>
                     <div className="idiv-write-message-info">
-                        <div className="cdiv-email">البريد الإلكتروني</div>
                         <span className="cspan-error-email"></span>
+                        <div className="cdiv-email">البريد الإلكتروني</div>
                         <input type="email" className="cinput-email"/>
                     </div>
                     <div className="idiv-write-message-info">
+                       <span className="cspan-error-message"></span>
                         <div className="cdiv-message">الرسالة</div>
-                        <span className="cspan-error-message"></span>
-                        <textarea className="ctextarea-message"placeholder="أكتب رسالتك هنا......."></textarea>
+                        <textarea className="ctextarea-message"placeholder=".......أكتب رسالتك هنا"></textarea>
                     </div>
                 
                     <button type="button" className="btn btn-default cbtn-send">إرسال</button>

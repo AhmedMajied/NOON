@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 /*Start  LocationOnMap Style*/
 @font-face
 {
@@ -19,6 +19,7 @@
     background-color: rgb(255, 255, 255);
     border:1px solid rgb(237,237,237);
     z-index: 3;
+    max-width: 100%;
 }
 .cdiv-back{
     width:200px;

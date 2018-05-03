@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 /* Start Country Select Style*/
 
 @font-face
@@ -18,6 +18,7 @@
     margin-top: 30px;
     position: relative;
     font-family: BahijTheSansArabic Plain;
+    max-width: 100%;
 }
 /*Start Media Query*/
 @media(max-width:402px)

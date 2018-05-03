@@ -12,6 +12,8 @@
 {font-family: "Bahij TheSansArabic";
     direction: rtl;
     text-align: justify;
+display:inline-block;
+padding:0;
 }
 
 /*Start About Noon Style*/
@@ -100,7 +102,7 @@
                                           rgb(232, 19, 119) 11.6%,rgb(232, 19, 119) 76.77%,
                                           rgb(255,255,255)76.77%);
     margin-top:4%;
-    margin-right:2%;
+
     float: right;    
 }
 .cdiv-contain-logo

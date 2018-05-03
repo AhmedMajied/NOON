@@ -1,4 +1,4 @@
-/**Author : Mariam Ashraf */
+/**Author : Mariam Ashraf Fekry*/
 import React from "react"
 export const PostAddressInfo =(props)=>
 {

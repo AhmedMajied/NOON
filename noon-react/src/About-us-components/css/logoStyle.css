@@ -1,4 +1,4 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 /*Start Logo Style*/
 .cdiv-behind-logo
 {
@@ -9,7 +9,6 @@
                                           rgb(232, 19, 119) 11.6%,rgb(232, 19, 119) 76.77%,
                                           transparent 76.77%);
     margin-top:4%;
-    margin-right:2%;
     float: right;    
 }
 .cdiv-contain-logo

@@ -1,4 +1,4 @@
-/*Author : Mariam Ashraf*/
+/*Author : Mariam Ashraf Fekry*/
 /*Start Image Style*/
 .aboutus_row1 .cdiv-behind-image
 {
@@ -19,6 +19,7 @@
     border:1px solid rgb(237,237,237);
     border-top:1px solid transparent;
     border-bottom:1px solid transparent;    
+    border-left: none;
     transform: translate(0%,2%);
 }
 

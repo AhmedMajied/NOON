@@ -1,3 +1,4 @@
+/*author: Mariam Ashraf Fekry */
 import React from 'react';
 import "./Contact-us-components/css/generalContactUsStyle.css";
 import { CallUs } from './Contact-us-components/CallUs';
@@ -67,7 +68,7 @@ export const ContactUs =(props)=>
     }
     
     return(
-        <div className="container">
+        <div className="container contactus">
             <div className="row contactus_row1">
                 <CallUs callUs={props.callUs}/>
                 <PostAddress postAddress={props.postAddress}/>

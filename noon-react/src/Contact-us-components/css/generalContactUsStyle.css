@@ -1,9 +1,12 @@
-/* author : Mariam Ashraf */
+/* author : Mariam Ashraf Fekry*/
 /*Start Rows Style For Contact Us Page*/
 @font-face
 {
    font-family:Bahij TheSansArabic Plain;
    src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
+}
+.contactus{
+    padding: 0px;
 }
 .contactus_row1 , .contactus_row2 , .contactus_row3
 {
@@ -11,6 +14,7 @@
     direction: rtl;
     text-align: right;
     margin-top:5%;
+    display: block;
 
 }
 .contactus_row2
@@ -20,10 +24,17 @@
     background-position: 50% 50%;
     background-size: contain;
     border-color: transparent;
+    direction: ltr;
 }
 .contactus_row3 {margin-top:10.5%;margin-bottom: 5%;}
 @media(max-width:879px)
 {
    .contactus_row2{background-size: cover;}
+}
+@media(max-width:575px){
+    .contactus{
+        padding-left:15px;
+        padding-right: 15px;
+    }
 }
 /*End Rows Style For Contact Us Page*/
