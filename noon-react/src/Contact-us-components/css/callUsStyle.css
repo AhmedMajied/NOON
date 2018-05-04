@@ -1,0 +1,29 @@
+/* author : Mariam Ashraf Fekry */
+/* Start Call Us Style*/
+.contactus_row1 .cdiv-about-us
+{
+    width: 39.34%;
+}
+.contactus_row1 .cdiv-about-noon 
+{
+    padding:0px 4px 0px 8px;
+    margin:31.25% 13.95% 26.66% auto;
+}
+.contactus_row1 .cspan-about{
+    display: inline-block;
+}
+/*Start Media Query*/
+@media(max-width:402px)
+{
+    .contactus_row1 .cdiv-about-noon {font-size: 17px;}
+}
+@media(min-width:403px) and (max-width:589px)
+{
+    .contactus_row1 .cdiv-about-noon{font-size: 35px;}
+}
+@media(min-width:590px) and (max-width:767px)
+{
+    .contactus_row1 .cdiv-about-noon {font-size: 40px;}
+}
+/*End Media Query*/
+/* End Call Us Style*/

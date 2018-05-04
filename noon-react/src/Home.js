@@ -6,7 +6,6 @@ import "./Home-components/home.js";
 
 import {VideosCarousel} from "./Home-components/Videos-carousel";
 import {ImagesCarousel} from "./Home-components/Images-carousel"
-
 export class Home extends React.Component
 {
 
