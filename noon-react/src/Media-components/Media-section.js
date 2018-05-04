@@ -5,12 +5,26 @@ class MediaSection extends React.Component{
     constructor(props){
 		super();
 		this.state = {
-			data: props.data,
+			data: props.data
 		};
     }
 
     render() {
         let cards = null;
+        var cardStyle, hoverIconSrc;
+
+        if(this.props.title === "Photos") {
+            hoverIconSrc = "./images/img.png";
+            cardStyle = {
+                'margin': '1.25rem 0rem'
+            };
+        } else {
+            hoverIconSrc = "./images/play.png";
+            cardStyle = {
+                'margin': '1.25rem -0.07rem',
+                'padding': '0rem 0rem'
+            };
+        }
 
         if ( this.state.data ) {
             cards = (
@@ -23,16 +37,17 @@ class MediaSection extends React.Component{
                                 mediaSrc={card.source}
                                 date={date.getDate() + "/" + (date.getMonth()+1) + "/" + 
                                       date.getFullYear()}
-                                hoverIconSrc = {(this.props.title === "Photos") ? 
-                                                "./images/img.png" : "./images/play.png"}
-                                caption={card.captionText} />
+                                hoverIconSrc = {hoverIconSrc}
+                                caption={card.captionText}
+                                cardStyle = {cardStyle}
+                                showScreen={this.props.showScreen} />
                     }
                 )
             );
         }
 
         return (
-            <div className="container-fluid cdiv-component-root">
+            <div className="container-fluid cdiv-component-root" style={this.props.backgroundStyle}>
                 <header className="chdr">
                     <span className="cspn-hdr">
                         <label className="clbl-hdr">{this.props.title}</label>

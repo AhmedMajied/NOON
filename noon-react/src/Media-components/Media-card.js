@@ -1,7 +1,16 @@
 import React from 'react';
 
-class MediaCard extends React.Component {
-    
+class MediaCard extends React.Component {    
+
+    /**
+     * Zooms in the video/photo that is shown on the card by viewing it in a big modal screen
+     */
+    zoomIn = ()  => {
+        var screenMode = this.props.sectionTitle;
+        var viewSource = this.props.mediaSrc;
+        this.props.showScreen(screenMode, viewSource);
+    }
+
     render() {
         var media, metaCaption;
 
@@ -24,7 +33,7 @@ class MediaCard extends React.Component {
         var hoverDiv = (
             <div className="cdiv-show-on-hover">
                 <span className="cspn-show-on-hover">
-                    <figure className="cfgr-show-on-hover">
+                    <figure className="cfgr-show-on-hover" onClick={this.zoomIn}>
                         <img src={this.props.hoverIconSrc} className="img img-responsive cimg-show-on-hover" alt=""/>
                         <figcaption className="cfigcaption-show-on-hover">{metaCaption}</figcaption>
                     </figure>
@@ -33,7 +42,7 @@ class MediaCard extends React.Component {
         );
 
         return (
-            <div className="cdiv-media-card col-lg-3 col-md-4 col-sm-6">
+            <div className="cdiv-media-card col-lg-3 col-md-4 col-sm-6" style={this.props.cardStyle}>
                 <figure className="cfgr-main">
                     <div className="cdiv-media-box">
                         {hoverDiv}
