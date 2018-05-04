@@ -5,11 +5,10 @@ import {NewsCarousel} from "./../Home-components/News-carousel";
 
 export class NewsVideosCarousel extends React.Component{
 
-    constructor(props){
+    constructor(){
         super();
         this.state = {
-            data: props.data,
-            dataItemsLength: props.data.data.length
+            data: require("./../fake/videosCarousel.json")
         };
     }
 
@@ -17,11 +16,11 @@ export class NewsVideosCarousel extends React.Component{
         return(
             <NewsCarousel
                 carouselID={"idiv-news-videos-carousel"}
-                dataItemsLength={this.state.dataItemsLength}
+                dataItemsLength={this.state.data.data.length}
             >
                 {/* videos slides */}
                 {this.state.data.data.map((carouselItem,i) =>
-                    <div className={"carousel-item "+((i===0)?"active":"") } key={i} >
+                    <div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem.ID} >
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-sm-4 cdiv-carousel-item">
 
@@ -44,7 +43,7 @@ export class NewsVideosCarousel extends React.Component{
                                         </div>
                                         <div className="col-sm-12 col-md-3 col-lg-3">
                                             <center>
-                                                <i className="fa fa-play-circle" aria-hidden="true" style={{display:'none'}}></i>
+                                                <i className="fa fa-play-circle" aria-hidden="true" style={{display:'none',fontSize:'73px'}}></i>
                                                 <img src={carouselItem.iconImage} className="cimg-icon" alt="icon"/>
                                             </center>
                                         </div>

@@ -32,7 +32,7 @@ export class Home extends React.Component
 
         return(
             <div>
-                <ImagesCarousel data={this.state.imagesCarouselData} />
+                <ImagesCarousel />
                 <VideosCarousel
                     data={this.state.videosCarouselData}
                     videosHeadlineStyle ={videosHeadlineStyle}

@@ -11,7 +11,6 @@ export class Media extends React.Component
     constructor(){
         super();
         this.state = {
-            videosCarouselData: require("./fake-api/videosCarousel.json"),
             photosData: require("./fake-api/photos.json"),
             videosData: require("./fake-api/videos.json"),
         };
@@ -32,7 +31,8 @@ export class Media extends React.Component
 
         return(
             <div>
-                <NewsVideosCarousel data={this.state.videosCarouselData} />
+                <NewsVideosCarousel />
+
                 {/* Media photos */}
                 <MediaSection title="Photos" data={this.state.photosData} 
                               showScreen={this.showScreen} backgroundStyle={photosBackground} />
@@ -41,6 +41,7 @@ export class Media extends React.Component
                               showScreen={this.showScreen} backgroundStyle={videosBackground} />
                 {/*Sceen is a modal that opens images and videos for better view */}
                 <Screen ref="screen" />
+
                 {/* call your components here */}
             </div>
         );

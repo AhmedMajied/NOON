@@ -5,11 +5,10 @@ import {NewsCarousel} from "./News-carousel"
 
 export class ImagesCarousel extends React.Component{
 
-	constructor(props){
+	constructor(){
 		super();
 		this.state = {
-			data: props.data,
-			dataItemsLength: props.data.data.length
+			data: require("./../fake/imagesCarousel.json")
 		};
 	}
 
@@ -17,11 +16,11 @@ export class ImagesCarousel extends React.Component{
 		return(
 			<NewsCarousel
 				carouselID={"idiv-news-carousel"}
-				dataItemsLength={this.state.dataItemsLength}
+				dataItemsLength={this.state.data.data.length}
 			>
 				{/* images slides */}
 				{this.state.data.data.map((carouselItem,i) =>
-					<div className={"carousel-item "+((i===0)?"active":"") } key={i} >
+					<div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem.ID} >
 						<div className="row">
 							<div className="col-lg-4 col-md-4 col-sm-4 cdiv-carousel-item">
 								<img src={carouselItem.image} alt={carouselItem.captionText} className="img-fluid cimg-carousel-image" />
