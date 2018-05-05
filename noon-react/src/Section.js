@@ -7,7 +7,7 @@ export class Section extends React.Component
     constructor(){
         super();
         this.state = {
-            videosCarouselData: require("./fake/videosCarousel.json")
+            videosCarouselData: require("./fake-api/videosCarousel.json")
         };
     }
 
