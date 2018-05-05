@@ -8,6 +8,8 @@ import {VideosCarousel} from "./Home-components/Videos-carousel";
 import {NewsSection} from "./NewsSection/News-Section";
 import {ImagesCarousel} from "./Home-components/Images-carousel";
 import SponsorsSection from "./Home-components/Sponsors-section";
+import {Sports} from "./Sports-component/Sports";
+import {Photos} from "./Photos-component/Photos";
 
 export class Home extends React.Component
 {
@@ -39,6 +41,7 @@ export class Home extends React.Component
         return(
             <div>
                 <ImagesCarousel />
+                <Sports sportName="Football"/>
                 <NewsSection title = "Profiles"
                              flagBorderStyle = {flagBorderStyle}
                              more = "All Page"
@@ -48,11 +51,15 @@ export class Home extends React.Component
                              withMoreDetails = {false}
                              alignment = "center"
                              descriptionLineCount = {2} />
+                <Sports sportName="Basketball"/>
+                <Photos/>
+                <Sports sportName="Swimming"/>
                 <VideosCarousel
                     data={this.state.videosCarouselData}
                     videosHeadlineStyle ={videosHeadlineStyle}
                     videosHeadlineTextStyle = {videosHeadlineTextStyle}
                 />
+                <Sports sportName="Vollyball"/>
                 <NewsSection title = "Magazines"
                              flagBorderStyle = {flagBorderStyle}
                              more = "All Page"
@@ -62,6 +69,7 @@ export class Home extends React.Component
                              withMoreDetails = {false}
                              alignment = "left"
                              descriptionLineCount = {5} />
+                <Sports sportName="Tennis"/>
                 <NewsSection title = "Opinions"
                              flagBorderStyle = {flagBorderStyle}
                              more = "All Page"
