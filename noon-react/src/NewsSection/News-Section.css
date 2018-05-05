@@ -1,0 +1,43 @@
+@viewport {
+    width: device-width;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Bahij-TheSansArabic-Plain;
+     src: url('./../fonts/bahij-the-sans-arabic-plain.ttf') format('truetype');
+}
+@font-face {
+    font-family: Bahij-TheSansArabic-Bold;
+     src: url('./../fonts/bahij-the-sans-arabic-bold.ttf') format('truetype');
+}
+
+.csection-root {
+    
+    padding-bottom: 4.063rem;
+    width: 100%;
+    background-color: #efefef;
+}
+
+.chdr-section-title {
+    padding-bottom: 100px;
+    height: 4.375rem;
+    font-family: "Bahij-TheSansArabic-Plain";
+}
+
+.cspn-flag {
+    padding: 0rem 0.313rem;
+    height: 100%;
+    width: 3.75rem;
+    color: #ffffff;
+    background-color: #6b478f;
+    font-size: 0.875rem;
+    float: left;
+}
+
+.cspn-more {
+    float: right;
+    margin-top: 56px;
+    margin-right: 20px;
+    color: #6b478f;
+}

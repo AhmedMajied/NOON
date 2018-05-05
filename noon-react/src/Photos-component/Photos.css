@@ -1,0 +1,50 @@
+/* Author: Amr Saeed */
+
+.cdiv-gray-bg{
+  width: 100%;
+  background:#efefef;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-bottom: 45px;
+}
+
+.cdiv-photo-container{
+  width: 5%;
+  height: 150px;
+  background: #6b478f;
+  padding: 0px;
+}
+
+.cimg-photo{
+  object-fit: cover;
+  object-position: left;
+  width: 100%;
+  height: 100%;
+}
+
+.cdiv-photo-text{
+  position: absolute;
+  color: white;
+  top: 50%;
+  margin: 5%;
+  display: none;
+}
+
+.cdiv-photo-title{
+  font-size: 65%;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.cdiv-photo-description{
+  font-size: 85%;
+  font-weight: bold;
+}
+
+.cdiv-photo-container:hover .cdiv-photo-text{
+  display: block;
+}
+
+.cdiv-photo-container:hover .cimg-photo{
+  opacity: 0.4;
+}

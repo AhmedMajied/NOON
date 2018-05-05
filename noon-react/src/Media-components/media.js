@@ -31,5 +31,4 @@ $(document).ready(function(){
         $("#idiv-news-videos-carousel .carousel-item.active .row .cdiv-carousel-item:nth-child(2) video").trigger("pause");
     });
     /* news videos carousel component JS end */
-
 });
