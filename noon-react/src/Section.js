@@ -2,8 +2,8 @@
 
 import React from 'react';
 import {VideosCarousel} from "./Home-components/Videos-carousel"
-import {Photos} from "./Section-components/Photos"
-import {Sports} from "./Section-components/Sports"
+import {Photos} from "./Photos-component/Photos"
+import {Sports} from "./Sports-component/Sports"
 
 export class Section extends React.Component
 {
