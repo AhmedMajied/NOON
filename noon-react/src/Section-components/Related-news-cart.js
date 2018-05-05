@@ -1,3 +1,5 @@
+/* Author: Amr Saeed */
+
 import React, {Component} from 'react';
 import './Section.css'
 

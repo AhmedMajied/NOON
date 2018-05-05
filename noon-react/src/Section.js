@@ -1,3 +1,5 @@
+/* Author: Amr Saeed */
+
 import React from 'react';
 import {VideosCarousel} from "./Home-components/Videos-carousel"
 import {Photos} from "./Section-components/Photos"
@@ -9,8 +11,6 @@ export class Section extends React.Component
     constructor(){
         super();
         this.state = {
-            sportsData: require("./fake/sports.json"),
-            photosData: require("./fake/photos.json"),
             videosCarouselData: require("./fake/videosCarousel.json")
         };
     }
@@ -28,12 +28,8 @@ export class Section extends React.Component
 
         return(
             <div>
-                <Sports
-                    data={this.state.sportsData}
-                />
-                <Photos
-                    data={this.state.photosData}
-                />
+                <Sports sportName="football"/>
+                <Photos/>
                 <VideosCarousel
                     data={this.state.videosCarouselData}
                     videosHeadlineStyle ={videosHeadlineStyle}

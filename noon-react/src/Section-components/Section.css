@@ -24,7 +24,6 @@
   color: white;
   vertical-align: middle;
   line-height: 70px;
-  font-weight: bold;
   font-size: 80%;
 }
 
@@ -119,15 +118,20 @@ body{
     display: table;
     padding: 0rem 0.313rem;
     height: 100%;
-    width: 3.75rem;
+    width: 4.4rem;
     color: #ffffff;
     background-color: #6b478f;
     font-size: 0.875rem;
     float: left;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 #ilbl-sport-name{
     display: table-cell;
     vertical-align: bottom;
+    vertical-align: middle;
+    line-height: 100%;
+    text-align: center;
 }
 #ispn-hdr-right{
     display: table;
