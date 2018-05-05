@@ -101,7 +101,9 @@ form{
     height:328px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-left:0;
+    margin-right:0
 
 }
 .csection-links, .cdiv-news {
@@ -150,7 +152,6 @@ form{
 }
 
 .cdiv-social a {
-    margin-right: 9px;
     color: rgb(204, 204, 204);
     font-size: 14px;
     transition:all 0.2s ease-in-out;
