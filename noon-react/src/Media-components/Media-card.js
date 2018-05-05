@@ -1,3 +1,5 @@
+/* Author: Ahmed Hussein */
+
 import React from 'react';
 
 class MediaCard extends React.Component {    

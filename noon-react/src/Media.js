@@ -34,10 +34,10 @@ export class Media extends React.Component
                 <NewsVideosCarousel />
 
                 {/* Media photos */}
-                <MediaSection title="Photos" data={this.state.photosData} 
+                <MediaSection limit={12} title="Photos" data={this.state.photosData} 
                               showScreen={this.showScreen} backgroundStyle={photosBackground} />
                 {/* Media videos */}
-                <MediaSection title="Videos" data={this.state.videosData} 
+                <MediaSection limit={12} title="Videos" data={this.state.videosData} 
                               showScreen={this.showScreen} backgroundStyle={videosBackground} />
                 {/*Sceen is a modal that opens images and videos for better view */}
                 <Screen ref="screen" />

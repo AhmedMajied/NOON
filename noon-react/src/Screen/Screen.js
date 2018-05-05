@@ -1,3 +1,5 @@
+/* Author: Ahmed Hussein */
+
 import React from 'react';
 import Modal from 'react-responsive-modal';
 import './Screen.css';
