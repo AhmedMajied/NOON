@@ -1,12 +1,13 @@
 /* Author: Andrew Emad Nassif */
 
 import React from "react"
+import {getDurationFromDate} from "./js/time.js"
 
 export const NewsCard = (props) => {
     return (
         <div className="cdiv-news">
             <img className="cimg-news" src={props.news.imageLink} alt="News" />
-            <time className="cnews-time">{props.news.time}</time>
+            <time className="cnews-time">{getDurationFromDate(props.news.time)}</time>
             <div className="cdiv-news-title">{props.news.title}</div>
             <div className="row">
                 <div className="cdiv-social col-xl-6 col-lg-12 col-6">
