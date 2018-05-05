@@ -13,7 +13,6 @@ export class VideosCarousel extends React.Component{
         };
     }
 
-
     render(){
         return(
             <div id="idiv-videos-section">
@@ -39,7 +38,7 @@ export class VideosCarousel extends React.Component{
                     {/* videos slides */}
                     <div className="carousel-inner">
                         {this.state.data.data.map((carouselItem,i) =>
-                            <div className={"carousel-item "+((i===0)?"active":"") } key={i} >
+                            <div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem.ID} >
                                 <div className="row">
                                     <div className="col-3 cdiv-video-carousel-item">
                                         {/* video and its cover */}
