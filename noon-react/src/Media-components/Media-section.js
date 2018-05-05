@@ -1,3 +1,5 @@
+/* Author: Ahmed Hussein */
+
 import React from 'react';
 import MediaCard from './Media-card';
 
@@ -5,8 +7,14 @@ class MediaSection extends React.Component{
     constructor(props){
 		super();
 		this.state = {
-			data: props.data
+            data: props.data,
+            limit: props.limit
 		};
+    }
+
+    showMore = () => {
+        this.setState({limit: this.state.data.data.length});
+        this.refs.btnMore.setAttribute("hidden", "hidden");
     }
 
     render() {
@@ -28,7 +36,7 @@ class MediaSection extends React.Component{
 
         if ( this.state.data ) {
             cards = (
-                this.state.data.data.slice(0, 12).map(
+                this.state.data.data.slice(0, this.state.limit).map(
                     (card, index) => {
                         var date = new Date(card.publishTime);
                         return <MediaCard 
@@ -63,7 +71,7 @@ class MediaSection extends React.Component{
                 </div>
 
                 <footer className="container-fluid cftr">
-                    <button className="cbtn-more">More</button>
+                    <button ref="btnMore" className="cbtn-more" onClick={this.showMore}>More</button>
                 </footer>
             </div>
         );
