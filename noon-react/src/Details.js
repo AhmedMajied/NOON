@@ -4,18 +4,32 @@ import React from 'react';
 import { NewsArticle } from "./Details-components/NewsArticle"
 import { Links } from "./Details-components/Links"
 import { MoreNews } from "./Details-components/MoreNews"
-import { CommentsContainer } from "./Details-components/CommentsContainer"
-import { NewsSection } from "./Details-components/NewsSection"
+import { CommentsSection } from "./Details-components/CommentsSection"
+import { NewsSection } from "./NewsSection/News-Section"
 import { Advertisement } from "./Details-components/Advertisement"
-import { ProfilesContainer } from './Details-components/ProfilesContainer';
+import { ProfilesSection } from './Details-components/ProfilesSection';
 import "./Details-components/css/details.css"
 import "./Details-components/css/scroll.css"
 
 export const Details = (props) => {
-    var news = require("./fake/news.json");
+    var news = require("./fake-api/news.json");
     news.id = props.newsId;
     news.links.site = window.location.href;
-
+    var relatedTopicsFlagStyle= {
+        borderBottomLeftRadius: "50%",
+        borderBottomRightRadius: "50%",
+        backgroundColor: "#6b478f",
+        width: "85px",
+        height: "81px",
+        padding: "20px",
+        paddingTop: "34px",
+        fontSize: "14px",
+        fontFamily: "Bahij TheSansArabic",
+        lineHeight:"1.2",
+        textAlign: "center",
+        float: "left"
+        
+    }
     return (
         <div>
             <main id="imain-container" className="container">
@@ -30,16 +44,16 @@ export const Details = (props) => {
                                 <MoreNews />
                             </div>
                         </div>
-                        <CommentsContainer comments={news.comments} />
+                        <CommentsSection comments={news.comments} />
                     </div>
                     <aside className="col-lg-3 col-sm-5 col-12">
                         <Advertisement />
-                        <ProfilesContainer />
+                        <ProfilesSection />
                     </aside>
                 </div>
             </main>
             {/* News Section Here ! */}
-            
+            <NewsSection flagBorderStyle={relatedTopicsFlagStyle} newsSrc="moreNews" withPublishTimes={true} withSocialLinks={true} title="Related Topics" withMoreDetails={true}/>
         </div>
     );
 }

@@ -4,7 +4,7 @@ import React from "react"
 import { Comment } from "./Comment"
 import ScrollArea from "react-scrollbar"
 
-export class CommentsContainer extends React.Component {
+export class CommentsSection extends React.Component {
     constructor(props) {
         super();
         this.state = {

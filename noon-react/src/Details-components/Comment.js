@@ -1,7 +1,7 @@
 /* Author: Andrew Emad Nassif */
 
 import React from "react"
-import { RepliesContainer } from "./RepliesContainer"
+import { RepliesSection } from "./RepliesSection"
 
 export class Comment extends React.Component {
     constructor(props) {
@@ -47,7 +47,7 @@ export class Comment extends React.Component {
                             <input className="form-control cinp-write-reply" name="reply" placeholder="Write a reply..." type="text"/>
                         </form>
                     </div>
-                    {this.state.comment.replies.length > 0 && <RepliesContainer replies={this.state.comment.replies} />}
+                    {this.state.comment.replies.length > 0 && <RepliesSection replies={this.state.comment.replies} />}
                 </div>
             </div>
         );
