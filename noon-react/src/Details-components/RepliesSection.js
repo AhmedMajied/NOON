@@ -3,7 +3,7 @@
 import React from "react"
 import {Comment} from "./Comment"
 
-export class RepliesContainer extends React.Component {
+export class RepliesSection extends React.Component {
     constructor(props) {
         super();
         this.state = {
