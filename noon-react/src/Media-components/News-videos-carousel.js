@@ -8,7 +8,7 @@ export class NewsVideosCarousel extends React.Component{
     constructor(){
         super();
         this.state = {
-            data: require("./../fake/videosCarousel.json")
+            data: require("./../fake-api/videosCarousel.json")
         };
     }
 

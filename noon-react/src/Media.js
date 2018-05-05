@@ -41,8 +41,6 @@ export class Media extends React.Component
                               showScreen={this.showScreen} backgroundStyle={videosBackground} />
                 {/*Sceen is a modal that opens images and videos for better view */}
                 <Screen ref="screen" />
-
-                {/* call your components here */}
             </div>
         );
     }

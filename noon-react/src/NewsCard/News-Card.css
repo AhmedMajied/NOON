@@ -1,0 +1,78 @@
+/* Author: Andrew Emad Nassif */
+
+/* Fonts */
+@font-face {
+    font-family: Bahij-TheSansArabic-Plain;
+     src: url('./../fonts/bahij-the-sans-arabic-plain.ttf') format('truetype');
+}
+@font-face {
+    font-family: Bahij-TheSansArabic-Bold;
+     src: url('./../fonts/bahij-the-sans-arabic-bold.ttf') format('truetype');
+}
+
+/* Component style */
+
+/* Component body */
+a:hover {
+    text-decoration: none;
+}
+time {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    font-size: 12px;
+    font-family: Bahij-TheSansArabic-Plain;
+    color: #cccccc;
+    line-height: 1.2rem;
+    display:block;
+    margin-bottom: 14px;
+}
+.cdiv-card-root{
+    padding: 0rem;
+}
+.cdiv-news{
+    border: 1px solid #f0f0f0;
+    padding: 1rem;
+    margin: 0.5rem 0.25rem;
+    background-color: #ffffff;
+}
+h5 {
+    display: block;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.2rem;
+    max-height: 2.4rem;
+    font-size: 18px;
+    font-family: Bahij-TheSansArabic-Bold;
+    color: #6b478f;
+    margin-bottom: 0.938rem;
+}
+.cimg-news {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+p {
+    display: block;
+    overflow: hidden;
+    word-wrap: break-word;
+    line-height: 1.25rem;
+    font-size: 14px;
+    font-family: Bahij-TheSansArabic-Plain;
+    color: #cccccc;
+}
+.cdiv-social {
+    display: inline-block
+}
+.fa {
+    margin-right: 10px;
+    color: #cccccc;
+    font-size: 14px;
+}
+.fa:hover {
+    color: #6b478f;
+}
+.cdiv-news:last-child {
+    margin-bottom: 0
+}
+
+/* Author: Andrew Emad Nassif */

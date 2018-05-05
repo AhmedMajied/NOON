@@ -8,7 +8,7 @@ export class ImagesCarousel extends React.Component{
 	constructor(){
 		super();
 		this.state = {
-			data: require("./../fake/imagesCarousel.json")
+			data: require("./../fake-api/imagesCarousel.json")
 		};
 	}
 
