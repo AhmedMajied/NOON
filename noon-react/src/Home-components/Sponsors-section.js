@@ -1,3 +1,5 @@
+/* Author: Ahmed Hussein */
+
 import React from 'react';
 import Sponsor from './Sponsor';
 

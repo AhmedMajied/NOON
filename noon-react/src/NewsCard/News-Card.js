@@ -1,4 +1,4 @@
-/* Author: Ahmed Hussein Karam */
+/* Author: Ahmed Hussein */
 
 import React from "react"
 
