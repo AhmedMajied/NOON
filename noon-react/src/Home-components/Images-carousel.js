@@ -35,6 +35,6 @@ export class ImagesCarousel extends React.Component{
 					</div>
 				)}
 		    </NewsCarousel>
-		);		
+		);
 	}
 }

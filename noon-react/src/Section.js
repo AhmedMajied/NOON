@@ -1,5 +1,9 @@
+/* Author: Amr Saeed */
+
 import React from 'react';
 import {VideosCarousel} from "./Home-components/Videos-carousel"
+import {Photos} from "./Photos-component/Photos"
+import {Sports} from "./Sports-component/Sports"
 
 export class Section extends React.Component
 {
@@ -24,12 +28,13 @@ export class Section extends React.Component
 
         return(
             <div>
+                <Sports sportName="football"/>
+                <Photos/>
                 <VideosCarousel
                     data={this.state.videosCarouselData}
                     videosHeadlineStyle ={videosHeadlineStyle}
                     videosHeadlineTextStyle = {videosHeadlineTextStyle}
                 />
-                {/* call your components here */}
             </div>
         );
     }
