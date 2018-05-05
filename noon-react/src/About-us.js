@@ -24,7 +24,7 @@ export const AboutUs =(props)=>
             image:'./images/Gathering.png'
         },
         logo:{
-            image:'./images/logo.png'
+            image:'./images/noonLogo.png'
         },
         vision:{
             title:'رؤيتنا',
