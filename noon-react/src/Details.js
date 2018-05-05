@@ -9,7 +9,6 @@ import { NewsSection } from "./Details-components/NewsSection"
 import { Advertisement } from "./Details-components/Advertisement"
 import { ProfilesContainer } from './Details-components/ProfilesContainer';
 import "./Details-components/css/details.css"
-import "./shared-libraries/font-awesome-4.min.css"
 import "./Details-components/css/scroll.css"
 
 export const Details = (props) => {
