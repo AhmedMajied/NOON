@@ -1,0 +1,48 @@
+/* Author : Mariam Ashraf Fekry*/
+ /*Start General Style of Page About Us*/
+@font-face{
+    font-family:BahijTheSansArabic Plain;
+    src:url('../../fonts/bahij-the-sans-arabic-plain.ttf');
+ }
+ .aboutus{
+    padding:0px;
+ }
+.aboutus_row1 , .aboutus_row2 , .aboutus_row3
+ {
+    font-family:BahijTheSansArabic Plain;
+    direction: rtl;
+    text-align: justify;
+    margin-top:20px;
+    display: inline-block;
+}
+.aboutus_row2
+ {
+    margin-top:10.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:366px;
+
+ }
+.aboutus_row3 {margin-top:10%;}
+ 
+ /*Start Media Query*/
+ @media(max-width:589px)
+ {
+    .aboutus_row2 {
+         height: 227px;
+    }
+ }
+ @media(min-width:403px) and (max-width:589px){
+    .aboutus_row2 {
+        margin-right: 0%;
+        margin-left: 0%;
+   }
+ }
+ @media(max-width:575px){
+     .aboutus{
+         padding-left:15px;
+         padding-right: 15px;
+     }
+ }
+ /*End Media Query*/
+ /*End General Style of Page About Us*/

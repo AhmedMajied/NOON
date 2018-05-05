@@ -1,0 +1,45 @@
+/* author : Mariam Ashraf Fekry*/
+/* Start Country Select Style*/
+
+@font-face
+{
+    font-family: BahijTheSansArabic Plain;
+    src:url('../../fonts/bahij-the-sans-arabic-plain.ttf'); 
+}
+.cdiv-country {float: left;margin-top:4%;}
+.cselect-country
+{
+    width:100%;
+    border: none;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(237,237,237);
+    color: rgb(107, 71, 143);
+    margin-top: 30px;
+    position: relative;
+    font-family: BahijTheSansArabic Plain;
+    max-width: 100%;
+}
+/*Start Media Query*/
+@media(max-width:402px)
+{
+    .cselect-country{    width: 80px;font-size: 6px;margin-top: 15px;}
+}
+@media(min-width:403px) and (max-width:617px)
+{
+    .cselect-country{margin-top: 20px;font-size: 10px;}
+}
+@media(min-width:618px) and (max-width:710px)
+{
+    .cselect-country{margin-top: 15px;font-size: 12px;}
+}
+@media(min-width:711px) and (max-width:767px)
+{
+    .cselect-country{margin-top: 8px;font-size: 12px;}
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .cselect-country{margin-top: 80px;}
+}
+/*End Media Query*/
+/* End Country Select Style*/

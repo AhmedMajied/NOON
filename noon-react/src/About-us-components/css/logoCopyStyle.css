@@ -1,0 +1,16 @@
+/* author : Mariam Ashraf Fekry*/
+/*Start White Logo Style*/
+.aboutus_row3 .cdiv-contain-logo
+{
+    background-color: rgb(232, 19, 119);
+    transform: translate(-2%,-3%);
+    border-bottom:1px transparent;
+    border-right:1px transparent;
+}
+.aboutus_row3 .cdiv-behind-logo
+{
+    margin-top: -3%;
+    margin-right: 17%;
+    background: linear-gradient(to top,rgb(107, 71, 143)0%,rgb(107, 71, 143)9%,transparent 9%);
+}
+/*End White Logo Style*/
