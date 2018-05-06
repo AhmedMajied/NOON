@@ -6,10 +6,10 @@ import {Carousel} from "./Carousel";
 
 export class VideosCarousel extends React.Component{
 
-    constructor(props){
+    constructor(){
         super();
         this.state = {
-            data: props.data
+            data: require("./../fake-api/videosCarousel.json")
         };
     }
 
@@ -21,8 +21,8 @@ export class VideosCarousel extends React.Component{
                 <div id="idiv-videos-header">
                     <div className="row">
                         <div className="col-6">
-                            <div id="idiv-videos-headline" style={this.props.videosHeadlineStyle}>
-                                <span id="ispan-videos-headline" style={this.props.videosHeadlineTextStyle}>Videos</span>
+                            <div id="idiv-videos-headline" >
+                                <span id="ispan-videos-headline">Videos</span>
                             </div>
                         </div>
                         <div className="col-6">
@@ -53,14 +53,14 @@ export class VideosCarousel extends React.Component{
                                             <div className="cdiv-video-title">{carouselItem.title}</div>
 
                                             <div className="row">
-                                                <div className="col-sm-12 col-md-9 col-lg-9">
+                                                <div className="col-sm-6 col-md-6 col-lg-9">
                                                     <div className="cdiv-video-caption-text">
                                                         {carouselItem.captionText}
                                                     </div>
                                                 </div>
-                                                <div className="col-sm-12 col-md-3 col-lg-3">
+                                                <div className="col-sm-6 col-md-6 col-lg-3">
                                                     <center>
-                                                        <i className="fa fa-play-circle" aria-hidden="true"></i>
+                                                        <i className="fa fa-play-circle cplay-btn" aria-hidden="true" style={{"fontSize": "49px"}}></i>
                                                     </center>
                                                 </div>
                                             </div>
@@ -74,10 +74,10 @@ export class VideosCarousel extends React.Component{
 
                     {/* left and right controls */}
                     <a className="carousel-control-prev" href="#idiv-videos-carousel" data-slide="prev" id="ilink-video-left-control">
-                        <i className="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                        <i className="fa fa-chevron-circle-left c-video-carousel-control" aria-hidden="true"></i>
                     </a>
                     <a className="carousel-control-next" href="#idiv-videos-carousel" data-slide="next" id="ilink-video-right-control">
-                        <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <i className="fa fa-chevron-circle-right c-video-carousel-control" aria-hidden="true" ></i>
                     </a>
                 </Carousel>
             </div>
