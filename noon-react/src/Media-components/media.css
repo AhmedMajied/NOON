@@ -15,10 +15,7 @@ body{
 }
 
 /* news videos carousel component style start */
-.cimg-icon{
-    width: 68px;
-    height: 68px;
-}
+
 
 /* carousel middle item style (when active) */
 .carousel .carousel-inner .carousel-item.active .row div:nth-child(2) .cdiv-carousel-item-caption .cimg-icon{

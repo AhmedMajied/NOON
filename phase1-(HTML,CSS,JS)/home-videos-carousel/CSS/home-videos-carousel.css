@@ -54,15 +54,17 @@ body{
     margin-bottom: 3%;
 }
 #idiv-label{
-    position: relative;
+    display: table;
     height: 100%;
+    text-align: center;
     background-color: rgb(107, 71, 143);
-    padding-left: 7px;
     width: 70px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 #ilbl-label{
-    position: absolute;
-    bottom: 0;
+    display: table-cell;
+    vertical-align: middle;
     color: #ffffff;
 }
 #idiv-videos-all-page{

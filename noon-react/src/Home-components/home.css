@@ -65,7 +65,7 @@ body{
 
 /* carousel item style */
 .cdiv-carousel-item{
-    height: 69.2vh;
+    height: 647px;
     padding: 0;
 }
 .cimg-carousel-image{
@@ -74,15 +74,16 @@ body{
 }
 .cdiv-carousel-item-caption{
     position: absolute;
+    height: 162px;
+    width: 100%;
     bottom:0;
     background-color: rgba(255, 255, 255,0.902);
     font-family: Bahij-TheSansArabic-Plain;
     line-height: 1.2;
-    padding-left: 7.7%;
-    padding-right: 3%;
-    padding-top: 6%;
-    padding-bottom: 5.9%;
-    width: 100%;
+    padding-left: 7.5%;
+    padding-top: 39px;
+    padding-bottom: 40px;
+    overflow: hidden;
 }
 .cdiv-carousel-item-caption .cspan-published-time{
     font-size: 12px;
@@ -91,7 +92,6 @@ body{
 .cdiv-carousel-item-caption .cdiv-text{
     font-size: 22px;
     color: #6b478f;
-    margin-top: 3%;
 }
 
 /* carousel middle item style (when active) */
@@ -124,17 +124,22 @@ body{
 }
 #idiv-videos-headline{
     display: table;
-    height: 8.2vh;
+    height: 75px;
+    width: 82px;
     background-color: rgb(107, 71, 143);
+    text-align: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 #ispan-videos-headline{
     display: table-cell;
     color: #ffffff;
+    vertical-align: middle;
 }
 #idiv-videos-allpage{
     float: right;
     display: table;
-    height: 8.2vh;
+    height: 75px;
 }
 #ilink-videos-allpage{
     display: table-cell;
@@ -143,19 +148,19 @@ body{
 }
 
 /* carousel control style */
-.carousel-control-next, .carousel-control-prev{
+.c-video-carousel-control{
     background-image: none !important;
     color: rgb(107, 71, 143) !important;
-    font-size: 25px;
+    font-size: 34px !important;
 }
-.carousel-control:hover, .carousel-control-next:hover{
+.c-video-carousel-control:hover{
     color: rgb(107, 71, 143) !important;
     opacity: 1 !important;
 }
 
 /* carousel video item style */
 .cdiv-video-carousel-item{
-    height: 44vh;
+    height: 409px;
     padding: 0;
 }
 .cimg-video-cover{
@@ -167,18 +172,20 @@ body{
     position: absolute;
     bottom:0;
     width: 100%;
+    height: 120px;
     background-color: rgba(107, 71, 143,0.902);
-    padding-left: 4.9%;
-    padding-top: 4.9%;
-    padding-bottom: 4.4%;
+    padding-left: 5%;
+    padding-top: 22px;
+    padding-bottom: 18px;
     color: white;
     line-height: 1.2;
     display: none;
+    overflow: hidden;
 }
 .cdiv-video-title{
     font-size: 12px;
     font-family: Bahij-TheSansArabic-ExtraLight;
-    margin-bottom: 5.6%;
+    margin-bottom: 23px;
 }
 .cdiv-video-caption-text{
     font-size: 18px;
@@ -192,9 +199,8 @@ body{
     display: none;
 }
 .fa-play-circle{
-    font-size: 49px;
-    color: white;
-    cursor: pointer;
+    color: white !important;
+    cursor: pointer !important;
 }
 
 /* carousel middle video item style (when active) */

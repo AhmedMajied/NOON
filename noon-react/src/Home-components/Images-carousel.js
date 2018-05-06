@@ -24,9 +24,9 @@ export class ImagesCarousel extends React.Component{
 						<div className="row">
 							<div className="col-lg-4 col-md-4 col-sm-4 cdiv-carousel-item">
 								<img src={carouselItem.image} alt={carouselItem.captionText} className="img-fluid cimg-carousel-image" />
-								<div className="cdiv-carousel-item-caption">
+								<div className="cdiv-carousel-item-caption" style={{"paddingRight":"7.5%"}}>
 									<span className="cspan-published-time">{carouselItem.publishTime}</span>
-									<div className="cdiv-text">
+									<div className="cdiv-text" style={{"marginTop":"26px"}}>
 										{carouselItem.captionText}
 									</div>
 								</div>

@@ -32,18 +32,18 @@ export class NewsVideosCarousel extends React.Component{
                                 </video>
 
                                 {/* video caption */}
-                                <div className="cdiv-carousel-item-caption">
+                                <div className="cdiv-carousel-item-caption" style={{"paddingRight":"3.1%"}}>
                                     <div className="cspan-published-time">{carouselItem.publishTime}</div>
 
                                     <div className="row">
-                                        <div className="col-sm-12 col-md-9 col-lg-9">
-                                            <div className="cdiv-text">
+                                        <div className="col-sm-6 col-md-6 col-lg-9">
+                                            <div className="cdiv-text" style={{"marginTop":"21px"}}>
                                                 {carouselItem.captionText}
                                             </div>
                                         </div>
-                                        <div className="col-sm-12 col-md-3 col-lg-3">
+                                        <div className="col-sm-6 col-md-6 col-lg-3">
                                             <center>
-                                                <i className="fa fa-play-circle" aria-hidden="true" style={{display:'none',fontSize:'73px'}}></i>
+                                                <i className="fa fa-play-circle" aria-hidden="true" style={{display:'none',fontSize:'81px'}}></i>
                                                 <img src={carouselItem.iconImage} className="cimg-icon" alt="icon"/>
                                             </center>
                                         </div>

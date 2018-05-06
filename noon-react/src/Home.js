@@ -17,21 +17,11 @@ export class Home extends React.Component
     constructor(){
         super();
         this.state = {
-            imagesCarouselData: require("./fake-api/imagesCarousel.json"),
-            videosCarouselData: require("./fake-api/videosCarousel.json"),
             sponsorsData: require("./fake-api/sponsors.json")
         };
     }
 
     render(){
-        var videosHeadlineStyle = {
-            width: '75px',
-            paddingLeft: '7px',
-            paddingBottom: '5px'
-        };
-        var videosHeadlineTextStyle = {
-            verticalAlign: 'bottom'
-        };
 
         var flagBorderStyle = {
             borderBottomLeftRadius: '50%',
@@ -54,11 +44,7 @@ export class Home extends React.Component
                 <Sports sportName="Basketball"/>
                 <Photos/>
                 <Sports sportName="Swimming"/>
-                <VideosCarousel
-                    data={this.state.videosCarouselData}
-                    videosHeadlineStyle ={videosHeadlineStyle}
-                    videosHeadlineTextStyle = {videosHeadlineTextStyle}
-                />
+                <VideosCarousel />
                 <Sports sportName="Vollyball"/>
                 <NewsSection title = "Magazines"
                              flagBorderStyle = {flagBorderStyle}
