@@ -1,0 +1,4 @@
+1- go to Mongo folder => bin => then open terminal
+2- write command " sudo mkdir -p /data/db " // this step is performed only ONCE
+3- write command " sudo chown -R $USER:$USER /data " // this step is performed only ONCE
+4- write command " ./mongod "s
