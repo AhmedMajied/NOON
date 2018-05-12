@@ -1,0 +1,24 @@
+/* author : Mariam Ashraf Fekry */
+.displayMedia{
+    margin-right: 5px;
+    margin-top: 15px;
+    display: inline-block;
+    width:400px;
+}
+.cimage{
+    width: 200px;
+    height: 200px;
+}
+.fieldset{
+    width: 100%;
+    background:#FFF;
+    border:1px solid#CCC;
+    padding :20px;  
+    margin-bottom:20px;
+}
+.legendTitle{
+ background:#FFF;
+ border:1px solid#CCC ; 
+ padding:10px;
+ text-align: center;
+}

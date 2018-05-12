@@ -1,8 +1,30 @@
+#addImageModal{
+  direction: ltr;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
-a {
-  color: #00B7FF;
+.navbar{
+  background-color: rgba(0,0,0,0.6); 
+  font-size: 16px;
+}
+.navbar-image{
+  width: 100px;
+}
+.nav-item{
+  margin-left: 25px;
+}
+.btn{
+  background-color: transparent;
+  color: white;
+}
+.dropdown-menu{
+  background-color: #343a40 !important;
+  text-align: center;
+}
+.button{
+  border: transparent;
+  width: 100%;
+  font-size: 15px;
 }

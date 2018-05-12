@@ -1,0 +1,33 @@
+<!-- author : Mariam Ashraf Fekry -->
+<html>
+    <head>
+        <title> <%=title%> </title>
+        <meta charset="utf-8" />
+        <script src="/shared-libraries/jquery-3.2.1.min.js"></script>
+        <script src="/shared-libraries/bootstrap-4.0.0.min.js"></script>
+        <link rel="stylesheet" href="/shared-libraries/bootstrap-4.0.0.min.css"/>
+        <link rel="stylesheet" href="/stylesheets/displayMediaPhotoStyle.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <% for(media of mediaPhotos){ %>
+                <div class="row displayMedia col-lg-4">
+                    <form  action="deleteMediaPhoto" method="POST" name="register">
+                        <fieldset class="fieldset">
+                            <legend class="legendtitle"><%= media.captionText%></legend>
+                            <center>
+                                <img class="cimage" src='<%=media.source%>'/>
+                                <figcaption><%= media.publishTime%></figcaption>
+                            </center>
+                            <br>
+                            <center>
+                                <input type="hidden" name="mediaId" value='<%=media._id%>' />
+                                <input class="btn btn-danger"type="submit" value="Delete" />
+                            </center>
+                        </fieldset>
+                    </form>
+                </div>
+            <%}%>
+        </div>
+    </body>
+</html>

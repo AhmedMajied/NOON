@@ -1,0 +1,31 @@
+<!--author : Mariam Ashraf Fekry-->
+<html>
+<head>
+    <title> <%=title%> </title>
+    <meta charset="utf-8" />
+    <script src="/shared-libraries/jquery-3.2.1.min.js"></script>
+    <script src="/shared-libraries/bootstrap-4.0.0.min.js"></script>
+    <link rel="stylesheet" href="/shared-libraries/bootstrap-4.0.0.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/addMediaPhotoStyle.css"/>
+</head>
+<body>
+   <div class="container">
+       <div class="row addPhoto">
+            <h1 class="chead">Add MediaPhoto</h1>
+            <form  action="addMediaPhoto" method="POST" enctype="multipart/form-data">
+                <br>
+                <label for ="title">Title</label>
+                <input type="text" name="photoTitle"/>
+                <br><br>
+                <label for="meeting">Date</label>
+                <input name="date" type="date"/> 
+                <br><br>
+                <label for ="image">MediaPhoto</label>
+                <input class="uploadImage" type="file" name="uploadPhoto"/>
+                <br><br>
+                <input id="addButton" type="submit" value="Add"/>
+            </form>
+       </div>
+    </div>
+</body>
+</html>
