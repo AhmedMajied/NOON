@@ -20,7 +20,7 @@ class App extends React.Component
     render(){
         return(
             <div>
-                <Header title="Live Stream"/>
+                <Header />
 
                 <Router>
                     <Switch>
