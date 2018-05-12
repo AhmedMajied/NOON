@@ -12,21 +12,20 @@ var storage=multer.diskStorage({
     }
 })
 var upload=multer({storage:storage});
-/* GET posts listing. */
 
-router.get("/addMediaPhoto", (req, res) => {
-mediaController.addMediaPhotoForm(req, res);
+router.get("/addPhoto", (req, res) => {
+mediaController.addPhotoForm(req, res);
 });
-router.post("/addMediaPhoto",upload.single('uploadPhoto'), (req, res) => {
-    mediaController.addMediaPhoto(req, res);
-    res.redirect("/media/displayMediaPhotos");
+router.post("/addPhoto",upload.single('uploadPhoto'), (req, res) => {
+    mediaController.addPhoto(req, res);
+    res.redirect("/media/displayPhotos");
 });
 
-router.all("/displayMediaPhotos", (req, res) => {
-    mediaController.getMediaPhotos(req, res);
+router.all("/displayPhotos", (req, res) => {
+    mediaController.getPhotos(req, res);
 });
-router.post("/deleteMediaPhoto",(req,res)=>{
+router.post("/deletePhoto",(req,res)=>{
     mediaController.deletePhoto(req,res);
-    res.redirect("/media/displayMediaPhotos");
+    res.redirect("/media/displayPhotos");
 });
 module.exports = router;

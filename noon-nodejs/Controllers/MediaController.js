@@ -2,27 +2,26 @@
 var mediaDBModel=require('./../DBModels/MediaDBModel');
 function MediaController(){
 }
-MediaController.prototype.addMediaPhotoForm=(req,res)=>{
+MediaController.prototype.addPhotoForm=(req,res)=>{
     res.render("addMediaPhoto.ejs",{
         message:null,
-        title:"Add MediaPhoto"
+        title:"Add Photo"
     });
 }
-MediaController.prototype.addMediaPhoto=(req,res)=>{
+MediaController.prototype.addPhoto=(req,res)=>{
     var path=(req.file.path).replace("public","./..");
     var newPhoto = mediaDBModel.Photo({
         captionText:req.body.photoTitle,
         source:path,
-        publishTime:req.body.date
     });
     mediaDBModel.insertPhoto(newPhoto);
 }
-MediaController.prototype.getMediaPhotos=(req,res)=>{
+MediaController.prototype.getPhotos=(req,res)=>{
     mediaDBModel.getPhotos(
         function(photos){
             res.render("displayMediaPhotos.ejs",{
                 message:null,
-                title:"All MediaPhotos",
+                title:"All Photos",
                 mediaPhotos:photos
             });
     });
