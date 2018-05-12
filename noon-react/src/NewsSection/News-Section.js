@@ -15,8 +15,9 @@ export class NewsSection extends React.Component {
     }
 
     render() {
+        let newsId = this.props.id;
         return (
-            <section className="container-fluid csection-root">
+            <section id={newsId} className="container-fluid csection-root">
                 <div className="container">
                     <header className="chdr-section-title">
                         <span className="cspn-flag" style={this.props.flagBorderStyle}>
@@ -27,7 +28,7 @@ export class NewsSection extends React.Component {
                         </span>
                     </header>
 
-                    <div id="idiv-opinion-nav" className="row">
+                    <div className="row">
                         {
                             this.state.news.data.slice(0, 4).map((news) => (
                                 <div key={news.id} className="col-lg-3 col-md-6 col-12">

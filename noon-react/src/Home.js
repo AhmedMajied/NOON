@@ -31,8 +31,8 @@ export class Home extends React.Component
         return(
             <div>
                 <ImagesCarousel />
-                <Sports sportName="Football"/>
-                <NewsSection title = "Profiles"
+                <Sports id="idiv-football-nav" sportName="Football"/>
+                <NewsSection id="idiv-profile-nav" title = "Profiles"
                              flagBorderStyle = {flagBorderStyle}
                              more = "All Page"
                              newsSrc = "profiles.json"
@@ -41,12 +41,12 @@ export class Home extends React.Component
                              withMoreDetails = {false}
                              alignment = "center"
                              descriptionLineCount = {2} />
-                <Sports sportName="Basketball"/>
+                <Sports id="idiv-basketball-nav" sportName="Basketball"/>
                 <Photos/>
-                <Sports sportName="Swimming"/>
+                <Sports id="idiv-swimming-nav" sportName="Swimming"/>
                 <VideosCarousel />
-                <Sports sportName="Vollyball"/>
-                <NewsSection title = "Magazines"
+                <Sports id="idiv-vollyball-nav" sportName="Vollyball"/>
+                <NewsSection id="idiv-magazine-nav" title = "Magazines"
                              flagBorderStyle = {flagBorderStyle}
                              more = "All Page"
                              newsSrc = "magazines.json"
@@ -55,8 +55,8 @@ export class Home extends React.Component
                              withMoreDetails = {false}
                              alignment = "left"
                              descriptionLineCount = {5} />
-                <Sports sportName="Tennis"/>
-                <NewsSection title = "Opinions"
+                <Sports id="idiv-tennis-nav" sportName="Tennis"/>
+                <NewsSection id="idiv-opinion-nav" title = "Opinions"
                              flagBorderStyle = {flagBorderStyle}
                              more = "All Page"
                              newsSrc = "opinions.json"

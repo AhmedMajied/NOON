@@ -9,8 +9,8 @@ export class DownHeader extends Component {
             categories:[
                 {title:"Sports", categories:[
                     {title:"Football",action:"#",sub:true},
-                    {title:"Basketball",action:"/#idiv-bdy",sub:false},
-                    {title:"Swmming",action:"/#idiv-bdy",sub:false},
+                    {title:"Basketball",action:"/#idiv-basketball-nav",sub:false},
+                    {title:"Swimming",action:"/#idiv-swimming-nav",sub:false},
                 ]},
                 {title:"opinion",categories:[
                     {title:"user",action:"/#idiv-opinion-nav",sub:false}
@@ -22,7 +22,7 @@ export class DownHeader extends Component {
                     {title:"Animation",action:"/#idiv-videos-section",sub:false}
                 ]},
                 {title:"Magazine",categories:[
-                    {title:"Manga",action:"/#idiv-opinion-nav",sub:false}
+                    {title:"Manga",action:"/#idiv-magazine-nav",sub:false}
                 ]},
             ]
         }
