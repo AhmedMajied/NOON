@@ -20,7 +20,7 @@ export class Photos extends Component{
     });
 
     return (
-      <div className="cdiv-gray-bg">
+      <div id="idiv-photo-nav" className="cdiv-gray-bg">
         <Header title="Photos" navTitle="All Page" type="circle"/>
         <div className="container-fluid">
           <div className="row">

@@ -15,8 +15,9 @@ export class NewsSection extends React.Component {
     }
 
     render() {
+        let newsId = this.props.id;
         return (
-            <section className="container-fluid csection-root">
+            <section id={newsId} className="container-fluid csection-root">
                 <div className="container">
                     <header className="chdr-section-title">
                         <span className="cspn-flag" style={this.props.flagBorderStyle}>

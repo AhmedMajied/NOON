@@ -1,0 +1,317 @@
+/**
+ * Page Rules
+*/
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-black.ttf');
+    font-family: 'Black';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-bold.ttf');
+    font-family: 'Bold';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-extra-light.ttf');
+    font-family: 'ExtraLight';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-plain.ttf');
+    font-family: 'Plain';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-semi-light.ttf');
+    font-family: 'SemiLight';
+}
+
+body {
+    font-family: 'Plain';
+}
+
+/* Start of Slider */
+
+.slide-show {
+    margin: 100px 0
+}
+
+.slide-show .carousel-control-next {
+    color: #6b478f;
+    width: 60px;
+    opacity: 1;
+    height: 60px;
+    top: 50px;
+    right: 45px;
+    line-height: 1;
+    font-family: Plain;
+    text-align: right;
+}
+
+.slide-show .carousel-control-prev {
+    right: 115px;
+    width: 60px;
+    height: 60px;
+    color: #6b478f;
+    opacity: 1;
+    left: auto;
+    top: 35px;
+    font-family: Plain;
+    line-height: 1;
+    text-align: left;
+}
+
+.slide-show .carousel-control-next-icon,
+.slide-show .carousel-control-prev-icon {
+    padding-top: 50px;
+}
+
+.slide-show .line {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 111px;
+    width: 2px;
+    height: 60px;
+    background: #CCC;
+    transform: rotate(40deg);
+}
+
+.slide-show .options {
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.slide-show .options .left,
+.slide-show .options .right {
+    position: relative;
+}
+
+.slide-show .options .left .controller,
+.slide-show .options .right .controller {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    transition: .3s all ease-in-out
+}
+
+.slide-show .options .left:hover .controller,
+.slide-show .options .right:hover .controller {
+    bottom: 0;
+}
+
+.slide-show .options .left .controller .square,
+.slide-show .options .right .controller .square {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 88px;
+    background: #e81377;
+    height: 90px;
+    object-position: center;
+    color: #FFF;
+    font-family: Plain;
+}
+
+.slide-show .options .left .controller .square .sq-text,
+.slide-show .options .right .controller .square .sq-text {
+    text-align: center;
+    line-height: 5.5;
+}
+
+.slide-show .options .left .controller .rectangle,
+.slide-show .options .right .controller .rectangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 88px);
+    background-color: rgba(108, 75, 140, .9);
+    color: #FFF;
+    font-family: Plain;
+    font-size: 21px;
+    padding: 15px 25px;
+    line-height: 1.1;
+}
+
+.slide-show .options .left .controller .rectangle .rec-text,
+.slide-show .options .right .controller .rectangle .rec-text {
+    width: 80%;
+    margin: 0
+}
+
+.slide-show .options .left .controller .rectangle i,
+.slide-show .options .right .controller .rectangle i {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 20%;
+    font-size: 45px;
+    cursor: pointer;
+}
+.slide-show  .cdiv-label {
+    position: absolute;
+    top: 123px;
+    background: #efefef;
+    padding: 5px 20px 20px;
+    width: 99px;
+    font-family: 'Plain';
+    text-align: center;
+    color: #6b478f;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+    font-size: 20px
+}
+
+
+/* End of Slider */
+
+
+/*
+*******************************
+            Amr Saeed
+     Live stream video styles
+*******************************
+*/
+
+#ivideo-lst{
+    object-fit: cover;
+}
+
+#ibutton-play{
+  height: 86px;
+  width: 86px;
+  background: url(../LiveStream-images/icons/play.png) no-repeat center;
+  border: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+}
+
+#idiv-lst-controls{
+  width: 100%;
+  position: absolute;
+  top: 85%;
+}
+
+/* Sliders general styles */
+
+.cinput-slider{
+  -webkit-appearance: none !important;
+  height: 10px;
+  background: #fff;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.cinput-slider::-webkit-slider-thumb{
+  -webkit-appearance: none !important;
+  height: 18px;
+  width: 18px;
+  background: #6b478f;
+  border-radius: 100%;
+  border: solid 2px #fff;
+  cursor: pointer;
+}
+
+/* Time bar styles */
+
+#idiv-time-bar{
+  position: relative;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 4%;
+}
+
+#iinput-time-slider{
+  width: 100%;
+  display: block;
+}
+
+#idiv-time-prog-bar{
+  width: 0;
+  height: 10px;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 20px 0 0 20px;
+  background-color: #6b478f;
+}
+
+#idiv-time-buf-bar{
+  width: 0;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 20px;
+}
+
+/* Volume bar styles */
+
+#idiv-volume-bar{
+  position: relative;
+  margin-left: 5%;
+  width: 10%;
+}
+
+#ibutton-mute{
+  background: url(../LiveStream-images/icons/vol.png) no-repeat center;
+  height: 18px;
+  width: 18px;
+  border: none;
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+#iinput-volume-slider{
+  position: absolute;
+  top:0;
+  left: 30px;
+}
+
+#idiv-volume-prog-bar{
+  width: 100%;
+  height: 10px;
+  background-color: #6b478f;
+  position: absolute;
+  top:0;
+  left: 30px;
+  border-radius: 20px 0 0 20px;
+}
+
+
+#ispan-current-time{
+  display: none;
+  float: left;
+  margin-top: 40px;
+  font-weight: bold;
+  transform: translateX(-10px);
+  color: #6b478f;
+}
+
+
+/* Full screen button */
+
+#ibutton-full-screen{
+  background: url(../LiveStream-images/icons/fl-scr.png) no-repeat center;
+  height: 20px;
+  width: 20px;
+  border: none;
+  float: right;
+  margin-right: 5%;
+}
+
+/* Options button */
+
+#ibutton-options{
+  background: url(../LiveStream-images/icons/v-set.png) no-repeat center;
+  height: 20px;
+  width: 20px;
+  border: none;
+  float: right;
+  margin-right: 20px;
+}
