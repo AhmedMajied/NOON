@@ -27,7 +27,7 @@ export class NewsSection extends React.Component {
                         </span>
                     </header>
 
-                    <div className="row">
+                    <div id="idiv-opinion-nav" className="row">
                         {
                             this.state.news.data.slice(0, 4).map((news) => (
                                 <div key={news.id} className="col-lg-3 col-md-6 col-12">
