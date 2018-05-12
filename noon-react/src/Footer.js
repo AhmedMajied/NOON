@@ -22,30 +22,30 @@ export class Footer extends React.Component
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td><a href="#">Football</a></td>
+                                        <td><a href="/#idiv-bdy">Football</a></td>
                                         <td>
-                                            <a href="#">Tennis</a>
+                                            <a href="/#idiv-bdy">Tennis</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="#">Bascketball</a>
+                                            <a href="/#idiv-bdy">Bascketball</a>
                                         </td>
                                         <td>
-                                            <a href="#">Combat Sport</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">Swimming</a>
-                                        </td>
-                                        <td>
-                                            <a href="#">Individual Sport</a>
+                                            <a href="/#idiv-bdy">Combat Sport</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="#">Volleyball</a>
+                                            <a href="/#idiv-bdy">Swimming</a>
+                                        </td>
+                                        <td>
+                                            <a href="/#idiv-bdy">Individual Sport</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/#idiv-bdy">Volleyball</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -72,12 +72,12 @@ export class Footer extends React.Component
                             <div className="row">
                                 <div className="col-sm-6 cdiv-footer-left">
                                     <h5>About us</h5>
-                                    <a href="#">Vision</a>
-                                    <a href="#">Mission</a>
-                                    <a href="#">Contact us</a>
+                                    <a href="/About-us/#idiv-vision-nav">Vision</a>
+                                    <a href="/About-us/#idiv-mission-nav">Mission</a>
+                                    <a href="/Contact-us">Contact us</a>
                                 </div>
                                 <div className="col-sm-6 cdiv-footer-right">
-                                    <a href="#"><span className="oi oi-audio"></span> Live Stream</a>
+                                    <a href="/Live-streaming"><span className="oi oi-audio"></span> Live Stream</a>
                                     <a href="#"><i className="fa fa-shopping-bag" aria-hidden="true"></i>Shop</a>
                                 </div>
                             </div>
