@@ -25,5 +25,10 @@ router.get('/d', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/add-image', (req,res)=>{
+        res.render('add-image');
+});
+
+
 
 module.exports = router;
