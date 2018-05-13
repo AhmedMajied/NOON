@@ -10,7 +10,7 @@ function MongoDB(){
 MongoDB.prototype.PhotoSchema = new Schema ({
     source: {type: String, required: true},
     captionText: String,
-    publishTime: {type: Date, default: Date.now}
+    publishTime: {type: Date, default: Date.now()}
 });
 
 MongoDB.prototype.VideoSchema = new Schema({
@@ -18,7 +18,7 @@ MongoDB.prototype.VideoSchema = new Schema({
     source: {type: String, required: true},
     coverSource: {type: String, required: true},
     captionText: String,
-    publishTime: {type: Date, default: Date.now},
+    publishTime: {type: Date, default: Date.now()},
     iconImageSource: String
 });
 

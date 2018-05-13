@@ -1,0 +1,156 @@
+/* Author: Mariam Ashraf Fekry */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#idiv-admin-panel {
+    min-height: 100vh;
+    margin: 0
+}
+
+#iaside-admin {
+    min-height: 100%;
+    background: rgb(107, 71, 143);
+    color: #fff;
+    padding: 0
+}
+
+#iaside-admin .cdiv-logo {
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid rgb(107, 71, 143);
+}
+
+#iaside-admin .cdiv-logo img {
+    max-width: 100%;
+    margin: auto
+}
+
+#iaside-admin .cul-sections {
+    list-style-type: none;
+    padding: 0
+}
+
+#iaside-admin .cul-sections li {
+    padding: 15px 30px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out
+}
+
+#iaside-admin .cul-sections li:hover, #iaside-admin .cul-sections li.active, #idiv-admin-panel .csection-admin .btn-add:hover {
+    background: rgb(79, 52, 105);
+    cursor: pointer;
+}
+
+#isection-welcome {
+    height: 320px;
+}
+
+#isection-welcome .cdiv-welcome-text {
+    margin-bottom: 100px;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 1px 5px 5px rgb(122, 122, 122);
+    margin-top: 100px
+}
+
+#isection-welcome img {
+    max-width: 60%
+}
+
+.csection-admin {
+    background: #fff;
+    min-height: 100%;
+    text-align: center
+}
+
+.csection-admin .tab {
+    display: none;
+}
+
+.csection-admin .tab-active {
+    display: block;
+}
+
+#idiv-admin-panel .csection-admin .displayMedia {
+    margin-top: 15px;
+}
+
+#idiv-admin-panel .csection-admin .cimage {
+    max-height: 150px;
+    max-width: 100%;
+    margin-bottom: 20px
+}
+
+#idiv-admin-panel .csection-admin .fieldset {
+    width: 100%;
+    background: #FFF;
+    border: 1px solid#CCC;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+#idiv-admin-panel .csection-admin .legendtitle {
+    background: #FFF;
+    border: 1px solid#CCC;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+#idiv-admin-panel .csection-admin time {
+    display: block;
+    color:rgb(126, 126, 126);
+    font-size: 12px
+}
+
+#idiv-admin-panel .csection-admin .btn-add {
+    height: 70px;
+    background: rgb(107, 71, 143);
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    margin: 5px
+}
+#idiv-admin-panel .csection-admin .modal form{
+    text-align:left;
+}
+#idiv-admin-panel .csection-admin .modal label{
+    width:100px
+}
+
+#idiv-admin-panel input[type="file"]{
+    max-width: 200px;
+    font-size:12px
+}
+@media(max-width:576px) {
+
+    #iaside-admin .cdiv-logo {
+        padding: 10px
+    }
+    #iaside-admin .cul-sections li {
+        font-size: 15px;
+    }
+    #isection-welcome .cdiv-welcome-text {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #idiv-admin-panel .csection-admin .btn-add {
+        height: 40px;
+        font-size: 15px;
+        padding: 10px
+    }
+}
