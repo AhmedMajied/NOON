@@ -1,0 +1,359 @@
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-black.ttf');
+    font-family: 'Black';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-bold.ttf');
+    font-family: 'Bold';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-extra-light.ttf');
+    font-family: 'ExtraLight';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-plain.ttf');
+    font-family: 'Plain';
+}
+
+@font-face {
+    src: url('../../fonts/bahij-the-sans-arabic-semi-light.ttf');
+    font-family: 'SemiLight';
+}
+
+body {
+    font-family: 'Plain';
+}
+/* start top header*/
+
+.cheader-top-head .cdiv-top-header .cdiv-logo img {
+    width: 135px;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-right {
+    padding: 10px;
+    text-align: right
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-left {
+    padding: 15px;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .btn,
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .btn {
+    position: relative;
+    font-family: "Plain";
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 5px 10px;
+    color: #CCC;
+    box-shadow: none;
+    transition: .2s all ease-in-out;
+    font-size: 14px;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .btn:nth-of-type(2)::after,
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .btn:nth-of-type(2)::before,
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-language .dropdown::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #CCC;
+    position: absolute;
+    top: 10px;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .btn:nth-of-type(2)::after {
+    right: 0;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .btn:nth-of-type(2)::before,
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .language .dropdown::before {
+    left: 0
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .cdiv-search {
+    display: none;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-top-btns .btn:hover,
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .btn:hover {
+    color: #6b478f;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-social-media,
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-language {
+    display: inline-block;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-social-media .btn {
+    padding: 5px
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-language {
+    position: relative;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-language .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    font-size: 14px;
+    top: 6px !important;
+    left: auto !important;
+    right: 0;
+    font-family: Plain;
+}
+
+.cheader-top-head .cdiv-top-header .cdiv-bottom-btns .cdiv-language .dropdown-menu .dropdown-item {
+    padding: 7px 15px;
+    border-bottom: 1px solid #EEE;
+}
+
+
+/* end top header */
+
+
+/* start bottom header */
+
+.cheader-bottom-header .navbar {
+    background-color: #6b478f;
+    padding: 0;
+    margin-bottom: 20px
+}
+
+.cheader-bottom-header .navbar .navbar-brand,
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #FFF;
+    font-family: 'Plain';
+    font-size: 14px;
+    padding: 10px
+}
+
+.cheader-bottom-header .navbar .navbar-brand {
+    padding-left: 0;
+    margin: 0
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item {
+    position: relative;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .nav-link:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    background: #FFF;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .nav-link::after {
+    display: none;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .nav-link i {
+    font-size: 8px;
+    padding: 0 3px
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .nav-link i {
+    font-size: 11px;
+    padding-right: 6px
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    font-size: 14px;
+    top: 39px;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .dropdown-menu a {
+    color: #CCC;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .dropdown-menu a:hover {
+    color: #6b478f;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    padding: 11px 15px;
+    border-bottom: 1px solid #EEE;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .nav-item:first-of-type {
+    padding-right: 35px
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .nav-item .nav-link {
+    position: relative;
+}
+
+.dropdown-menu .show>.dropdown-toggle::after {
+    transform: rotate(-90deg);
+}
+
+.bottom-header .navbar .dropdown-menu a {
+    position: relative;
+}
+
+.cheader-bottom-header .navbar .dropdown-menu .dropdown-toggle::after {
+    position: absolute;
+    top: 18px;
+    right: 6px;
+}
+
+
+/*.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .nav-item .nav-link:hover,*/
+
+.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .cli-active-cust .nav-link {
+    background: #e81377;
+}
+
+
+/*.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .nav-item .nav-link:hover::after,*/
+
+.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .cli-active-cust .nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    background: #e81377;
+    height: 10px;
+}
+
+.cheader-bottom-header .navbar .collapse .navbar-nav:last-of-type .nav-item .nav-link span {
+    padding-right: 6px
+}
+
+.cheader-bottom-header .navbar .cdiv-label {
+    position: absolute;
+    bottom: -85px;
+    background: #efefef;
+    padding: 5px 20px 20px;
+    width: 99px;
+    font-family: 'Plain';
+    text-align: center;
+    color: #6b478f;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+    font-size: 20px
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item ul.dropdown-menu li {
+    transition: .5s all ease-in-out
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li:hover {
+    border-right: 1px solid #533670
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+    font-family: 'Plain';
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: -m-max-content;
+    max-width: 65vw;
+    top: -4px !important;
+    left: 159px !important;
+    padding-right: 15px
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-first {
+    border-right: 1px solid #EEE;
+    padding-right: 0
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table {
+    width: 100%;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr th {
+    padding: 11px
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td {
+    border: 1px solid #EEE;
+    color: #CCC;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td:first-of-type {
+    border-left: 0;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td:last-of-type {
+    border-right: 0;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr:first-of-type td {
+    border-top: 0
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr:last-of-type td {
+    border-bottom: 0
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td img {
+    margin-right: 5px
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td a {
+    text-decoration: none;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu table tr td a:hover {
+    color: #6b478f;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third {
+    padding: 15px 0;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second .cart,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third .cart {
+    box-shadow: 0px 0px 15px #E9E9E9
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second .cart .image img,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third .cart .image img {
+    width: 100%;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second .cart .text,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third .cart .text {
+    padding: 10px
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second .cart .text .head h6,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third .cart .text .head h6 {
+    float: left;
+    font-family: 'ExtraLight';
+    font-size: 13px;
+    color: #6b478f;
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second .cart .text .head span,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third .cart .text .head span {
+    float: right;
+    font-size: 12px;
+    color: #DDD
+}
+
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-second .cart .text p,
+.cheader-bottom-header .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu .cdiv-third .cart .text p {
+    clear: both;
+    font-size: 15px;
+    margin: 0;
+    color: #6b478f
+}
+
+
+/* end bottom header */

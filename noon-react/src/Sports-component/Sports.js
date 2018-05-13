@@ -15,6 +15,7 @@ export class Sports extends Component{
   }
 
   render(){
+    let sportId = this.props.id;
     let sportName = this.props.sportName;
     let mainNewsCart = this.mainNewsCart;
     let relatedNewsCarts = this.relatedNewsCarts.map(cart => {
@@ -24,6 +25,7 @@ export class Sports extends Component{
     });
 
     return (
+      <div id={sportId}>
       <div id="idiv-component-root" class="container-fluid">
         <Header title={sportName} navTitle="All Page" type="circle"/>
           <div id="idiv-bdy" class="container">
@@ -37,6 +39,7 @@ export class Sports extends Component{
                   </div>
               </div>
           </div>
+      </div>
       </div>
     );
   }
