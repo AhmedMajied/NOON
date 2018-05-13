@@ -24,7 +24,9 @@ MediaDBModel.prototype.deletePhoto = function(photoID){
     this.Photo.findById(photoID,function(err,photo){
         try{
             // Delete Related Files From FileSystem
-            fs.unlink(photo.source.replace("./..", "public"));
+            fs.unlinkSync(photo.source.replace("./..", "public"));
+        }
+        catch{
         }
         finally{
             photo.remove()
@@ -47,9 +49,11 @@ MediaDBModel.prototype.deleteVideo = function(videoID){
     this.Video.findById(videoID,function(err,video){
         try{
             // Delete Related Files From FileSystem
-            fs.unlink(video.coverSource.replace("./..", "public"));
-            fs.unlink(video.source.replace("./..", "public"));
-            fs.unlink(video.iconImageSource.replace("./..", "public"));
+            fs.unlinkSync(video.coverSource.replace("./..", "public"));
+            fs.unlinkSync(video.source.replace("./..", "public"));
+            fs.unlinkSync(video.iconImageSource.replace("./..", "public"));
+        }
+        catch{
         }
         finally{
             video.remove()

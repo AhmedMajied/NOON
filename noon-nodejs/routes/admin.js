@@ -10,7 +10,7 @@ var photoStorage=multer.diskStorage({
         cb(null,'./public/uploads/Photos/');
     },
     filename:function(req,file,cb){
-        cb(null,file.originalname);
+        cb(null,Date.now()+"-"+file.originalname);
     }
 });
 var videoStorage = multer.diskStorage({
@@ -18,7 +18,7 @@ var videoStorage = multer.diskStorage({
         cb(null,'./public/uploads/Videos/');
     },
     filename:function(req,file,cb){
-        cb(null,file.originalname);
+        cb(null,Date.now()+"-"+file.originalname);
     }
 });
 var photoUpload=multer({storage:photoStorage});
@@ -43,8 +43,6 @@ router.post("/addVideo",videoUpload.any(), (req, res) => {
     mediaController.addVideo(req, res);
     res.redirect("/admin/");
 });
-
-
 router.post("/deleteVideo",(req,res)=>{
     mediaController.deleteVideo(req,res);
     res.redirect("/admin/");
