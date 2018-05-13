@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 var MongoDB = require('./MongoDB');
-
+var fs = require("fs");
 function MediaDBModel(){}
 
 MediaDBModel.prototype.Photo = mongoose.model('Photos',MongoDB.PhotoSchema);
@@ -10,9 +10,10 @@ MediaDBModel.prototype.Video = mongoose.model('Videos',MongoDB.VideoSchema);
 
 /* manipulate Photos */
 MediaDBModel.prototype.getPhotos = function(_callback){
-    this.Photo.find().then(function(photos){
+    this.Photo.find().lean().then(function(photos){
         _callback(photos);
     });
+
 }
 
 MediaDBModel.prototype.insertPhoto = function(newPhoto){
@@ -20,12 +21,22 @@ MediaDBModel.prototype.insertPhoto = function(newPhoto){
 }
 
 MediaDBModel.prototype.deletePhoto = function(photoID){
-    this.Photo.findByIdAndRemove(photoID).exec();
+    this.Photo.findById(photoID,function(err,photo){
+        try{
+            // Delete Related Files From FileSystem
+            fs.unlinkSync(photo.source.replace("./..", "public"));
+        }
+        catch{
+        }
+        finally{
+            photo.remove()
+        }
+    });
 }
 
 /* manipulate videos */
 MediaDBModel.prototype.getVideos = function(_callback){
-    this.Video.find().then(function(videos){
+    this.Video.find().lean().then(function(videos){
         _callback(videos);
     });
 }
@@ -35,7 +46,19 @@ MediaDBModel.prototype.insertVideo = function(newVideo){
 }
 
 MediaDBModel.prototype.deleteVideo = function(videoID){
-    this.Video.findByIdAndRemove(videoID).exec();
+    this.Video.findById(videoID,function(err,video){
+        try{
+            // Delete Related Files From FileSystem
+            fs.unlinkSync(video.coverSource.replace("./..", "public"));
+            fs.unlinkSync(video.source.replace("./..", "public"));
+            fs.unlinkSync(video.iconImageSource.replace("./..", "public"));
+        }
+        catch{
+        }
+        finally{
+            video.remove()
+        }
+    });
 }
 
 module.exports = new MediaDBModel();

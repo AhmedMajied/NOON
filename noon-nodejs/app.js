@@ -7,6 +7,8 @@ var logger = require('morgan');
 const MediaController = require('./Controllers/MediaController');
 var indexRouter = require('./routes/index');
 var mediaRouter = require('./routes/media');
+var adminRouter = require('./routes/admin');
+
 var app = express();
 const multer = require('multer');
 
@@ -85,6 +87,7 @@ app.post('/add-image', (req, res) => {
 
 app.use('/', indexRouter);
 app.use('/media',mediaRouter);
+app.use('/media',adminRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
