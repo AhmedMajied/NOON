@@ -27,17 +27,16 @@ var videoUpload=multer({storage:videoStorage});
 router.all("/",(req,res) => {
     adminPanelController.displayAdminPanel(req,res);
 })
-
+/* author : Mariam Ashraf Fekry */
 router.post("/addPhoto",photoUpload.single('uploadPhoto'), (req, res) => {
     mediaController.addPhoto(req, res);
     res.redirect("/admin/");
 });
-
-
 router.post("/deletePhoto",(req,res)=>{
     mediaController.deletePhoto(req,res);
     res.redirect("/admin/");
 });
+/* author : Mariam Ashraf Fekry */
 
 /* Author: Andrew Emad Nassif */
 router.post("/addVideo",videoUpload.any(), (req, res) => {

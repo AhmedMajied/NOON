@@ -5,12 +5,8 @@ var getDurationFromDate = require("./../time.js");
 
 function MediaController() {
 }
-MediaController.prototype.addPhotoForm = (req, res) => {
-    res.render("addMediaPhoto.ejs", {
-        message: null,
-        title: "Add Photo"
-    });
-}
+/* author : Mariam Ashraf Fekry */
+/* addPhoto to mediaDB using data that comes from view */
 MediaController.prototype.addPhoto = (req, res) => {
     var path = (req.file.path).replace("public", "./..");
     var newPhoto = mediaDBModel.Photo({
@@ -19,17 +15,19 @@ MediaController.prototype.addPhoto = (req, res) => {
     });
     mediaDBModel.insertPhoto(newPhoto);
 }
+/* getPhotos from db in MediaDB */
 MediaController.prototype.getPhotos = (req, res, _callback) => {
     mediaDBModel.getPhotos(function(photos){
-        console.log(getDurationFromDate(photos[0].publishTime));
         photos.forEach(photo => photo.publishTime = getDurationFromDate(photo.publishTime));
         _callback(photos)
         
     });
 }
+/* delete photo from db using photoID */
 MediaController.prototype.deletePhoto = (req, res) => {
     mediaDBModel.deletePhoto(req.body.mediaId);
 }
+/* author : Mariam Ashraf Fekry */
 
 /* Author: Andrew Emad Nassif */
 
