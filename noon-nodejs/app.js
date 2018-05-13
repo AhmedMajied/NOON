@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+const MediaController = require('./Controllers/MediaController');
 var indexRouter = require('./routes/index');
-
+var mediaRouter = require('./routes/media');
 var app = express();
+const multer = require('multer');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,8 +21,70 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
 
+
+
+
+
+// Set The Storage Engine
+const storage = multer.diskStorage({
+  destination: './public/uploads/',
+  filename: function(req, file, cb){
+    cb(null,file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+  }
+});
+
+
+// Init Upload
+const upload = multer({
+  storage: storage,
+  limits:{fileSize: 1000000},
+  fileFilter: function(req, file, cb){
+    checkFileType(file, cb);
+  }
+}).single('myImage');
+
+// Check File Type
+function checkFileType(file, cb){
+  // Allowed ext
+  const filetypes = /jpeg|jpg|png|gif/;
+  // Check ext
+  const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+  // Check mime
+  const mimetype = filetypes.test(file.mimetype);
+  if(mimetype && extname){
+          return cb(null,true);
+  } else {
+          cb('Error: Images Only!');
+  }
+}
+
+app.post('/add-image', (req, res) => {
+  upload(req, res, (err) => {
+    if(err){
+      res.render('add-image', {
+        msg: err
+      });
+    } else {
+      if(req.file == undefined){
+          res.render('add-image', {
+            msg: 'Error: No File Selected!'
+          });
+        } else {
+          var response =  {
+            msg: 'File Uploaded!',
+            file: `uploads/${req.file.filename}`
+          };
+          MediaController.addImage(response.file);
+          res.render('add-image',response);
+      }
+    }
+  });
+});
+
+
+app.use('/', indexRouter);
+app.use('/media',mediaRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
