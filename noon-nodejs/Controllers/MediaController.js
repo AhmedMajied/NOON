@@ -20,7 +20,6 @@ MediaController.prototype.getPhotos = (req, res, _callback) => {
     mediaDBModel.getPhotos(function(photos){
         photos.forEach(photo => photo.publishTime = getDurationFromDate(photo.publishTime));
         _callback(photos)
-        
     });
 }
 /* delete photo from db using photoID */
