@@ -5,21 +5,16 @@ const MediaController = require('../Controllers/MediaController');
 
 
 router.get('/images', (req, res) => {
-        MediaController.getAllPhoto(req,res);
+        MediaController.getPhotos(req,res,function(photo){
+                res.send(photo);
+        });
 });
 
 
 router.get('/videos', (req, res) => {
-        MediaController.getAllVideo(req,res);
-});
-
-
-router.get('/add-video', (req,res)=>{
-        res.render('add-video');
-});
-
-router.post('/add-video',(req,res)=>{
-        MediaController.addVideo(req,res);
+        MediaController.getVideos(req,res,function(video){
+                res.send(video);
+        });
 });
 
 module.exports = router;

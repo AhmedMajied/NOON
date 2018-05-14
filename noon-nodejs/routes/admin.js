@@ -30,22 +30,22 @@ router.all("/",(req,res) => {
 /* author : Mariam Ashraf Fekry */
 router.post("/addPhoto",photoUpload.single('uploadPhoto'), (req, res) => {
     mediaController.addPhoto(req, res);
-    res.redirect("/admin/");
+    res.redirect("/media/");
 });
 router.post("/deletePhoto",(req,res)=>{
     mediaController.deletePhoto(req,res);
-    res.redirect("/admin/");
+    res.redirect("/media/");
 });
 /* author : Mariam Ashraf Fekry */
 
 /* Author: Andrew Emad Nassif */
 router.post("/addVideo",videoUpload.any(), (req, res) => {
     mediaController.addVideo(req, res);
-    res.redirect("/admin/");
+    res.redirect("/media/");
 });
 router.post("/deleteVideo",(req,res)=>{
     mediaController.deleteVideo(req,res);
-    res.redirect("/admin/");
+    res.redirect("/media/");
 });
 /* Author: Andrew Emad Nassif */
 
