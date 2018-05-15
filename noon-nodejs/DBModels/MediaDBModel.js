@@ -26,7 +26,7 @@ MediaDBModel.prototype.deletePhoto = function(photoID){
             // Delete Related Files From FileSystem
             fs.unlinkSync(photo.source.replace("./..", "public"));
         }
-        catch{
+        catch (error){
         }
         finally{
             photo.remove()
@@ -53,7 +53,7 @@ MediaDBModel.prototype.deleteVideo = function(videoID){
             fs.unlinkSync(video.source.replace("./..", "public"));
             fs.unlinkSync(video.iconImageSource.replace("./..", "public"));
         }
-        catch{
+        catch (error){
         }
         finally{
             video.remove()

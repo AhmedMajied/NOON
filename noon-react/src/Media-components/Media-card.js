@@ -19,7 +19,7 @@ class MediaCard extends React.Component {
         if(this.props.sectionTitle === "Photos") {
             metaCaption = this.props.date;
             media = (
-                <img src={this.props.mediaSrc} className="img img-responsive cmedia" alt="" />
+                <img src={this.props.mediaSrc} className="img img-responsive cmedia" alt="not found" />
             );
         }
         else {
@@ -36,7 +36,7 @@ class MediaCard extends React.Component {
             <div className="cdiv-show-on-hover">
                 <span className="cspn-show-on-hover">
                     <figure className="cfgr-show-on-hover" onClick={this.zoomIn}>
-                        <img src={this.props.hoverIconSrc} className="img img-responsive cimg-show-on-hover" alt=""/>
+                        <img src={this.props.hoverIconSrc} className="img img-responsive cimg-show-on-hover" alt="not found"/>
                         <figcaption className="cfigcaption-show-on-hover">{metaCaption}</figcaption>
                     </figure>
                 </span>

@@ -7,13 +7,23 @@ class MediaSection extends React.Component{
     constructor(props){
 		super();
 		this.state = {
-            data: props.data,
+            data: [],
             limit: props.limit
-		};
+        };
+    }
+
+    componentDidMount() {
+        /*Call nodejs API*/
+        fetch(this.props.dataURL).then(res => {
+            return res.json()
+        }).then(JSONRes => { 
+            console.log(JSONRes);
+            this.setState({data: JSONRes});
+        });
     }
 
     showMore = () => {
-        this.setState({limit: this.state.data.data.length});
+        this.setState({limit: this.state.data.length});
         this.refs.btnMore.setAttribute("hidden", "hidden");
     }
 
@@ -36,17 +46,15 @@ class MediaSection extends React.Component{
 
         if ( this.state.data ) {
             cards = (
-                this.state.data.data.slice(0, this.state.limit).map(
+                this.state.data.slice(0, this.state.limit).map(
                     (card, index) => {
-                        var date = new Date(card.publishTime);
                         return <MediaCard 
-                                key={card.id}
+                                key={card._id}
                                 sectionTitle={this.props.title}
-                                mediaSrc={card.source}
-                                date={date.getDate() + "/" + (date.getMonth()+1) + "/" + 
-                                      date.getFullYear()}
+                                mediaSrc={ card.source}
+                                date={card.publishTime}
                                 hoverIconSrc = {hoverIconSrc}
-                                caption={card.captionText}
+                                caption={this.props.title == "Photos" ? card.captionText : card.title}
                                 cardStyle = {cardStyle}
                                 showScreen={this.props.showScreen} />
                     }
