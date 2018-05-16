@@ -1,3 +1,4 @@
+/*Authors: Ahmed Mohamed Ahmed - Ahmed Hussein */
 import React from 'react';
 import {NewsVideosCarousel} from "./Media-components/News-videos-carousel";
 import MediaSection from './Media-components/Media-section';
@@ -22,7 +23,7 @@ export class Media extends React.Component
 
         return(
             <div>
-                <NewsVideosCarousel />
+                <NewsVideosCarousel limit={5} />
 
                 {/* Media photos */}
                 <MediaSection limit={12} title="Photos" dataURL="media/images" showScreen={this.showScreen} 
@@ -36,3 +37,5 @@ export class Media extends React.Component
         );
     }
 }
+
+/*Authors: Ahmed Mohamed Ahmed - Ahmed Hussein */

@@ -8,7 +8,7 @@ export default class PhotoContainer extends Component{
     let props = this.props;
     return (
       <div className="col-md-3 cdiv-photo-container">
-        <img className="cimg-photo" src={props.src}/>
+        <img className="cimg-photo" src={props.src} alt="not found"/>
         <div className="cdiv-photo-text">
           <div className="cdiv-photo-title">
             {props.title}

@@ -9,7 +9,7 @@ import './Sports.css'
 export class Sports extends Component{
   constructor(){
     super();
-    this.state = require("../fake-api/sportsComponent.json"),
+    this.state = require("../fake-api/sportsComponent.json");
     this.mainNewsCart = this.state.data.mainNewsCart;
     this.relatedNewsCarts = this.state.data.relatedNewsCarts;
   }
@@ -20,21 +20,21 @@ export class Sports extends Component{
     let mainNewsCart = this.mainNewsCart;
     let relatedNewsCarts = this.relatedNewsCarts.map(cart => {
       return (
-        <RelatedNewsCart relatedNews={cart}/>
+        <RelatedNewsCart key={cart.id} relatedNews={cart}/>
       );
     });
 
     return (
       <div id={sportId}>
-      <div id="idiv-component-root" class="container-fluid">
+      <div id="idiv-component-root" className="container-fluid">
         <Header title={sportName} navTitle="All Page" type="circle"/>
-          <div id="idiv-bdy" class="container">
-              <div class="row">
+          <div id="idiv-bdy" className="container">
+              <div className="row">
                   <MainNewsCart mainNews={mainNewsCart}/>
-                  <div class="col-lg-3 col-md-6 cdiv-related-news-col">
+                  <div className="col-lg-3 col-md-6 cdiv-related-news-col">
                     {relatedNewsCarts.slice(0, 2)}
                   </div>
-                  <div class="col-lg-3 col-md-6 cdiv-related-news-col">
+                  <div className="col-lg-3 col-md-6 cdiv-related-news-col">
                     {relatedNewsCarts.slice(2, 4)}
                   </div>
               </div>

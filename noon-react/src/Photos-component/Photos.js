@@ -8,26 +8,31 @@ import './Photos.css'
 export class Photos extends Component{
   constructor(){
     super();
-    this.state = require("../fake-api/photosComponent.json");
-    this.photos = this.state.data;
+    this.state = {photos: []};
+  }
+
+  componentDidMount() {
+    /*Call nodejs API*/
+    fetch("media/images").then(res => {
+        return res.json()
+    }).then(JSONRes => {
+        this.setState({photos: JSONRes});
+    });
   }
 
   render(){
-    let photos = this.photos.map( photo => {
+    let photos = this.state.photos.slice(0,this.props.limit).map( photo => {
       return (
-        <PhotoContainer src={photo.src} title={photo.title} description={photo.description}/>
+        <PhotoContainer key={photo._id} src={photo.source} title={photo.publishTime} description={photo.captionText}/>
       );
     });
 
     return (
       <div id="idiv-photo-nav" className="cdiv-gray-bg">
-        <Header title="Photos" navTitle="All Page" type="circle"/>
+        <Header title="Photos" navTitle="All Page" moreLink="media" ype="circle"/>
         <div className="container-fluid">
           <div className="row">
-            {photos.slice(0, 4)}
-          </div>
-          <div className="row">
-            {photos.slice(4, 8)}
+            {photos}
           </div>
         </div>
       </div>

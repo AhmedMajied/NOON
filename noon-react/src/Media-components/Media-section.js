@@ -16,8 +16,7 @@ class MediaSection extends React.Component{
         /*Call nodejs API*/
         fetch(this.props.dataURL).then(res => {
             return res.json()
-        }).then(JSONRes => { 
-            console.log(JSONRes);
+        }).then(JSONRes => {
             this.setState({data: JSONRes});
         });
     }
@@ -54,7 +53,7 @@ class MediaSection extends React.Component{
                                 mediaSrc={ card.source}
                                 date={card.publishTime}
                                 hoverIconSrc = {hoverIconSrc}
-                                caption={this.props.title == "Photos" ? card.captionText : card.title}
+                                caption={card.captionText}
                                 cardStyle = {cardStyle}
                                 showScreen={this.props.showScreen} />
                     }

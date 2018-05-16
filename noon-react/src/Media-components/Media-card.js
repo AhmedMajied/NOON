@@ -2,7 +2,18 @@
 
 import React from 'react';
 
-class MediaCard extends React.Component {    
+class MediaCard extends React.Component {  
+
+    showVideoDuration = () => {
+        let options = {  
+            hour: "2-digit", minute: "2-digit", second: "2-digit"
+        }; 
+
+        var durationInSec = Math.floor(this.refs.video.duration); //ignore milliseconds
+        var videoDuration = new Date();
+        videoDuration.setHours(0, 0, durationInSec);
+        this.refs.hoverFigCaption.innerHTML = videoDuration.toTimeString().split(' ')[0];
+    }
 
     /**
      * Zooms in the video/photo that is shown on the card by viewing it in a big modal screen
@@ -23,9 +34,9 @@ class MediaCard extends React.Component {
             );
         }
         else {
-            metaCaption = "Video duration ...";
+            metaCaption = "Getting duration ...";
             media = (
-                <video className="cmedia" ref="video" onLoad={this.showVideoDuration} >
+                <video className="cmedia" ref="video" onLoadedMetadata={this.showVideoDuration} >
                     <source src={this.props.mediaSrc} />
                 </video>
             );
@@ -37,7 +48,7 @@ class MediaCard extends React.Component {
                 <span className="cspn-show-on-hover">
                     <figure className="cfgr-show-on-hover" onClick={this.zoomIn}>
                         <img src={this.props.hoverIconSrc} className="img img-responsive cimg-show-on-hover" alt="not found"/>
-                        <figcaption className="cfigcaption-show-on-hover">{metaCaption}</figcaption>
+                        <figcaption ref="hoverFigCaption" className="cfigcaption-show-on-hover">{metaCaption}</figcaption>
                     </figure>
                 </span>
             </div>

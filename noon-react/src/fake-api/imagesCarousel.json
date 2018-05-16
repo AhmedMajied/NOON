@@ -1,8 +1,0 @@
-{
-  "data":[
-	{"ID":1,"image":"./images/photos-1.png","publishTime":"1 min ago","captionText":"first first first first first first first first first first"},
-	{"ID":2,"image":"./images/photos-2.png","publishTime":"5 min ago","captionText":"second second second second second second second second second"},
-	{"ID":3,"image":"./images/photos-3.png","publishTime":"1 hour ago","captionText":"third third third third third third third third third third"},
-	{"ID":4,"image":"./images/photos-4.png","publishTime":"2 hours ago","captionText":"forth forth forth forth forth forth forth forth forth forth"}
-  ]
-}

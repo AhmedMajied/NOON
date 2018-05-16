@@ -1,0 +1,41 @@
+{
+    "categories":[
+        {
+            "id": "c1",
+            "title":"Sports",
+            "subCategories":[
+                {"id": "c1sc1","title":"Football","action":"#","sub":true},
+                {"id": "c1sc2","title":"Basketball","action":"/#idiv-basketball-nav","sub":false},
+                {"id": "c1sc3","title":"Swimming","action":"/#idiv-swimming-nav","sub":false}
+            ]
+        },
+        {
+            "id": "c2",
+            "title":"opinion",
+            "subCategories":[
+                {"id": "c2sc1","title":"user","action":"/#idiv-opinion-nav","sub":false}
+            ]
+        },
+        {
+            "id": "c3",
+            "title":"Images",
+            "subCategories":[
+                {"id": "c3sc1","title":"Nature","action":"/#idiv-photo-nav","sub":false}
+            ]
+        },
+        {
+            "id": "c4",
+            "title":"Videos",
+            "subCategories":[
+                {"id": "c4sc1","title":"Animation","action":"/#idiv-videos-section","sub":false}
+            ]
+        },
+        {
+            "id": "c5",
+            "title":"Magazine",
+            "subCategories":[
+                {"id": "c5sc1","title":"Manga","action":"/#idiv-magazine-nav","sub":false}
+            ]
+        }
+    ]
+}

@@ -13,10 +13,10 @@
 /* Component style */
 
 /* Component body */
-a:hover {
+.cdiv-news a:hover {
     text-decoration: none;
 }
-time {
+.cdiv-news time {
     margin-top: 20px;
     margin-bottom: 22px;
     font-size: 12px;
@@ -37,7 +37,7 @@ time {
     flex-direction: column;
     justify-content: space-between;
 }
-h5 {
+.cdiv-news h5 {
     font-size: 18px;
     font-family: "Bahij TheSansArabic";
     color: rgb(107, 71, 143);
@@ -55,7 +55,7 @@ h5 {
     width: 100%;
     height: auto;
 }
-p {
+.cdiv-news p {
     display: block;
     overflow: hidden;
     word-wrap: break-word;
@@ -67,12 +67,12 @@ p {
 .cdiv-social {
     display: inline-block
 }
-.fa {
+.cdiv-news .cdiv-social .fa {
     margin-right: 8px;
     color: #cccccc;
     font-size: 14px;
 }
-.fa:hover {
+.cdiv-news .cdiv-social .fa:hover {
     color: #6b478f;
 }
 

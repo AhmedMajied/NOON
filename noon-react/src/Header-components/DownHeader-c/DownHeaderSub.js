@@ -18,16 +18,16 @@ export class DownHeaderSub extends Component {
       let categories = this.state.categories.map((category) => {
           if(category.sub==true)
           {
-            return <DownHeaderSubCard title={category.title} />
+            return <DownHeaderSubCard key={category.id} title={category.title} />
           }
           else
           {
-            return  <li><a className="dropdown-item" href={category.action}>{category.title}</a> </li>
+            return  <li key={category.id}><a className="dropdown-item" href={category.action}>{category.title}</a> </li>
           }
       });
     return (
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        {categories}
+            <ul className="cul-no-bullets">{categories}</ul>
         </div>
     )
   }
