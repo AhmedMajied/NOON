@@ -1,8 +1,0 @@
-{
-  "data":[
-    {"ID":1,"cover":"./images/photos-1.png","title":"swimming","publishTime":"1 min ago","captionText":"first first first first first first first first first first first first","video":"./videos/1.mp4","iconImage":"./images/icon.png"},
-    {"ID":2,"cover":"./images/photos-2.png","title":"football","publishTime":"1 min ago","captionText":"second second second second second second second second","video":"./videos/1.mp4","iconImage":"./images/icon.png"},
-    {"ID":3,"cover":"./images/photos-3.png","title":"vollyball","publishTime":"1 min ago","captionText":"third third third third third third third third third third third third","video":"./videos/1.mp4","iconImage":"./images/icon.png"},
-    {"ID":4,"cover":"./images/photos-4.png","title":"basketball","publishTime":"1 min ago","captionText":"forth forth forth forth forth forth forth forth forth forth forth forth","video":"./videos/1.mp4","iconImage":"./images/icon.png"}
-  ]
-}

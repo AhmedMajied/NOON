@@ -30,7 +30,7 @@ export class Home extends React.Component
 
         return(
             <div>
-                <ImagesCarousel />
+                <ImagesCarousel limit="5" />
                 <Sports id="idiv-football-nav" sportName="Football"/>
                 <NewsSection id="idiv-profile-nav" title = "Profiles"
                              flagBorderStyle = {flagBorderStyle}
@@ -42,7 +42,7 @@ export class Home extends React.Component
                              alignment = "center"
                              descriptionLineCount = {2} />
                 <Sports id="idiv-basketball-nav" sportName="Basketball"/>
-                <Photos/>
+                <Photos limit="8" />
                 <Sports id="idiv-swimming-nav" sportName="Swimming"/>
                 <VideosCarousel />
                 <Sports id="idiv-vollyball-nav" sportName="Vollyball"/>

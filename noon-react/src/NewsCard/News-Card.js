@@ -21,9 +21,6 @@ export const NewsCard = (props) => {
                 {props.hasPublishTime === true && <time className="cnews-time">{getDurationFromDate(props.news.time)}</time>}
                 <h5 style={alignmentStyle}>{props.news.title}</h5>
                 {props.descriptionLineCount > 0 && <p style={paragraphStyle}>{props.news.about}</p>}
-                
-                
-                
                 {props.hasSocialLinks===true && props.hasMoreDetail === true &&
                 <div className="row">
                 <div className="cdiv-social col-xl-6 col-lg-12 col-6">
@@ -50,14 +47,6 @@ export const NewsCard = (props) => {
                 </div>
             </div>
                 }
-
-
-
-
-
-
-
-
                 {props.hasSocialLinks === true && !props.hasMoreDetail &&
                     <div className="container">
                         <div className="row">

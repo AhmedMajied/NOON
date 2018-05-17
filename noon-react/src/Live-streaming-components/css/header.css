@@ -355,5 +355,8 @@ body {
     color: #6b478f
 }
 
-
+.dropdown-menu .cul-no-bullets {
+    padding-left: 0px;
+    list-style-type:none;
+}
 /* end bottom header */

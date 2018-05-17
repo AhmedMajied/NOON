@@ -1,5 +1,0 @@
-1- download Mongo Server from "https://www.mongodb.com/download-center?jmp=nav#community"
-2- go to Mongo folder => bin => then open terminal
-3- write command " sudo mkdir -p /data/db " // this step is performed only ONCE
-4- write command " sudo chown -R $USER:$USER /data " // this step is performed only ONCE
-5- write command " ./mongod "s

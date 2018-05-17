@@ -14,13 +14,14 @@ export default class Header extends Component{
   }
 
   render(){
+    var moreLink = this.props.moreLink || "#";
     return (
       <header className="ihdr">
           <span className="ispn-hdr-left" style={this.border(this.props.type)}>
               <label className="ilbl-header-name">{this.props.title}</label>
           </span>
           <span className="ispn-hdr-right">
-              <label className="ilbl-all-page">{this.props.navTitle}</label>
+              <a className="clink-all-page" href={moreLink}>{this.props.navTitle}</a>
           </span>
       </header>
     );

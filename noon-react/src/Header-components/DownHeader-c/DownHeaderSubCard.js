@@ -49,7 +49,7 @@ export class DownHeaderSubCard extends Component {
                         <div className="cdiv-second">
                             <div className="cart">
                                 <div className="image">
-                                    <img src="./images/LiveStream-images/general/img1.png" alt="image 1" />
+                                    <img src="./images/LiveStream-images/general/img1.png" alt="not found" />
                                 </div>
                                 <div className="text">
                                     <div className="head">
@@ -65,7 +65,7 @@ export class DownHeaderSubCard extends Component {
                         <div className="cdiv-third">
                             <div className="cart">
                                 <div className="image">
-                                    <img src="./images/LiveStream-images/general/img1.png" alt="image 1" />
+                                    <img src="./images/LiveStream-images/general/img1.png" alt="not found" />
                                 </div>
                                 <div className="text">
                                     <div className="head">

@@ -1,3 +1,4 @@
+/*Authors: Ahmed Mohamed Ahmed - Ahmed Hussein */
 import React from 'react';
 import {NewsVideosCarousel} from "./Media-components/News-videos-carousel";
 import MediaSection from './Media-components/Media-section';
@@ -7,15 +8,6 @@ import "./Media-components/media.css";
 
 export class Media extends React.Component
 {
-
-    constructor(){
-        super();
-        this.state = {
-            photosData: require("./fake-api/photos.json"),
-            videosData: require("./fake-api/videos.json"),
-        };
-    }
-
     /*Screen modes are: "Photos" - "Videos" */
     showScreen = (mode, src) => {
         this.refs.screen.powerOn(mode, src);
@@ -23,25 +15,27 @@ export class Media extends React.Component
 
     render(){
         var photosBackground = {
-            'background-color' : '#ffffff'
+            'backgroundColor' : '#ffffff'
         };
         var videosBackground = {
-            'background-color' : '#efefef'
+            'backgroundColor' : '#efefef'
         };
 
         return(
             <div>
-                <NewsVideosCarousel />
+                <NewsVideosCarousel limit={5} />
 
                 {/* Media photos */}
-                <MediaSection limit={12} title="Photos" data={this.state.photosData} 
-                              showScreen={this.showScreen} backgroundStyle={photosBackground} />
+                <MediaSection limit={12} title="Photos" dataURL="media/images" showScreen={this.showScreen} 
+                              backgroundStyle={photosBackground} />
                 {/* Media videos */}
-                <MediaSection limit={12} title="Videos" data={this.state.videosData} 
-                              showScreen={this.showScreen} backgroundStyle={videosBackground} />
+                <MediaSection limit={12} title="Videos" dataURL="media/videos" showScreen={this.showScreen}
+                              backgroundStyle={videosBackground} />
                 {/*Sceen is a modal that opens images and videos for better view */}
                 <Screen ref="screen" />
             </div>
         );
     }
 }
+
+/*Authors: Ahmed Mohamed Ahmed - Ahmed Hussein */

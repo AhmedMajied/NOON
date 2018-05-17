@@ -8,26 +8,35 @@ export class NewsVideosCarousel extends React.Component{
     constructor(){
         super();
         this.state = {
-            data: require("./../fake-api/videosCarousel.json")
+            data: []
         };
+    }
+
+    componentDidMount() {
+        /*Call nodejs API*/
+        fetch("media/videos").then(res => {
+            return res.json()
+        }).then(JSONRes => { 
+            this.setState({data: JSONRes});
+        });
     }
 
     render(){
         return(
             <NewsCarousel
                 carouselID={"idiv-news-videos-carousel"}
-                dataItemsLength={this.state.data.data.length}
+                dataItemsLength={this.props.limit}
             >
                 {/* videos slides */}
-                {this.state.data.data.map((carouselItem,i) =>
-                    <div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem.ID} >
+                {this.state.data.slice(0,this.props.limit).map((carouselItem,i) =>
+                    <div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem._id} >
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-sm-4 cdiv-carousel-item">
 
                                 {/* video and its cover */}
-                                <img src={carouselItem.cover} alt={carouselItem.captionText} className="img-fluid cimg-carousel-image" />
+                                <img src={carouselItem.coverSource} alt={carouselItem.captionText} className="img-fluid cimg-carousel-image" />
                                 <video className="video" controls>
-                                    <source src="videos/1.mp4" type="video/mp4" />
+                                    <source src={carouselItem.source} />
                                     Your browser does not support the video tag.
                                 </video>
 
@@ -44,7 +53,7 @@ export class NewsVideosCarousel extends React.Component{
                                         <div className="col-sm-6 col-md-6 col-lg-3">
                                             <center>
                                                 <i className="fa fa-play-circle" aria-hidden="true" style={{display:'none',fontSize:'81px'}}></i>
-                                                <img src={carouselItem.iconImage} className="cimg-icon" alt="icon"/>
+                                                <img src={carouselItem.iconImageSource} className="cimg-icon" alt="icon"/>
                                             </center>
                                         </div>
                                     </div>

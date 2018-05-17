@@ -82,7 +82,7 @@ body {
 #idiv-admin-panel .csection-admin .cimage {
     max-height: 150px;
     max-width: 100%;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 #idiv-admin-panel .csection-admin .fieldset {
@@ -94,7 +94,7 @@ body {
     height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 #idiv-admin-panel .csection-admin .legendtitle {

@@ -8,6 +8,7 @@
     },
     "relatedNewsCarts": [
       {
+        "id": "rnc1",
         "src": "./images/sports.jpg",
         "title": "Lorem Ipsum is simply dummy",
         "time": "1 min. ago",
@@ -20,6 +21,7 @@
         }
       },
       {
+        "id": "rnc2",
         "src": "./images/sports.jpg",
         "title": "Lorem Ipsum is simply dummy",
         "time": "1 min. ago",
@@ -32,6 +34,7 @@
         }
       },
       {
+        "id": "rnc3",
         "src": "./images/sports.jpg",
         "title": "Lorem Ipsum is simply dummy",
         "time": "1 min. ago",
@@ -44,6 +47,7 @@
         }
       },
       {
+        "id": "rnc4",
         "src": "./images/sports.jpg",
         "title": "Lorem Ipsum is simply dummy",
         "time": "1 min. ago",

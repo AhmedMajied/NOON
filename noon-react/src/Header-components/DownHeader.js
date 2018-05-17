@@ -4,38 +4,17 @@ import DownHeaderSub from "./DownHeader-c/DownHeaderSub"
 export class DownHeader extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            title:props.title,
-            categories:[
-                {title:"Sports", categories:[
-                    {title:"Football",action:"#",sub:true},
-                    {title:"Basketball",action:"/#idiv-basketball-nav",sub:false},
-                    {title:"Swimming",action:"/#idiv-swimming-nav",sub:false},
-                ]},
-                {title:"opinion",categories:[
-                    {title:"user",action:"/#idiv-opinion-nav",sub:false}
-                ]},
-                {title:"Images",categories:[
-                    {title:"Nature",action:"/#idiv-photo-nav",sub:false}
-                ]},
-                {title:"Videos",categories:[
-                    {title:"Animation",action:"/#idiv-videos-section",sub:false}
-                ]},
-                {title:"Magazine",categories:[
-                    {title:"Manga",action:"/#idiv-magazine-nav",sub:false}
-                ]},
-            ]
-        }
+        this.state = require("./../fake-api/downHeader.json");
     }
   render() {
       let navBar = this.state.categories.map((category) => {
           return(
-            <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                {category.title} <i className="fa fa-chevron-down"></i>
-            </a>
-                <DownHeaderSub categories= { category.categories}/>
-        </li>
+            <li key={category.id} className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {category.title} <i className="fa fa-chevron-down"></i>
+                </a>
+                <DownHeaderSub categories= { category.subCategories}/>
+            </li>
           );
       });
     return (

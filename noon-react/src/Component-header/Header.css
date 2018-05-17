@@ -27,7 +27,8 @@
     color: #6b478f;
     float: right;
 }
-.ilbl-all-page{
+.clink-all-page{
     display: table-cell;
     vertical-align: bottom;
+    color: #6b478f !important;
 }
