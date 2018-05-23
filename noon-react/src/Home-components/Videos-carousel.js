@@ -9,8 +9,17 @@ export class VideosCarousel extends React.Component{
     constructor(){
         super();
         this.state = {
-            data: require("./../fake-api/videosCarousel.json")
+            data: []
         };
+    }
+
+    componentDidMount() {
+        /*Call nodejs API*/
+        fetch("media/videos").then(res => {
+            return res.json()
+        }).then(JSONRes => { 
+            this.setState({data: JSONRes});
+        });
     }
 
     render(){
@@ -27,7 +36,7 @@ export class VideosCarousel extends React.Component{
                         </div>
                         <div className="col-6">
                             <div id="idiv-videos-allpage">
-                                <a href="#" id="ilink-videos-allpage">All page</a>
+                                <a href="media" id="ilink-videos-allpage">All page</a>
                             </div>
                         </div>
                     </div>
@@ -37,14 +46,14 @@ export class VideosCarousel extends React.Component{
                 <Carousel carouselID={"idiv-videos-carousel"}>
                     {/* videos slides */}
                     <div className="carousel-inner">
-                        {this.state.data.data.map((carouselItem,i) =>
-                            <div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem.ID} >
+                        {this.state.data.map((carouselItem,i) =>
+                            <div className={"carousel-item "+((i===0)?"active":"") } key={carouselItem._id} >
                                 <div className="row">
                                     <div className="col-3 cdiv-video-carousel-item">
                                         {/* video and its cover */}
-                                        <img src={carouselItem.cover} alt={carouselItem.captionText} className="img-fluid cimg-video-cover" />
+                                        <img src={carouselItem.coverSource} alt={carouselItem.captionText} className="img-fluid cimg-video-cover" />
                                         <video className="video" controls>
-                                            <source src="videos/1.mp4" type="video/mp4" />
+                                            <source src={carouselItem.source} />
                                                 Your browser does not support the video tag.
                                         </video>
 
